@@ -38,4 +38,18 @@ a little joy.</string>
     <string name="settings_placeholder">More preferences are coming in a later update.</string>
     <string name="template_metadata">%1$s · %2$s</string>
     <string name="template_preview">%1$s template preview</string>
+    <string name="search_drawings">Search drawings</string>
+    <string name="search_hint">Try a name or category</string>
+    <string name="clear_search">Clear search</string>
+    <string name="categories">Categories</string>
+    <string name="all_categories">All categories</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="all_difficulties">All</string>
+    <string name="no_matching_drawings">No drawings found</string>
+    <string name="try_different_filters">Try another name or category, or clear your filters to see every drawing.</string>
+    <string name="clear_filters">Clear filters</string>
+    <plurals name="drawing_results">
+        <item quantity="one">%d drawing</item>
+        <item quantity="other">%d drawings</item>
+    </plurals>
 </resources>

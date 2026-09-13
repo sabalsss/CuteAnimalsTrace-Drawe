@@ -23,6 +23,7 @@ class NavigationShellTest {
     @Test
     fun detailAndTrace_hideTabs_andBackReturnsToExplore() {
         compose.onNodeWithTag("tab_explore").performClick()
+        compose.onNodeWithTag("screen_explore").performScrollToNode(hasTestTag("drawing_kitten"))
         compose.onNodeWithTag("drawing_kitten").performClick()
         compose.onNodeWithTag("screen_detail").assertIsDisplayed()
         compose.onNodeWithTag("bottom_navigation").assertDoesNotExist()

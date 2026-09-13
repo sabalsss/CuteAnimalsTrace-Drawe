@@ -22,5 +22,7 @@
   "20": "TopLevelDestination",
   "21": "NavigationShellTest",
   "22": "TemplateCategory",
-  "23": "LocalTemplateCatalogTest"
+  "23": "LocalTemplateCatalogTest",
+  "24": "filterDrawings",
+  "25": "ExploreFiltersTest"
 }

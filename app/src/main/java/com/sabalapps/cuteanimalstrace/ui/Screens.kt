@@ -1,6 +1,21 @@
 package com.sabalapps.cuteanimalstrace.ui
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.res.pluralStringResource
+import com.sabalapps.cuteanimalstrace.data.Difficulty
+import com.sabalapps.cuteanimalstrace.data.TemplateCategory
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
@@ -108,19 +123,97 @@ fun HomeScreen(drawings: List<DrawingTemplate>, onExplore: () -> Unit, onDrawing
 
 @Composable
 fun ExploreScreen(drawings: List<DrawingTemplate>, onDrawing: (String) -> Unit) {
+    var query by rememberSaveable { mutableStateOf("") }
+    var category by rememberSaveable { mutableStateOf<TemplateCategory?>(null) }
+    var difficulty by rememberSaveable { mutableStateOf<Difficulty?>(null) }
+    val matches = remember(drawings, query, category, difficulty) {
+        filterDrawings(drawings, query, category, difficulty)
+    }
+    val focusManager = LocalFocusManager.current
+    val clearFilters = {
+        query = ""
+        category = null
+        difficulty = null
+        focusManager.clearFocus()
+    }
+
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
         LazyVerticalGrid(
             columns = GridCells.Adaptive(156.dp),
-            modifier = Modifier.widthIn(max = 960.dp).fillMaxSize().testTag("screen_explore"),
+            modifier = Modifier.widthIn(max = 960.dp).fillMaxSize().imePadding().testTag("screen_explore"),
             contentPadding = PaddingValues(24.dp),
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
-            item(span = { GridItemSpan(maxLineSpan) }) {
-                Intro(stringResource(R.string.explore_title), stringResource(R.string.explore_subtitle))
+            item(key = "filters", span = { GridItemSpan(maxLineSpan) }) {
+                Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
+                    Intro(stringResource(R.string.explore_title), stringResource(R.string.explore_subtitle))
+                    OutlinedTextField(
+                        value = query,
+                        onValueChange = { query = it },
+                        modifier = Modifier.fillMaxWidth().testTag("explore_search"),
+                        label = { Text(stringResource(R.string.search_drawings)) },
+                        placeholder = { Text(stringResource(R.string.search_hint)) },
+                        leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                        trailingIcon = {
+                            if (query.isNotEmpty()) {
+                                IconButton(onClick = { query = "" }) {
+                                    Icon(Icons.Default.Close, stringResource(R.string.clear_search))
+                                }
+                            }
+                        },
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.medium,
+                        keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
+                        keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() }),
+                    )
+                    Text(stringResource(R.string.categories), style = MaterialTheme.typography.titleMedium)
+                    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FilterChip(selected = category == null, onClick = { category = null },
+                            label = { Text(stringResource(R.string.all_categories)) },
+                            modifier = Modifier.testTag("category_all"))
+                        TemplateCategory.entries.forEach { option ->
+                            FilterChip(selected = category == option, onClick = { category = option },
+                                label = { Text(option.label) },
+                                modifier = Modifier.testTag("category_${option.name}"))
+                        }
+                    }
+                    Text(stringResource(R.string.difficulty), style = MaterialTheme.typography.titleMedium)
+                    Row(Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FilterChip(selected = difficulty == null, onClick = { difficulty = null },
+                            label = { Text(stringResource(R.string.all_difficulties)) },
+                            modifier = Modifier.testTag("difficulty_all"))
+                        Difficulty.entries.forEach { option ->
+                            FilterChip(selected = difficulty == option, onClick = { difficulty = option },
+                                label = { Text(option.label) },
+                                modifier = Modifier.testTag("difficulty_${option.name}"))
+                        }
+                    }
+                    Text(pluralStringResource(R.plurals.drawing_results, matches.size, matches.size),
+                        style = MaterialTheme.typography.labelLarge, modifier = Modifier.testTag("result_count"))
+                }
             }
-            items(drawings, key = { it.id }) { drawing ->
-                DrawingCard(drawing) { onDrawing(drawing.id) }
+            if (matches.isEmpty()) {
+                item(key = "empty", span = { GridItemSpan(maxLineSpan) }) {
+                    Card(Modifier.fillMaxWidth().testTag("explore_empty")) {
+                        Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                            Icon(Icons.Default.Search, contentDescription = null)
+                            Text(stringResource(R.string.no_matching_drawings), style = MaterialTheme.typography.titleLarge)
+                            Text(stringResource(R.string.try_different_filters))
+                            Button(onClick = clearFilters, modifier = Modifier.testTag("clear_filters")) {
+                                Text(stringResource(R.string.clear_filters))
+                            }
+                        }
+                    }
+                }
+            }
+            items(matches, key = { it.id }) { drawing ->
+                DrawingCard(drawing) {
+                    focusManager.clearFocus()
+                    onDrawing(drawing.id)
+                }
             }
         }
     }
