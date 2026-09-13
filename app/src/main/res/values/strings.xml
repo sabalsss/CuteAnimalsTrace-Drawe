@@ -18,12 +18,12 @@ a little joy.</string>
     <string name="hero_title">Your next little masterpiece</string>
     <string name="hero_description">Find a friendly face to inspire your next drawing.</string>
     <string name="explore_drawings">Explore drawings</string>
-    <string name="little_inspiration">A little inspiration</string>
+    <string name="little_inspiration">Featured drawings</string>
     <string name="explore_title">Meet your next muse</string>
-    <string name="explore_subtitle">A few friendly placeholders to get you started.</string>
+    <string name="explore_subtitle">Find a little friend in our offline collection.</string>
     <string name="detail_subtitle">A friendly face for your next creative moment.</string>
     <string name="detail_description">This sample is a preview of the drawing collection. Animal artwork will arrive in a later update.</string>
-    <string name="open_trace">Open Trace</string>
+    <string name="open_trace">Trace this drawing</string>
     <string name="drawing_unavailable">This drawing is unavailable. Go back to choose another.</string>
     <string name="trace_title">Your creative space</string>
     <string name="trace_selected">Selected drawing: %1$s</string>
@@ -36,4 +36,6 @@ a little joy.</string>
     <string name="appearance">Appearance</string>
     <string name="follows_system">Follows your device’s light or dark theme.</string>
     <string name="settings_placeholder">More preferences are coming in a later update.</string>
+    <string name="template_metadata">%1$s · %2$s</string>
+    <string name="template_preview">%1$s template preview</string>
 </resources>

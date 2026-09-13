@@ -1,5 +1,9 @@
 package com.sabalapps.cuteanimalstrace
 
+import androidx.compose.ui.test.hasTestTag
+import androidx.compose.ui.test.performScrollToNode
+import com.sabalapps.cuteanimalstrace.data.LocalTemplateCatalog
+import org.junit.Assert.assertNotNull
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertIsSelected
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
@@ -51,5 +55,31 @@ class NavigationShellTest {
         compose.onNodeWithTag("tab_home").assertIsSelected()
         compose.onNodeWithTag("tab_explore").performClick()
         compose.onNodeWithTag("screen_explore").assertIsDisplayed()
+    }
+
+    @Test
+    fun everyOfflineTemplate_hasArtworkAndOpensMatchingDetails() {
+        compose.onNodeWithTag("tab_explore").performClick()
+        LocalTemplateCatalog.templates.forEach { template ->
+            assertNotNull(compose.activity.getDrawable(template.imageRes))
+            compose.onNodeWithTag("screen_explore")
+                .performScrollToNode(hasTestTag("drawing_${template.id}"))
+            compose.onNodeWithTag("drawing_${template.id}").performClick()
+            compose.onNodeWithTag("template_image_${template.id}").assertIsDisplayed()
+            compose.onNodeWithText(template.name).assertIsDisplayed()
+            compose.onNodeWithText("${template.category.label} · ${template.difficulty.label}")
+                .performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText(template.description).performScrollTo().assertIsDisplayed()
+            compose.onNodeWithText("Trace this drawing").performScrollTo().assertIsDisplayed()
+            compose.onNodeWithContentDescription("Back").performClick()
+        }
+    }
+
+    @Test
+    fun home_showsFeaturedCatalogAndOpensItsDetails() {
+        val template = LocalTemplateCatalog.featuredTemplates.last()
+        compose.onNodeWithTag("drawing_${template.id}").performScrollTo().performClick()
+        compose.onNodeWithText(template.name).assertIsDisplayed()
+        compose.onNodeWithTag("template_image_${template.id}").assertIsDisplayed()
     }
 }

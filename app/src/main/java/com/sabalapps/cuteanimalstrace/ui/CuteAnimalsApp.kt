@@ -16,6 +16,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.*
 import androidx.navigation.navArgument
 import com.sabalapps.cuteanimalstrace.R
+import com.sabalapps.cuteanimalstrace.data.LocalTemplateCatalog
 import com.sabalapps.cuteanimalstrace.ui.navigation.DrawingDestination
 import com.sabalapps.cuteanimalstrace.ui.navigation.TopLevelDestination
 
@@ -72,19 +73,20 @@ fun CuteAnimalsApp() {
         ) {
             composable(TopLevelDestination.Home.route) {
                 HomeScreen(
+                    drawings = LocalTemplateCatalog.featuredTemplates,
                     onExplore = { navigateToTab(TopLevelDestination.Explore) },
                     onDrawing = { navController.navigate(DrawingDestination.detail(it)) },
                 )
             }
             composable(TopLevelDestination.Explore.route) {
-                ExploreScreen { navController.navigate(DrawingDestination.detail(it)) }
+                ExploreScreen(LocalTemplateCatalog.templates) { navController.navigate(DrawingDestination.detail(it)) }
             }
             composable(TopLevelDestination.Favorites.route) { FavoritesScreen() }
             composable(TopLevelDestination.Settings.route) { SettingsScreen() }
             composable(DrawingDestination.Detail,
                 arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
             ) { backStackEntry ->
-                val drawing = placeholderDrawings.find { it.id == backStackEntry.arguments?.getString(DrawingDestination.Argument) }
+                val drawing = LocalTemplateCatalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
                 DrawingDetailScreen(drawing) {
                     drawing?.let { navController.navigate(DrawingDestination.trace(it.id)) { launchSingleTop = true } }
                 }
@@ -92,7 +94,7 @@ fun CuteAnimalsApp() {
             composable(DrawingDestination.Trace,
                 arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
             ) { backStackEntry ->
-                val drawing = placeholderDrawings.find { it.id == backStackEntry.arguments?.getString(DrawingDestination.Argument) }
+                val drawing = LocalTemplateCatalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
                 TraceScreen(drawing)
             }
         }

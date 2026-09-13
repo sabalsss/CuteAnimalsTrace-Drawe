@@ -1,1 +1,24 @@
-{"0": "Documented App Requirements", "1": "Activity Startup", "2": "Gradle Wrapper", "3": "Android Instrumentation Tests", "4": "Local Unit Tests", "5": "Development Workflow", "6": "Application Build Configuration", "7": "HDPI Square Icon", "8": "HDPI Round Icon", "9": "MDPI Square Icon", "10": "MDPI Round Icon", "11": "XHDPI Square Icon", "12": "XHDPI Round Icon", "13": "XXHDPI Square Icon", "14": "XXHDPI Round Icon", "15": "XXXHDPI Square Icon", "16": "XXXHDPI Round Icon", "17": "Root Build Configuration", "18": "Gradle Project Settings"}
+{
+  "0": "Cute Animals: Trace & Draw",
+  "1": "MainActivity.kt",
+  "2": "gradlew",
+  "3": "ExampleInstrumentedTest",
+  "4": "ExampleUnitTest",
+  "5": "Gradle build and test validation",
+  "6": "app/build.gradle.kts",
+  "7": "HDPI square Android launcher icon: white robot head on green grid",
+  "8": "HDPI round Android launcher icon: white robot head on green grid",
+  "9": "MDPI square Android launcher icon: white robot head on green grid",
+  "10": "MDPI round Android launcher icon: white robot head on green grid",
+  "11": "XHDPI square Android launcher icon: white robot head on green grid",
+  "12": "Circular Android launcher icon: white robot head on green grid",
+  "13": "Rounded-square Android launcher icon: white robot head on green grid",
+  "14": "Circular Android launcher icon: white robot head on green grid",
+  "15": "Rounded-square Android launcher icon: white robot head on green grid",
+  "16": "Circular Android launcher icon: white robot head on green grid",
+  "17": "build.gradle.kts",
+  "18": "settings.gradle.kts",
+  "19": "Screens.kt",
+  "20": "TopLevelDestination",
+  "21": "NavigationShellTest"
+}

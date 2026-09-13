@@ -20,5 +20,7 @@
   "18": "settings.gradle.kts",
   "19": "Screens.kt",
   "20": "TopLevelDestination",
-  "21": "NavigationShellTest"
+  "21": "NavigationShellTest",
+  "22": "TemplateCategory",
+  "23": "LocalTemplateCatalogTest"
 }

@@ -1,5 +1,6 @@
 package com.sabalapps.cuteanimalstrace.ui
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
@@ -16,10 +17,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.sabalapps.cuteanimalstrace.R
+import com.sabalapps.cuteanimalstrace.data.DrawingTemplate
 
 @Composable
 private fun ScreenColumn(tag: String, content: @Composable ColumnScope.() -> Unit) {
@@ -54,21 +59,38 @@ private fun Illustration(icon: ImageVector = Icons.Default.Face, coral: Boolean 
     }
 }
 
+/** Artwork stays on light paper in both themes, preserving the contrast of its ink. */
 @Composable
-private fun DrawingCard(drawing: PlaceholderDrawing, onClick: () -> Unit) {
+private fun TemplateImage(drawing: DrawingTemplate, expanded: Boolean = false) {
+    Surface(
+        modifier = Modifier.fillMaxWidth().height(if (expanded) 280.dp else 152.dp),
+        shape = MaterialTheme.shapes.large,
+        color = Color(0xFFFFFCF7),
+    ) {
+        Image(
+            painter = painterResource(drawing.imageRes),
+            contentDescription = stringResource(R.string.template_preview, drawing.name),
+            modifier = Modifier.padding(16.dp).testTag("template_image_${drawing.id}"),
+            contentScale = ContentScale.Fit,
+        )
+    }
+}
+
+@Composable
+private fun DrawingCard(drawing: DrawingTemplate, onClick: () -> Unit) {
     Card(onClick = onClick, modifier = Modifier.fillMaxWidth().testTag("drawing_${drawing.id}"),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow)) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Illustration(coral = drawing.id == "kitten" || drawing.id == "fox")
-            Text(stringResource(drawing.name), style = MaterialTheme.typography.titleMedium)
-            Text(stringResource(R.string.sample_drawing), style = MaterialTheme.typography.bodyMedium,
+            TemplateImage(drawing)
+            Text(drawing.name, style = MaterialTheme.typography.titleMedium)
+            Text(stringResource(R.string.template_metadata, drawing.category.label, drawing.difficulty.label), style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
 }
 
 @Composable
-fun HomeScreen(onExplore: () -> Unit, onDrawing: (String) -> Unit) {
+fun HomeScreen(drawings: List<DrawingTemplate>, onExplore: () -> Unit, onDrawing: (String) -> Unit) {
     ScreenColumn("screen_home") {
         Intro(stringResource(R.string.home_greeting), stringResource(R.string.home_subtitle))
         Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
@@ -80,12 +102,12 @@ fun HomeScreen(onExplore: () -> Unit, onDrawing: (String) -> Unit) {
             }
         }
         Text(stringResource(R.string.little_inspiration), style = MaterialTheme.typography.titleLarge)
-        DrawingCard(placeholderDrawings.first()) { onDrawing(placeholderDrawings.first().id) }
+        drawings.forEach { drawing -> DrawingCard(drawing) { onDrawing(drawing.id) } }
     }
 }
 
 @Composable
-fun ExploreScreen(onDrawing: (String) -> Unit) {
+fun ExploreScreen(drawings: List<DrawingTemplate>, onDrawing: (String) -> Unit) {
     Box(Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
         LazyVerticalGrid(
             columns = GridCells.Adaptive(156.dp),
@@ -97,7 +119,7 @@ fun ExploreScreen(onDrawing: (String) -> Unit) {
             item(span = { GridItemSpan(maxLineSpan) }) {
                 Intro(stringResource(R.string.explore_title), stringResource(R.string.explore_subtitle))
             }
-            items(placeholderDrawings, key = { it.id }) { drawing ->
+            items(drawings, key = { it.id }) { drawing ->
                 DrawingCard(drawing) { onDrawing(drawing.id) }
             }
         }
@@ -105,18 +127,18 @@ fun ExploreScreen(onDrawing: (String) -> Unit) {
 }
 
 @Composable
-fun DrawingDetailScreen(drawing: PlaceholderDrawing?, onTrace: () -> Unit) {
+fun DrawingDetailScreen(drawing: DrawingTemplate?, onTrace: () -> Unit) {
     ScreenColumn("screen_detail") {
         if (drawing == null) {
             Text(stringResource(R.string.drawing_unavailable))
         } else {
-            Illustration(coral = true)
-            Intro(stringResource(drawing.name), stringResource(R.string.detail_subtitle))
+            TemplateImage(drawing, expanded = true)
+            Text(drawing.name, style = MaterialTheme.typography.headlineLarge)
             Surface(shape = MaterialTheme.shapes.small, color = MaterialTheme.colorScheme.secondaryContainer) {
-                Text(stringResource(R.string.sample_drawing), Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                Text(stringResource(R.string.template_metadata, drawing.category.label, drawing.difficulty.label), Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                     style = MaterialTheme.typography.labelLarge)
             }
-            Text(stringResource(R.string.detail_description), style = MaterialTheme.typography.bodyLarge)
+            Text(drawing.description, style = MaterialTheme.typography.bodyLarge)
             Button(onClick = onTrace, modifier = Modifier.fillMaxWidth().testTag("start_trace"),
                 contentPadding = PaddingValues(16.dp)) {
                 Icon(Icons.Default.Create, null)
@@ -128,11 +150,11 @@ fun DrawingDetailScreen(drawing: PlaceholderDrawing?, onTrace: () -> Unit) {
 }
 
 @Composable
-fun TraceScreen(drawing: PlaceholderDrawing?) {
+fun TraceScreen(drawing: DrawingTemplate?) {
     ScreenColumn("screen_trace") {
         Illustration(Icons.Default.Create)
         Intro(stringResource(R.string.trace_title),
-            drawing?.let { stringResource(R.string.trace_selected, stringResource(it.name)) }
+            drawing?.let { stringResource(R.string.trace_selected, it.name) }
                 ?: stringResource(R.string.drawing_unavailable))
         Text(stringResource(R.string.trace_placeholder), style = MaterialTheme.typography.bodyLarge)
     }

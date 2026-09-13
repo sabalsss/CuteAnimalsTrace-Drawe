@@ -7,14 +7,66 @@
       "label": "MainActivity",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L9",
+      "source_location": "L10",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
       "community": 1,
-      "community_name": "Activity Startup",
+      "community_name": "MainActivity.kt",
       "norm_label": "mainactivity"
+    },
+    {
+      "label": "PlaceholderDrawing",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/PlaceholderDrawings.kt",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings_placeholderdrawing",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "placeholderdrawing"
+    },
+    {
+      "label": "DrawingDestination",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L20",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "drawingdestination"
+    },
+    {
+      "label": "TopLevelDestination",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "topleveldestination"
+    },
+    {
+      "label": "NavigationShellTest",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L15",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": "navigationshelltest"
     },
     {
       "label": "ExampleInstrumentedTest",
@@ -26,7 +78,7 @@
       "_origin": "ast",
       "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_exampleinstrumentedtest_exampleinstrumentedtest",
       "community": 3,
-      "community_name": "Android Instrumentation Tests",
+      "community_name": "ExampleInstrumentedTest",
       "norm_label": "exampleinstrumentedtest"
     },
     {
@@ -39,20 +91,212 @@
       "_origin": "ast",
       "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_exampleunittest_exampleunittest",
       "community": 4,
-      "community_name": "Local Unit Tests",
+      "community_name": "ExampleUnitTest",
       "norm_label": "exampleunittest"
     },
     {
       "label": ".onCreate()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L10",
+      "source_location": "L11",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
       "community": 1,
-      "community_name": "Activity Startup",
+      "community_name": "MainActivity.kt",
       "norm_label": ".oncreate()"
+    },
+    {
+      "label": "CuteAnimalsTheme()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/theme/Theme.kt",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme",
+      "community": 1,
+      "community_name": "MainActivity.kt",
+      "norm_label": "cuteanimalstheme()"
+    },
+    {
+      "label": "CuteAnimalsApp()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "cuteanimalsapp()"
+    },
+    {
+      "label": "DrawingCard()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "drawingcard()"
+    },
+    {
+      "label": "DrawingDetailScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L107",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "drawingdetailscreen()"
+    },
+    {
+      "label": "ExploreScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L87",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "explorescreen()"
+    },
+    {
+      "label": "FavoritesScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L141",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "favoritesscreen()"
+    },
+    {
+      "label": "HomeScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "homescreen()"
+    },
+    {
+      "label": "Illustration()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "illustration()"
+    },
+    {
+      "label": "Intro()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "intro()"
+    },
+    {
+      "label": "ScreenColumn()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "screencolumn()"
+    },
+    {
+      "label": "SettingsScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L150",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "settingsscreen()"
+    },
+    {
+      "label": "TraceScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L130",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "tracescreen()"
+    },
+    {
+      "label": ".detail()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination_detail",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": ".detail()"
+    },
+    {
+      "label": ".trace()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination_trace",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": ".trace()"
+    },
+    {
+      "label": ".detailAndTrace_hideTabs_andBackReturnsToExplore()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest_detailandtrace_hidetabs_andbackreturnstoexplore",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": ".detailandtrace_hidetabs_andbackreturnstoexplore()"
+    },
+    {
+      "label": ".tabsAndHomeCallToAction_useSingleTopNavigation()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest_tabsandhomecalltoaction_usesingletopnavigation",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": ".tabsandhomecalltoaction_usesingletopnavigation()"
     },
     {
       "label": ".useAppContext()",
@@ -63,7 +307,7 @@
       "_origin": "ast",
       "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_exampleinstrumentedtest_exampleinstrumentedtest_useappcontext",
       "community": 3,
-      "community_name": "Android Instrumentation Tests",
+      "community_name": "ExampleInstrumentedTest",
       "norm_label": ".useappcontext()"
     },
     {
@@ -75,7 +319,7 @@
       "_origin": "ast",
       "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_exampleunittest_exampleunittest_addition_iscorrect",
       "community": 4,
-      "community_name": "Local Unit Tests",
+      "community_name": "ExampleUnitTest",
       "norm_label": ".addition_iscorrect()"
     },
     {
@@ -86,19 +330,19 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
       "community": 1,
-      "community_name": "Activity Startup",
+      "community_name": "MainActivity.kt",
       "norm_label": "mainactivity.kt"
     },
     {
-      "label": "AppCompatActivity",
+      "label": "Theme.kt",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/theme/Theme.kt",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "appcompatactivity",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme",
       "community": 1,
-      "community_name": "Activity Startup",
-      "norm_label": "appcompatactivity"
+      "community_name": "MainActivity.kt",
+      "norm_label": "theme.kt"
     },
     {
       "label": "Bundle",
@@ -108,8 +352,19 @@
       "_origin": "ast",
       "id": "bundle",
       "community": 1,
-      "community_name": "Activity Startup",
+      "community_name": "MainActivity.kt",
       "norm_label": "bundle"
+    },
+    {
+      "label": "ComponentActivity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "componentactivity",
+      "community": 1,
+      "community_name": "MainActivity.kt",
+      "norm_label": "componentactivity"
     },
     {
       "label": "build.gradle.kts",
@@ -119,7 +374,7 @@
       "_origin": "ast",
       "id": "build_gradle",
       "community": 17,
-      "community_name": "Root Build Configuration",
+      "community_name": "build.gradle.kts",
       "norm_label": "build.gradle.kts"
     },
     {
@@ -130,8 +385,30 @@
       "_origin": "ast",
       "id": "settings_gradle",
       "community": 18,
-      "community_name": "Gradle Project Settings",
+      "community_name": "settings.gradle.kts",
       "norm_label": "settings.gradle.kts"
+    },
+    {
+      "label": "PlaceholderDrawings.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/PlaceholderDrawings.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "placeholderdrawings.kt"
+    },
+    {
+      "label": "Screens.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "community": 19,
+      "community_name": "Screens.kt",
+      "norm_label": "screens.kt"
     },
     {
       "label": "gradlew",
@@ -145,7 +422,7 @@
       "_origin": "ast",
       "id": "gradlew",
       "community": 2,
-      "community_name": "Gradle Wrapper",
+      "community_name": "gradlew",
       "norm_label": "gradlew"
     },
     {
@@ -160,7 +437,7 @@
       "_origin": "ast",
       "id": "gradlew__entry",
       "community": 2,
-      "community_name": "Gradle Wrapper",
+      "community_name": "gradlew",
       "norm_label": "gradlew script"
     },
     {
@@ -175,7 +452,7 @@
       "_origin": "ast",
       "id": "gradlew_die",
       "community": 2,
-      "community_name": "Gradle Wrapper",
+      "community_name": "gradlew",
       "norm_label": "die()"
     },
     {
@@ -190,8 +467,96 @@
       "_origin": "ast",
       "id": "gradlew_warn",
       "community": 2,
-      "community_name": "Gradle Wrapper",
+      "community_name": "gradlew",
       "norm_label": "warn()"
+    },
+    {
+      "label": "CuteAnimalsApp.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "cuteanimalsapp.kt"
+    },
+    {
+      "label": "Destinations.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "destinations.kt"
+    },
+    {
+      "label": "Explore",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_explore",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "explore"
+    },
+    {
+      "label": "Favorites",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_favorites",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "favorites"
+    },
+    {
+      "label": "Home",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_home",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "home"
+    },
+    {
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_settings",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "settings"
+    },
+    {
+      "label": "ImageVector",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "imagevector",
+      "community": 20,
+      "community_name": "TopLevelDestination",
+      "norm_label": "imagevector"
+    },
+    {
+      "label": "NavigationShellTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": "navigationshelltest.kt"
     },
     {
       "label": "ExampleInstrumentedTest.kt",
@@ -201,7 +566,7 @@
       "_origin": "ast",
       "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_exampleinstrumentedtest",
       "community": 3,
-      "community_name": "Android Instrumentation Tests",
+      "community_name": "ExampleInstrumentedTest",
       "norm_label": "exampleinstrumentedtest.kt"
     },
     {
@@ -212,7 +577,7 @@
       "_origin": "ast",
       "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_exampleunittest",
       "community": 4,
-      "community_name": "Local Unit Tests",
+      "community_name": "ExampleUnitTest",
       "norm_label": "exampleunittest.kt"
     },
     {
@@ -223,7 +588,7 @@
       "_origin": "ast",
       "id": "app_build_gradle",
       "community": 6,
-      "community_name": "Application Build Configuration",
+      "community_name": "app/build.gradle.kts",
       "norm_label": "app/build.gradle.kts"
     },
     {
@@ -236,10 +601,11 @@
       "author": null,
       "contributor": null,
       "rationale": "Minimum SDK 26; target and compile SDK 36 or newer stable requirements.",
-      "id": "agents_android_platform",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "android sdk requirements"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "android sdk requirements",
+      "_origin": "semantic",
+      "id": "agents_android_platform"
     },
     {
       "label": "CameraX overlay requirement",
@@ -251,10 +617,11 @@
       "author": null,
       "contributor": null,
       "rationale": "The core tracing system overlays an image on a normal camera preview to support tracing on real paper; it is not 3D augmented reality.",
-      "id": "agents_camerax_overlay",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "camerax overlay requirement"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "camerax overlay requirement",
+      "_origin": "semantic",
+      "id": "agents_camerax_overlay"
     },
     {
       "label": "Cute Animals: Trace & Draw",
@@ -265,10 +632,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_cute_animals_trace_draw",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "cute animals: trace & draw"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "cute animals: trace & draw",
+      "_origin": "semantic",
+      "id": "agents_cute_animals_trace_draw"
     },
     {
       "label": "Kotlin and Jetpack Compose",
@@ -279,10 +647,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_kotlin_jetpack_compose",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "kotlin and jetpack compose"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "kotlin and jetpack compose",
+      "_origin": "semantic",
+      "id": "agents_kotlin_jetpack_compose"
     },
     {
       "label": "Material 3 themes",
@@ -293,10 +662,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_material_3",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "material 3 themes"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "material 3 themes",
+      "_origin": "semantic",
+      "id": "agents_material_3"
     },
     {
       "label": "Offline operation",
@@ -308,10 +678,11 @@
       "author": null,
       "contributor": null,
       "rationale": "Product rules require offline operation and exclude backend services, user accounts, network APIs, AI APIs, analytics, advertisements, subscriptions, and in-app purchases.",
-      "id": "agents_offline_operation",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "offline operation"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "offline operation",
+      "_origin": "semantic",
+      "id": "agents_offline_operation"
     },
     {
       "label": "Simple architecture with stable AndroidX",
@@ -323,10 +694,11 @@
       "author": null,
       "contributor": null,
       "rationale": "Prefer stable AndroidX dependencies, avoid unnecessary complexity and rewrites, preserve configuration state, and support responsive edge-to-edge layouts.",
-      "id": "agents_simple_stable_architecture",
       "community": 0,
-      "community_name": "Documented App Requirements",
-      "norm_label": "simple architecture with stable androidx"
+      "community_name": "Cute Animals: Trace & Draw",
+      "norm_label": "simple architecture with stable androidx",
+      "_origin": "semantic",
+      "id": "agents_simple_stable_architecture"
     },
     {
       "label": "MDPI round Android launcher icon: white robot head on green grid",
@@ -337,10 +709,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_mdpi_ic_launcher_round_android_launcher_icon",
       "community": 10,
-      "community_name": "MDPI Round Icon",
-      "norm_label": "mdpi round android launcher icon: white robot head on green grid"
+      "community_name": "MDPI round Android launcher icon: white robot head on green grid",
+      "norm_label": "mdpi round android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_mdpi_ic_launcher_round_android_launcher_icon"
     },
     {
       "label": "XHDPI square Android launcher icon: white robot head on green grid",
@@ -351,10 +724,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xhdpi_ic_launcher_android_launcher_icon",
       "community": 11,
-      "community_name": "XHDPI Square Icon",
-      "norm_label": "xhdpi square android launcher icon: white robot head on green grid"
+      "community_name": "XHDPI square Android launcher icon: white robot head on green grid",
+      "norm_label": "xhdpi square android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xhdpi_ic_launcher_android_launcher_icon"
     },
     {
       "label": "Circular Android launcher icon: white robot head on green grid",
@@ -365,10 +739,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xhdpi_ic_launcher_round_android_launcher_icon",
       "community": 12,
-      "community_name": "XHDPI Round Icon",
-      "norm_label": "circular android launcher icon: white robot head on green grid"
+      "community_name": "Circular Android launcher icon: white robot head on green grid",
+      "norm_label": "circular android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xhdpi_ic_launcher_round_android_launcher_icon"
     },
     {
       "label": "Rounded-square Android launcher icon: white robot head on green grid",
@@ -379,10 +754,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xxhdpi_ic_launcher_android_launcher_icon",
       "community": 13,
-      "community_name": "XXHDPI Square Icon",
-      "norm_label": "rounded-square android launcher icon: white robot head on green grid"
+      "community_name": "Rounded-square Android launcher icon: white robot head on green grid",
+      "norm_label": "rounded-square android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xxhdpi_ic_launcher_android_launcher_icon"
     },
     {
       "label": "Circular Android launcher icon: white robot head on green grid",
@@ -393,10 +769,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xxhdpi_ic_launcher_round_android_launcher_icon",
       "community": 14,
-      "community_name": "XXHDPI Round Icon",
-      "norm_label": "circular android launcher icon: white robot head on green grid"
+      "community_name": "Circular Android launcher icon: white robot head on green grid",
+      "norm_label": "circular android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xxhdpi_ic_launcher_round_android_launcher_icon"
     },
     {
       "label": "Rounded-square Android launcher icon: white robot head on green grid",
@@ -407,10 +784,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xxxhdpi_ic_launcher_android_launcher_icon",
       "community": 15,
-      "community_name": "XXXHDPI Square Icon",
-      "norm_label": "rounded-square android launcher icon: white robot head on green grid"
+      "community_name": "Rounded-square Android launcher icon: white robot head on green grid",
+      "norm_label": "rounded-square android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xxxhdpi_ic_launcher_android_launcher_icon"
     },
     {
       "label": "Circular Android launcher icon: white robot head on green grid",
@@ -421,10 +799,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_xxxhdpi_ic_launcher_round_android_launcher_icon",
       "community": 16,
-      "community_name": "XXXHDPI Round Icon",
-      "norm_label": "circular android launcher icon: white robot head on green grid"
+      "community_name": "Circular Android launcher icon: white robot head on green grid",
+      "norm_label": "circular android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_xxxhdpi_ic_launcher_round_android_launcher_icon"
     },
     {
       "label": "Gradle build and test validation",
@@ -436,10 +815,11 @@
       "author": null,
       "contributor": null,
       "rationale": "Build after meaningful changes, fix compilation errors before completion, add useful protective tests, and report validation results.",
-      "id": "agents_gradle_validation",
       "community": 5,
-      "community_name": "Development Workflow",
-      "norm_label": "gradle build and test validation"
+      "community_name": "Gradle build and test validation",
+      "norm_label": "gradle build and test validation",
+      "_origin": "semantic",
+      "id": "agents_gradle_validation"
     },
     {
       "label": "Scoped milestone workflow",
@@ -451,10 +831,11 @@
       "author": null,
       "contributor": null,
       "rationale": "Inspect relevant files, briefly explain implementation, implement the requested milestone, run builds/tests, and report changes plus manual verification.",
-      "id": "agents_milestone_workflow",
       "community": 5,
-      "community_name": "Development Workflow",
-      "norm_label": "scoped milestone workflow"
+      "community_name": "Gradle build and test validation",
+      "norm_label": "scoped milestone workflow",
+      "_origin": "semantic",
+      "id": "agents_milestone_workflow"
     },
     {
       "label": "HDPI square Android launcher icon: white robot head on green grid",
@@ -465,10 +846,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_hdpi_ic_launcher_android_launcher_icon",
       "community": 7,
-      "community_name": "HDPI Square Icon",
-      "norm_label": "hdpi square android launcher icon: white robot head on green grid"
+      "community_name": "HDPI square Android launcher icon: white robot head on green grid",
+      "norm_label": "hdpi square android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_hdpi_ic_launcher_android_launcher_icon"
     },
     {
       "label": "HDPI round Android launcher icon: white robot head on green grid",
@@ -479,10 +861,11 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_hdpi_ic_launcher_round_android_launcher_icon",
       "community": 8,
-      "community_name": "HDPI Round Icon",
-      "norm_label": "hdpi round android launcher icon: white robot head on green grid"
+      "community_name": "HDPI round Android launcher icon: white robot head on green grid",
+      "norm_label": "hdpi round android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_hdpi_ic_launcher_round_android_launcher_icon"
     },
     {
       "label": "MDPI square Android launcher icon: white robot head on green grid",
@@ -493,13 +876,242 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "app_src_main_res_mipmap_mdpi_ic_launcher_android_launcher_icon",
       "community": 9,
-      "community_name": "MDPI Square Icon",
-      "norm_label": "mdpi square android launcher icon: white robot head on green grid"
+      "community_name": "MDPI square Android launcher icon: white robot head on green grid",
+      "norm_label": "mdpi square android launcher icon: white robot head on green grid",
+      "_origin": "semantic",
+      "id": "app_src_main_res_mipmap_mdpi_ic_launcher_android_launcher_icon"
     }
   ],
   "links": [
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
@@ -525,6 +1137,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/PlaceholderDrawings.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings_placeholderdrawing",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -544,26 +1168,208 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L5",
+      "source_location": "L4",
       "weight": 1.0,
       "metadata": {
-        "target_fqn": "androidx.appcompat.app.AppCompatActivity"
+        "target_fqn": "androidx.activity.ComponentActivity"
       },
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
-      "target": "appcompatactivity",
+      "target": "componentactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.graphics.vector.ImageVector"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations",
+      "target": "imagevector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.graphics.vector.ImageVector"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "imagevector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.ui.CuteAnimalsApp"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L19",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.ui.navigation.DrawingDestination"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L20",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.ui.navigation.TopLevelDestination"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
+      "source_location": "L8",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.ui.theme.CuteAnimalsTheme"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme",
       "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
       "target": "bundle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L57",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings_placeholderdrawing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings_placeholderdrawing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "target": "imagevector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L130",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_placeholderdrawings_placeholderdrawing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_explore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_favorites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_settings",
       "confidence_score": 1.0
     },
     {
@@ -580,12 +1386,177 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/theme/Theme.kt",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme",
       "confidence_score": 1.0
     },
     {
@@ -636,11 +1607,11 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
-      "target": "appcompatactivity",
+      "target": "componentactivity",
       "confidence_score": 1.0
     },
     {
@@ -657,12 +1628,56 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest_detailandtrace_hidetabs_andbackreturnstoexplore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest_tabsandhomecalltoaction_usesingletopnavigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination_detail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_drawingdestination_trace",
       "confidence_score": 1.0
     },
     {
@@ -677,12 +1692,85 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_homescreen"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_drawingdetailscreen"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:24-34",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_offline_operation",
       "target": "agents_cute_animals_trace_draw"
     },
@@ -693,6 +1781,7 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:40-50",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_simple_stable_architecture",
       "target": "agents_cute_animals_trace_draw"
     },
@@ -703,6 +1792,7 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:19-23",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_cute_animals_trace_draw",
       "target": "agents_android_platform"
     },
@@ -713,6 +1803,7 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:36-38",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_cute_animals_trace_draw",
       "target": "agents_camerax_overlay"
     },
@@ -723,6 +1814,7 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:45-46",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_cute_animals_trace_draw",
       "target": "agents_material_3"
     },
@@ -733,6 +1825,7 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:6-17",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_cute_animals_trace_draw",
       "target": "agents_kotlin_jetpack_compose"
     },
@@ -743,10 +1836,11 @@
       "source_file": "AGENTS.md",
       "source_location": "AGENTS.md:56-64",
       "weight": 1.0,
+      "_origin": "semantic",
       "source": "agents_milestone_workflow",
       "target": "agents_gradle_validation"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b8682ff790da2546c7764a3fe0079e29be741ab1"
+  "built_at_commit": "09918ab53de3e9f38afbb2d78a36728840c9b42b"
 }
