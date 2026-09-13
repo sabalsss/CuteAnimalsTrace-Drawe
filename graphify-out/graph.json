@@ -30,19 +30,6 @@
       "norm_label": "drawingtemplate"
     },
     {
-      "label": "LocalTemplateCatalog",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
-      "source_location": "L6",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog",
-      "community": 20,
-      "community_name": "TopLevelDestination",
-      "norm_label": "localtemplatecatalog"
-    },
-    {
       "label": "DrawingDestination",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
@@ -80,6 +67,19 @@
       "community": 21,
       "community_name": "NavigationShellTest",
       "norm_label": "navigationshelltest"
+    },
+    {
+      "label": "LocalTemplateCatalog",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": "localtemplatecatalog"
     },
     {
       "label": "Difficulty",
@@ -121,17 +121,17 @@
       "norm_label": "localtemplatecatalogtest"
     },
     {
-      "label": "FilterDrawingsTest",
+      "label": "CameraPermissionState",
       "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L7",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
       "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": "filterdrawingstest"
+      "community_name": "CameraPermissionState",
+      "norm_label": "camerapermissionstate"
     },
     {
       "label": "ExploreFiltersTest",
@@ -145,6 +145,45 @@
       "community": 25,
       "community_name": "ExploreFiltersTest",
       "norm_label": "explorefilterstest"
+    },
+    {
+      "label": "CameraPermissionStateTest",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": "camerapermissionstatetest"
+    },
+    {
+      "label": "CameraPreviewTest",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L13",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
+      "community": 28,
+      "community_name": "CameraPreviewTest",
+      "norm_label": "camerapreviewtest"
+    },
+    {
+      "label": "FilterDrawingsTest",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": "filterdrawingstest"
     },
     {
       "label": "ExampleInstrumentedTest",
@@ -248,7 +287,7 @@
       "label": "FavoritesScreen()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L256",
+      "source_location": "L245",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
@@ -308,7 +347,7 @@
       "label": "SettingsScreen()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L265",
+      "source_location": "L254",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
@@ -327,30 +366,6 @@
       "community": 19,
       "community_name": "Screens.kt",
       "norm_label": "templateimage()"
-    },
-    {
-      "label": "TraceScreen()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L245",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
-      "community": 19,
-      "community_name": "Screens.kt",
-      "norm_label": "tracescreen()"
-    },
-    {
-      "label": ".findById()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
-      "source_location": "L72",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog_findbyid",
-      "community": 20,
-      "community_name": "TopLevelDestination",
-      "norm_label": ".findbyid()"
     },
     {
       "label": ".detail()",
@@ -425,6 +440,18 @@
       "norm_label": ".tabsandhomecalltoaction_usesingletopnavigation()"
     },
     {
+      "label": ".findById()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
+      "source_location": "L72",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog_findbyid",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": ".findbyid()"
+    },
+    {
       "label": ".catalog_coversEveryInitialCategoryAndDifficulty()",
       "file_type": "code",
       "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalogTest.kt",
@@ -471,78 +498,6 @@
       "community": 23,
       "community_name": "LocalTemplateCatalogTest",
       "norm_label": ".lookup_resolveseveryrecordandrejectsunknownids()"
-    },
-    {
-      "label": "filterDrawings()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt",
-      "source_location": "L8",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_filterdrawings_filterdrawings",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": "filterdrawings()"
-    },
-    {
-      "label": ".blankQuery_returnsWholeCatalogInOrder()",
-      "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L10",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_blankquery_returnswholecataloginorder",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": ".blankquery_returnswholecataloginorder()"
-    },
-    {
-      "label": ".combinedFilters_intersectInsteadOfUnion()",
-      "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L20",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_combinedfilters_intersectinsteadofunion",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": ".combinedfilters_intersectinsteadofunion()"
-    },
-    {
-      "label": ".eachDifficulty_filtersIndependently()",
-      "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L26",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_eachdifficulty_filtersindependently",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": ".eachdifficulty_filtersindependently()"
-    },
-    {
-      "label": ".search_matchesNamesAndCategoriesIgnoringCaseAndOuterSpaces()",
-      "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L14",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_search_matchesnamesandcategoriesignoringcaseandouterspaces",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": ".search_matchesnamesandcategoriesignoringcaseandouterspaces()"
-    },
-    {
-      "label": ".unmatchedSearch_andEmptyCatalog_returnNoResults()",
-      "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
-      "source_location": "L32",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_unmatchedsearch_andemptycatalog_returnnoresults",
-      "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": ".unmatchedsearch_andemptycatalog_returnnoresults()"
     },
     {
       "label": ".combinedFilters_emptyStateCanResetEverything()",
@@ -603,6 +558,186 @@
       "community": 25,
       "community_name": "ExploreFiltersTest",
       "norm_label": ".show()"
+    },
+    {
+      "label": "CameraPreview()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "camerapreview()"
+    },
+    {
+      "label": "activity()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_activity",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "activity()"
+    },
+    {
+      "label": "TraceScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "tracescreen()"
+    },
+    {
+      "label": ".deniedButRequestable_showsRetry()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_deniedbutrequestable_showsretry",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": ".deniedbutrequestable_showsretry()"
+    },
+    {
+      "label": ".deniedWithoutRationale_afterRequest_showsSettings()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_deniedwithoutrationale_afterrequest_showssettings",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": ".deniedwithoutrationale_afterrequest_showssettings()"
+    },
+    {
+      "label": ".firstRequest_isNotMistakenForPermanentDenial()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_firstrequest_isnotmistakenforpermanentdenial",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": ".firstrequest_isnotmistakenforpermanentdenial()"
+    },
+    {
+      "label": ".grantFromSettings_overridesDenialHistory()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_grantfromsettings_overridesdenialhistory",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": ".grantfromsettings_overridesdenialhistory()"
+    },
+    {
+      "label": ".previewStreams_restartsAfterBackgroundAndRecreation_andCanReenter()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_previewstreams_restartsafterbackgroundandrecreation_andcanreenter",
+      "community": 28,
+      "community_name": "CameraPreviewTest",
+      "norm_label": ".previewstreams_restartsafterbackgroundandrecreation_andcanreenter()"
+    },
+    {
+      "label": ".waitForLivePreview()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L18",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_waitforlivepreview",
+      "community": 28,
+      "community_name": "CameraPreviewTest",
+      "norm_label": ".waitforlivepreview()"
+    },
+    {
+      "label": "filterDrawings()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_filterdrawings_filterdrawings",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": "filterdrawings()"
+    },
+    {
+      "label": ".blankQuery_returnsWholeCatalogInOrder()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_blankquery_returnswholecataloginorder",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": ".blankquery_returnswholecataloginorder()"
+    },
+    {
+      "label": ".combinedFilters_intersectInsteadOfUnion()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_combinedfilters_intersectinsteadofunion",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": ".combinedfilters_intersectinsteadofunion()"
+    },
+    {
+      "label": ".eachDifficulty_filtersIndependently()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_eachdifficulty_filtersindependently",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": ".eachdifficulty_filtersindependently()"
+    },
+    {
+      "label": ".search_matchesNamesAndCategoriesIgnoringCaseAndOuterSpaces()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_search_matchesnamesandcategoriesignoringcaseandouterspaces",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": ".search_matchesnamesandcategoriesignoringcaseandouterspaces()"
+    },
+    {
+      "label": ".unmatchedSearch_andEmptyCatalog_returnNoResults()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_unmatchedsearch_andemptycatalog_returnnoresults",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": ".unmatchedsearch_andemptycatalog_returnnoresults()"
     },
     {
       "label": ".useAppContext()",
@@ -777,17 +912,6 @@
       "norm_label": "warn()"
     },
     {
-      "label": "LocalTemplateCatalog.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog",
-      "community": 20,
-      "community_name": "TopLevelDestination",
-      "norm_label": "localtemplatecatalog.kt"
-    },
-    {
       "label": "CuteAnimalsApp.kt",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
@@ -863,6 +987,17 @@
       "community": 21,
       "community_name": "NavigationShellTest",
       "norm_label": "navigationshelltest.kt"
+    },
+    {
+      "label": "LocalTemplateCatalog.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog",
+      "community": 21,
+      "community_name": "NavigationShellTest",
+      "norm_label": "localtemplatecatalog.kt"
     },
     {
       "label": "DrawingTemplate.kt",
@@ -1019,15 +1154,59 @@
       "norm_label": "localtemplatecatalogtest.kt"
     },
     {
-      "label": "FilterDrawingsTest.kt",
+      "label": "CameraPermissionState.kt",
       "file_type": "code",
-      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate",
       "community": 24,
-      "community_name": "filterDrawings",
-      "norm_label": "filterdrawingstest.kt"
+      "community_name": "CameraPermissionState",
+      "norm_label": "camerapermissionstate.kt"
+    },
+    {
+      "label": "Blocked",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_blocked",
+      "community": 24,
+      "community_name": "CameraPermissionState",
+      "norm_label": "blocked"
+    },
+    {
+      "label": "Denied",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_denied",
+      "community": 24,
+      "community_name": "CameraPermissionState",
+      "norm_label": "denied"
+    },
+    {
+      "label": "Granted",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_granted",
+      "community": 24,
+      "community_name": "CameraPermissionState",
+      "norm_label": "granted"
+    },
+    {
+      "label": "NotRequested",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_notrequested",
+      "community": 24,
+      "community_name": "CameraPermissionState",
+      "norm_label": "notrequested"
     },
     {
       "label": "ExploreFiltersTest.kt",
@@ -1039,6 +1218,72 @@
       "community": 25,
       "community_name": "ExploreFiltersTest",
       "norm_label": "explorefilterstest.kt"
+    },
+    {
+      "label": "CameraPreview.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "camerapreview.kt"
+    },
+    {
+      "label": "TraceScreen.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "tracescreen.kt"
+    },
+    {
+      "label": "Modifier",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "modifier",
+      "community": 26,
+      "community_name": "TraceScreen",
+      "norm_label": "modifier"
+    },
+    {
+      "label": "CameraPermissionStateTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest",
+      "community": 27,
+      "community_name": "CameraPermissionStateTest",
+      "norm_label": "camerapermissionstatetest.kt"
+    },
+    {
+      "label": "CameraPreviewTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest",
+      "community": 28,
+      "community_name": "CameraPreviewTest",
+      "norm_label": "camerapreviewtest.kt"
+    },
+    {
+      "label": "FilterDrawingsTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest",
+      "community": 29,
+      "community_name": "filterDrawings",
+      "norm_label": "filterdrawingstest.kt"
     },
     {
       "label": "ExampleInstrumentedTest.kt",
@@ -1370,6 +1615,18 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_previewstreams_restartsafterbackgroundandrecreation_andcanreenter",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_waitforlivepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/ExploreFiltersTest.kt",
       "source_location": "L37",
       "weight": 1.0,
@@ -1527,7 +1784,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L258",
+      "source_location": "L247",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
@@ -1539,7 +1796,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L259",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
@@ -1551,7 +1808,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L260",
+      "source_location": "L249",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
@@ -1599,7 +1856,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L267",
+      "source_location": "L256",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
@@ -1611,7 +1868,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L268",
+      "source_location": "L257",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_settingsscreen",
@@ -1622,36 +1879,12 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L247",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
-      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_screencolumn",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L248",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
-      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_illustration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L249",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
-      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_intro",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_activity",
       "confidence_score": 1.0
     },
     {
@@ -1760,6 +1993,66 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
+      "source_location": "L17",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L19",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
       "source_location": "L9",
       "weight": 1.0,
@@ -1843,6 +2136,21 @@
       },
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.data.DrawingTemplate"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
       "confidence_score": 1.0
     },
@@ -1981,6 +2289,18 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt",
       "source_location": "L8",
       "weight": 1.0,
@@ -2053,12 +2373,12 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L245",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L38",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
       "confidence_score": 1.0
     },
@@ -2198,6 +2518,50 @@
     {
       "relation": "case_of",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_blocked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_denied",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_granted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate_notrequested",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "case_of",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
       "source_location": "L14",
       "weight": 1.0,
@@ -2237,6 +2601,17 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_navigation_destinations_topleveldestination_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
       "confidence_score": 1.0
     },
     {
@@ -2330,6 +2705,28 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstate_camerapermissionstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt",
       "source_location": "L23",
       "weight": 1.0,
@@ -2412,17 +2809,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
-      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L256",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_favoritesscreen",
       "confidence_score": 1.0
     },
@@ -2430,7 +2816,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt",
-      "source_location": "L265",
+      "source_location": "L254",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
@@ -2506,6 +2892,28 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_activity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalogTest.kt",
       "source_location": "L6",
       "weight": 1.0,
@@ -2523,6 +2931,17 @@
       "_origin": "ast",
       "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_exampleunittest",
       "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_exampleunittest_exampleunittest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
       "confidence_score": 1.0
     },
     {
@@ -2578,6 +2997,28 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
       "target": "componentactivity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_waitforlivepreview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_previewstreams_restartsafterbackgroundandrecreation_andcanreenter",
       "confidence_score": 1.0
     },
     {
@@ -2792,6 +3233,50 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_deniedbutrequestable_showsretry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_deniedwithoutrationale_afterrequest_showssettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_grantfromsettings_overridesdenialhistory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_camerapermissionstatetest_camerapermissionstatetest_firstrequest_isnotmistakenforpermanentdenial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt",
       "source_location": "L10",
       "weight": 1.0,
@@ -2914,7 +3399,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_cuteanimalsapp_cuteanimalsapp",
-      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_tracescreen"
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen"
     },
     {
       "relation": "calls",
@@ -2927,6 +3412,18 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens_explorescreen",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_filterdrawings_filterdrawings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview"
     },
     {
       "relation": "calls",
@@ -3067,5 +3564,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "41d71d6c8284593c9a7ae490181112cf5d610115"
+  "built_at_commit": "c139829a7693ba1aafb54a5dcbebb8e5d2e6ab97"
 }

@@ -23,6 +23,10 @@
   "21": "NavigationShellTest",
   "22": "TemplateCategory",
   "23": "LocalTemplateCatalogTest",
-  "24": "filterDrawings",
-  "25": "ExploreFiltersTest"
+  "24": "CameraPermissionState",
+  "25": "ExploreFiltersTest",
+  "26": "TraceScreen",
+  "27": "CameraPermissionStateTest",
+  "28": "CameraPreviewTest",
+  "29": "filterDrawings"
 }

@@ -243,17 +243,6 @@ fun DrawingDetailScreen(drawing: DrawingTemplate?, onTrace: () -> Unit) {
 }
 
 @Composable
-fun TraceScreen(drawing: DrawingTemplate?) {
-    ScreenColumn("screen_trace") {
-        Illustration(Icons.Default.Create)
-        Intro(stringResource(R.string.trace_title),
-            drawing?.let { stringResource(R.string.trace_selected, it.name) }
-                ?: stringResource(R.string.drawing_unavailable))
-        Text(stringResource(R.string.trace_placeholder), style = MaterialTheme.typography.bodyLarge)
-    }
-}
-
-@Composable
 fun FavoritesScreen() {
     ScreenColumn("screen_favorites") {
         Illustration(Icons.Default.Favorite, coral = true)

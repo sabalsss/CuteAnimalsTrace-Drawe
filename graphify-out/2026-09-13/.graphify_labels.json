@@ -22,5 +22,10 @@
   "20": "TopLevelDestination",
   "21": "NavigationShellTest",
   "22": "TemplateCategory",
-  "23": "LocalTemplateCatalogTest"
+  "23": "LocalTemplateCatalogTest",
+  "24": "CameraPermissionState",
+  "25": "ExploreFiltersTest",
+  "26": "TraceScreen",
+  "27": "CameraPermissionStateTest",
+  "28": "CameraPreviewTest"
 }

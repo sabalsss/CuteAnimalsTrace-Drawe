@@ -1,16 +1,16 @@
 # Graph Report - CuteAnimalsTraceDraw  (2026-09-13)
 
 ## Corpus Check
-- 19 files · ~5,556 words
+- 24 files · ~6,540 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 109 nodes · 144 edges · 26 communities (9 shown, 17 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
+- 130 nodes · 165 edges · 30 communities (11 shown, 19 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `41d71d6c`
+- Built from commit: `c139829a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -36,37 +36,41 @@
 - NavigationShellTest
 - TemplateCategory
 - LocalTemplateCatalogTest
-- filterDrawings
+- CameraPermissionState
 - ExploreFiltersTest
+- TraceScreen
+- CameraPermissionStateTest
+- CameraPreviewTest
+- filterDrawings
 
 ## God Nodes (most connected - your core abstractions)
-1. `DrawingTemplate` - 12 edges
+1. `DrawingTemplate` - 13 edges
 2. `TemplateCategory` - 12 edges
 3. `filterDrawings()` - 10 edges
 4. `CuteAnimalsApp()` - 9 edges
 5. `Difficulty` - 7 edges
 6. `ExploreFiltersTest` - 6 edges
-7. `ScreenColumn()` - 6 edges
-8. `Intro()` - 6 edges
-9. `HomeScreen()` - 6 edges
-10. `ExploreScreen()` - 6 edges
+7. `HomeScreen()` - 6 edges
+8. `ExploreScreen()` - 6 edges
+9. `TopLevelDestination` - 6 edges
+10. `FilterDrawingsTest` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `CuteAnimalsApp()` --calls--> `TraceScreen()`  [INFERRED]
+  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt
 - `ExploreScreen()` --calls--> `filterDrawings()`  [INFERRED]
   app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt
 - `LocalTemplateCatalog` --references--> `DrawingTemplate`  [EXTRACTED]
   app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
 - `filterDrawings()` --references--> `DrawingTemplate`  [EXTRACTED]
   app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
-- `filterDrawings()` --references--> `Difficulty`  [EXTRACTED]
-  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
-- `filterDrawings()` --references--> `TemplateCategory`  [EXTRACTED]
-  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
+- `TraceScreen()` --references--> `DrawingTemplate`  [EXTRACTED]
+  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (26 total, 17 thin omitted)
+## Communities (30 total, 19 thin omitted)
 
 ### Community 0 - "Cute Animals: Trace & Draw"
 Cohesion: 0.29
@@ -82,35 +86,43 @@ Nodes (3): gradlew script, die(), warn()
 
 ### Community 19 - "Screens.kt"
 Cohesion: 0.40
-Nodes (14): DrawingTemplate, CuteAnimalsApp(), DrawingCard(), DrawingDetailScreen(), ExploreScreen(), FavoritesScreen(), HomeScreen(), Illustration() (+6 more)
+Nodes (13): DrawingTemplate, CuteAnimalsApp(), DrawingCard(), DrawingDetailScreen(), ExploreScreen(), FavoritesScreen(), HomeScreen(), Illustration() (+5 more)
 
 ### Community 20 - "TopLevelDestination"
-Cohesion: 0.17
-Nodes (7): LocalTemplateCatalog, DrawingDestination, TopLevelDestination, Explore, Favorites, Home, Settings
+Cohesion: 0.22
+Nodes (6): DrawingDestination, TopLevelDestination, Explore, Favorites, Home, Settings
 
 ### Community 22 - "TemplateCategory"
 Cohesion: 0.14
 Nodes (13): Difficulty, Detailed, Easy, Medium, TemplateCategory, BabyAnimals, Bears, Bunnies (+5 more)
 
+### Community 24 - "CameraPermissionState"
+Cohesion: 0.33
+Nodes (5): CameraPermissionState, Blocked, Denied, Granted, NotRequested
+
+### Community 26 - "TraceScreen"
+Cohesion: 0.53
+Nodes (4): CameraPreview(), activity(), TraceScreen(), Modifier
+
 ## Knowledge Gaps
-- **30 isolated node(s):** `Easy`, `Medium`, `Detailed`, `Cats`, `Dogs` (+25 more)
+- **34 isolated node(s):** `Easy`, `Medium`, `Detailed`, `Cats`, `Dogs` (+29 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CuteAnimalsApp()` connect `Screens.kt` to `MainActivity.kt`, `TopLevelDestination`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
-- **Why does `TemplateCategory` connect `TemplateCategory` to `filterDrawings`, `Screens.kt`?**
-  _High betweenness centrality (0.084) - this node is a cross-community bridge._
-- **Why does `LocalTemplateCatalog` connect `TopLevelDestination` to `Screens.kt`, `NavigationShellTest`?**
-  _High betweenness centrality (0.084) - this node is a cross-community bridge._
+- **Why does `DrawingTemplate` connect `Screens.kt` to `filterDrawings`, `TraceScreen`, `NavigationShellTest`, `TemplateCategory`?**
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
+- **Why does `CuteAnimalsApp()` connect `Screens.kt` to `MainActivity.kt`, `TraceScreen`, `TopLevelDestination`?**
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._
+- **Why does `TemplateCategory` connect `TemplateCategory` to `Screens.kt`, `filterDrawings`?**
+  _High betweenness centrality (0.064) - this node is a cross-community bridge._
 - **Are the 6 inferred relationships involving `filterDrawings()` (e.g. with `ExploreScreen()` and `.blankQuery_returnsWholeCatalogInOrder()`) actually correct?**
   _`filterDrawings()` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `CuteAnimalsApp()` (e.g. with `DrawingDetailScreen()` and `ExploreScreen()`) actually correct?**
   _`CuteAnimalsApp()` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Easy`, `Medium`, `Detailed` to the rest of the system?**
-  _30 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _34 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `TemplateCategory` be split into smaller, more focused modules?**
   _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
