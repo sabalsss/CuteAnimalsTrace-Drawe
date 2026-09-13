@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">Cute Animals Trace Draw</string>
+    <string name="app_name">Cute Animals: Trace &amp; Draw</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="drawing_detail">Drawing Detail</string>
+    <string name="trace">Trace</string>
+    <string name="back">Back</string>
+    <string name="bunny">Sleepy bunny</string>
+    <string name="kitten">Curious kitten</string>
+    <string name="bear">Little bear</string>
+    <string name="fox">Friendly fox</string>
+    <string name="sample_drawing">Sample drawing</string>
+    <string name="home_greeting">A little creativity,
+a little joy.</string>
+    <string name="home_subtitle">Make room for a quiet moment and a cute new friend.</string>
+    <string name="hero_title">Your next little masterpiece</string>
+    <string name="hero_description">Find a friendly face to inspire your next drawing.</string>
+    <string name="explore_drawings">Explore drawings</string>
+    <string name="little_inspiration">A little inspiration</string>
+    <string name="explore_title">Meet your next muse</string>
+    <string name="explore_subtitle">A few friendly placeholders to get you started.</string>
+    <string name="detail_subtitle">A friendly face for your next creative moment.</string>
+    <string name="detail_description">This sample is a preview of the drawing collection. Animal artwork will arrive in a later update.</string>
+    <string name="open_trace">Open Trace</string>
+    <string name="drawing_unavailable">This drawing is unavailable. Go back to choose another.</string>
+    <string name="trace_title">Your creative space</string>
+    <string name="trace_selected">Selected drawing: %1$s</string>
+    <string name="trace_placeholder">The tracing space is taking shape. Camera preview and tracing controls are coming in a later update.</string>
+    <string name="favorites_title">A home for your favorites</string>
+    <string name="favorites_subtitle">Keep your favorite little friends close.</string>
+    <string name="favorites_placeholder">Your saved drawings will appear here. Saving favorites is coming in a later update.</string>
+    <string name="settings_title">Make yourself at home</string>
+    <string name="settings_subtitle">A simple space for the little details.</string>
+    <string name="appearance">Appearance</string>
+    <string name="follows_system">Follows your device’s light or dark theme.</string>
+    <string name="settings_placeholder">More preferences are coming in a later update.</string>
 </resources>

@@ -1,146 +1,110 @@
 {
   "app/build.gradle.kts": {
-    "mtime": 1789295478.6215568,
-    "seen": 1789295635.241629,
-    "ast_hash": "f4b208e50c7f05bd885d090859302b3c",
-    "semantic_hash": ""
+    "mtime": 1789294713.8660078,
+    "seen": 1789295231.769851,
+    "ast_hash": "32cec8182f12d358f6ecfa13e3e538ed",
+    "semantic_hash": "32cec8182f12d358f6ecfa13e3e538ed"
   },
   "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/ExampleInstrumentedTest.kt": {
     "mtime": 1789294713.528102,
-    "seen": 1789295635.241631,
+    "seen": 1789295231.769852,
     "ast_hash": "79829243d84c977680083863e1d73f5f",
     "semantic_hash": "79829243d84c977680083863e1d73f5f"
   },
   "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt": {
-    "mtime": 1789295478.621641,
-    "seen": 1789295635.241632,
-    "ast_hash": "1dd626052a1ec317f5c84b1c2f1aeb36",
-    "semantic_hash": ""
+    "mtime": 1789294713.8299847,
+    "seen": 1789295231.7698529,
+    "ast_hash": "759bff4bee3ca97d0335e81567ba2a57",
+    "semantic_hash": "759bff4bee3ca97d0335e81567ba2a57"
   },
   "app/src/test/java/com/sabalapps/cuteanimalstrace/ExampleUnitTest.kt": {
     "mtime": 1789294713.5179646,
-    "seen": 1789295635.241635,
+    "seen": 1789295231.769854,
     "ast_hash": "fa39484865b8350d5424972ae1955cc4",
     "semantic_hash": "fa39484865b8350d5424972ae1955cc4"
   },
   "build.gradle.kts": {
-    "mtime": 1789295478.6213408,
-    "seen": 1789295635.241636,
-    "ast_hash": "e3c098fa4871e2663115e04535c097f8",
-    "semantic_hash": ""
+    "mtime": 1789294713.363597,
+    "seen": 1789295231.769854,
+    "ast_hash": "0d150a90316a3fb424b44e4319a9fed2",
+    "semantic_hash": "0d150a90316a3fb424b44e4319a9fed2"
   },
   "gradlew": {
     "mtime": 1789294712.7329626,
-    "seen": 1789295635.241636,
+    "seen": 1789295231.769854,
     "ast_hash": "266606e78242737ef3da02a80ea0564d",
     "semantic_hash": "266606e78242737ef3da02a80ea0564d"
   },
   "settings.gradle.kts": {
     "mtime": 1789294713.276691,
-    "seen": 1789295635.2416372,
+    "seen": 1789295231.769855,
     "ast_hash": "29e360bfdcc05d3fa5f128f03aa07e6c",
     "semantic_hash": "29e360bfdcc05d3fa5f128f03aa07e6c"
   },
   "AGENTS.md": {
     "mtime": 1789294961.4146976,
-    "seen": 1789295635.2416372,
+    "seen": 1789295231.769855,
     "ast_hash": "8cb35f674d046b0f74edb0b8a80767b3",
     "semantic_hash": "8cb35f674d046b0f74edb0b8a80767b3"
   },
   "app/src/main/res/mipmap-hdpi/ic_launcher.webp": {
     "mtime": 1789294713.1566234,
-    "seen": 1789295635.2416372,
+    "seen": 1789295231.769855,
     "ast_hash": "39d9bb21eb48f128a71c3f01ad3cd427",
     "semantic_hash": "39d9bb21eb48f128a71c3f01ad3cd427"
   },
   "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp": {
     "mtime": 1789294713.1585488,
-    "seen": 1789295635.241638,
+    "seen": 1789295231.769855,
     "ast_hash": "70d6f58af3c76ee221c829b1ce9daa04",
     "semantic_hash": "70d6f58af3c76ee221c829b1ce9daa04"
   },
   "app/src/main/res/mipmap-mdpi/ic_launcher.webp": {
     "mtime": 1789294713.1615922,
-    "seen": 1789295635.241638,
+    "seen": 1789295231.769856,
     "ast_hash": "d2acce71c7b46e5e9540d23a9f7b2166",
     "semantic_hash": "d2acce71c7b46e5e9540d23a9f7b2166"
   },
   "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp": {
     "mtime": 1789294713.163565,
-    "seen": 1789295635.241639,
+    "seen": 1789295231.769856,
     "ast_hash": "6376acb48f96a855ee95c113cd7fd616",
     "semantic_hash": "6376acb48f96a855ee95c113cd7fd616"
   },
   "app/src/main/res/mipmap-xhdpi/ic_launcher.webp": {
     "mtime": 1789294713.1662188,
-    "seen": 1789295635.241639,
+    "seen": 1789295231.769856,
     "ast_hash": "bd087d80b70bec05a43c745f29dc3ffc",
     "semantic_hash": "bd087d80b70bec05a43c745f29dc3ffc"
   },
   "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp": {
     "mtime": 1789294713.1681688,
-    "seen": 1789295635.241639,
+    "seen": 1789295231.769857,
     "ast_hash": "7479edd56ab712609f030054bffd7263",
     "semantic_hash": "7479edd56ab712609f030054bffd7263"
   },
   "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp": {
     "mtime": 1789294713.1708856,
-    "seen": 1789295635.2416399,
+    "seen": 1789295231.769857,
     "ast_hash": "ea180e8d1a2e8300cc998b987266b736",
     "semantic_hash": "ea180e8d1a2e8300cc998b987266b736"
   },
   "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp": {
     "mtime": 1789294713.172558,
-    "seen": 1789295635.2416399,
+    "seen": 1789295231.769857,
     "ast_hash": "947842742b29eeda80ee0805e1600366",
     "semantic_hash": "947842742b29eeda80ee0805e1600366"
   },
   "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp": {
     "mtime": 1789294713.175211,
-    "seen": 1789295635.2416399,
+    "seen": 1789295231.7698581,
     "ast_hash": "54ab624970c86c2146e76b93f27586f7",
     "semantic_hash": "54ab624970c86c2146e76b93f27586f7"
   },
   "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp": {
     "mtime": 1789294713.1768823,
-    "seen": 1789295635.241641,
+    "seen": 1789295231.7698581,
     "ast_hash": "9ee591be72fb336861a8044086054daa",
     "semantic_hash": "9ee591be72fb336861a8044086054daa"
-  },
-  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt": {
-    "mtime": 1789295609.8658063,
-    "seen": 1789295635.241632,
-    "ast_hash": "00a04925af535fe615956dc2a487ac63",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt": {
-    "mtime": 1789295609.8654213,
-    "seen": 1789295635.241633,
-    "ast_hash": "7bb4072939dfa993a98fc19294c7a373",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/PlaceholderDrawings.kt": {
-    "mtime": 1789295478.621972,
-    "seen": 1789295635.2416341,
-    "ast_hash": "5015ee4002e5133ad1c9b541b3245be9",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt": {
-    "mtime": 1789295609.8656569,
-    "seen": 1789295635.2416341,
-    "ast_hash": "d930bd5005b804cf88e44e21a09a4e1c",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt": {
-    "mtime": 1789295478.621904,
-    "seen": 1789295635.2416341,
-    "ast_hash": "f0b5a6aa03b7ed63081b249f104767f9",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/theme/Theme.kt": {
-    "mtime": 1789295478.6218069,
-    "seen": 1789295635.241635,
-    "ast_hash": "6738580edb26233cd5ab5b5ed77f2f4c",
-    "semantic_hash": ""
   }
 }
