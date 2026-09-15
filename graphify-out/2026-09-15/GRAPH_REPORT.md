@@ -1,12 +1,12 @@
-# Graph Report - CuteAnimalsTraceDraw  (2026-09-15)
+# Graph Report - CuteAnimalsTraceDraw  (2026-09-13)
 
 ## Corpus Check
-- 28 files · ~7,761 words
+- 28 files · ~7,474 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 161 nodes · 221 edges · 30 communities (11 shown, 19 thin omitted)
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.8)
+- 153 nodes · 208 edges · 30 communities (11 shown, 19 thin omitted)
+- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
@@ -44,16 +44,16 @@
 - TraceScreen
 
 ## God Nodes (most connected - your core abstractions)
-1. `TracingOverlayState` - 20 edges
-2. `DrawingTemplate` - 15 edges
+1. `DrawingTemplate` - 15 edges
+2. `TracingOverlayState` - 15 edges
 3. `TemplateCategory` - 12 edges
 4. `filterDrawings()` - 10 edges
 5. `CuteAnimalsApp()` - 9 edges
-6. `TracingOverlayTest` - 8 edges
-7. `TraceScreen()` - 8 edges
-8. `TracingOverlayStateTest` - 8 edges
-9. `Difficulty` - 7 edges
-10. `ExploreFiltersTest` - 6 edges
+6. `TraceScreen()` - 8 edges
+7. `Difficulty` - 7 edges
+8. `ExploreFiltersTest` - 6 edges
+9. `TracingOverlayTest` - 6 edges
+10. `LocalTemplateCatalog` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `TracingOverlayTest` --calls--> `TracingOverlayState`  [INFERRED]
@@ -77,7 +77,7 @@ Cohesion: 0.29
 Nodes (7): Android SDK requirements, CameraX overlay requirement, Cute Animals: Trace & Draw, Kotlin and Jetpack Compose, Material 3 themes, Offline operation, Simple architecture with stable AndroidX
 
 ### Community 1 - "TracingOverlayTest"
-Cohesion: 0.23
+Cohesion: 0.26
 Nodes (5): TracingOverlayTest, MainActivity, CuteAnimalsTheme(), Bundle, ComponentActivity
 
 ### Community 2 - "gradlew"
@@ -101,8 +101,8 @@ Cohesion: 0.33
 Nodes (5): CameraPermissionState, Blocked, Denied, Granted, NotRequested
 
 ### Community 29 - "TraceScreen"
-Cohesion: 0.27
-Nodes (9): CameraPreview(), Modifier, activity(), TraceScreen(), Modifier, OpacityControl(), OverlayActions(), OverlayControls() (+1 more)
+Cohesion: 0.36
+Nodes (6): CameraPreview(), activity(), TraceScreen(), OverlayControls(), TracingOverlay(), Modifier
 
 ## Knowledge Gaps
 - **34 isolated node(s):** `Easy`, `Medium`, `Detailed`, `Cats`, `Dogs` (+29 more)
@@ -113,13 +113,13 @@ Nodes (9): CameraPreview(), Modifier, activity(), TraceScreen(), Modifier, Opaci
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `DrawingTemplate` connect `Screens.kt` to `TraceScreen`, `NavigationShellTest`, `TemplateCategory`?**
-  _High betweenness centrality (0.153) - this node is a cross-community bridge._
+  _High betweenness centrality (0.122) - this node is a cross-community bridge._
 - **Why does `TracingOverlayState` connect `TracingOverlayState` to `TracingOverlayTest`, `TraceScreen`?**
-  _High betweenness centrality (0.120) - this node is a cross-community bridge._
+  _High betweenness centrality (0.096) - this node is a cross-community bridge._
 - **Why does `TraceScreen()` connect `TraceScreen` to `TracingOverlayState`, `Screens.kt`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
-- **Are the 9 inferred relationships involving `TracingOverlayState` (e.g. with `TracingOverlayTest` and `TraceScreen()`) actually correct?**
-  _`TracingOverlayState` has 9 INFERRED edges - model-reasoned connections that need verification._
+  _High betweenness centrality (0.066) - this node is a cross-community bridge._
+- **Are the 7 inferred relationships involving `TracingOverlayState` (e.g. with `TracingOverlayTest` and `TraceScreen()`) actually correct?**
+  _`TracingOverlayState` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `filterDrawings()` (e.g. with `ExploreScreen()` and `.blankQuery_returnsWholeCatalogInOrder()`) actually correct?**
   _`filterDrawings()` has 6 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `CuteAnimalsApp()` (e.g. with `DrawingDetailScreen()` and `ExploreScreen()`) actually correct?**

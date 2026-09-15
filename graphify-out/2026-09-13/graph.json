@@ -4,6 +4,19 @@
   "graph": {},
   "nodes": [
     {
+      "label": "TracingOverlayTest",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L16",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": "tracingoverlaytest"
+    },
+    {
       "label": "MainActivity",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
@@ -13,7 +26,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "mainactivity"
     },
     {
@@ -160,6 +173,32 @@
       "norm_label": "explorefilterstest"
     },
     {
+      "label": "TracingOverlayState",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlaystate"
+    },
+    {
+      "label": "TracingOverlayStateTest",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlaystatetest"
+    },
+    {
       "label": "CameraPermissionStateTest",
       "file_type": "code",
       "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt",
@@ -176,7 +215,7 @@
       "label": "CameraPreviewTest",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L12",
+      "source_location": "L15",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -212,6 +251,54 @@
       "norm_label": "exampleunittest"
     },
     {
+      "label": ".dragPinchFlipAndResetUpdateOverlay()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_dragpinchflipandresetupdateoverlay",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": ".dragpinchflipandresetupdateoverlay()"
+    },
+    {
+      "label": ".lockedOverlayIgnoresTouchAndKeepsOpacityAvailable()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_lockedoverlayignorestouchandkeepsopacityavailable",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": ".lockedoverlayignorestouchandkeepsopacityavailable()"
+    },
+    {
+      "label": ".pinch()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_pinch",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": ".pinch()"
+    },
+    {
+      "label": ".showOverlay()",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": ".showoverlay()"
+    },
+    {
       "label": ".onCreate()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
@@ -220,7 +307,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity_mainactivity_oncreate",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": ".oncreate()"
     },
     {
@@ -232,7 +319,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "cuteanimalstheme()"
     },
     {
@@ -635,12 +722,12 @@
       "label": "CameraPreview()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
-      "source_location": "L33",
+      "source_location": "L31",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "camerapreview()"
     },
     {
@@ -652,7 +739,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_activity",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "activity()"
     },
     {
@@ -664,8 +751,92 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "tracescreen()"
+    },
+    {
+      "label": "OverlayControls()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L67",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_overlaycontrols",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "overlaycontrols()"
+    },
+    {
+      "label": "TracingOverlay()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlay()"
+    },
+    {
+      "label": ".flipDoesNotReverseDragDirection_andUnlockRestoresMovement()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_flipdoesnotreversedragdirection_andunlockrestoresmovement",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": ".flipdoesnotreversedragdirection_andunlockrestoresmovement()"
+    },
+    {
+      "label": ".lockBlocksAllGeometryButAllowsOpacity()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_lockblocksallgeometrybutallowsopacity",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": ".lockblocksallgeometrybutallowsopacity()"
+    },
+    {
+      "label": ".movementAndScaleStayBounded_andInvalidInputIsIgnored()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_movementandscalestaybounded_andinvalidinputisignored",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": ".movementandscalestaybounded_andinvalidinputisignored()"
+    },
+    {
+      "label": ".pinchKeepsItsCentroidAnchored()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_pinchkeepsitscentroidanchored",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": ".pinchkeepsitscentroidanchored()"
+    },
+    {
+      "label": ".resetCentersAtDefaultScale_preservingOpacityAndFlip()",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_resetcentersatdefaultscale_preservingopacityandflip",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": ".resetcentersatdefaultscale_preservingopacityandflip()"
     },
     {
       "label": ".deniedButRequestable_showsRetry()",
@@ -719,7 +890,7 @@
       "label": ".previewStreams_restartsAfterBackgroundAndRecreation_andCanReenter()",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L25",
+      "source_location": "L27",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_previewstreams_restartsafterbackgroundandrecreation_andcanreenter",
@@ -731,7 +902,7 @@
       "label": ".waitForLivePreview()",
       "file_type": "code",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L18",
+      "source_location": "L20",
       "_callable": true,
       "_origin": "ast",
       "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_waitforlivepreview",
@@ -764,6 +935,17 @@
       "norm_label": ".addition_iscorrect()"
     },
     {
+      "label": "TracingOverlayTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest",
+      "community": 1,
+      "community_name": "TracingOverlayTest",
+      "norm_label": "tracingoverlaytest.kt"
+    },
+    {
       "label": "MainActivity.kt",
       "file_type": "code",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
@@ -771,7 +953,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_mainactivity",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "mainactivity.kt"
     },
     {
@@ -782,7 +964,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "theme.kt"
     },
     {
@@ -793,7 +975,7 @@
       "_origin": "ast",
       "id": "bundle",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "bundle"
     },
     {
@@ -804,7 +986,7 @@
       "_origin": "ast",
       "id": "componentactivity",
       "community": 1,
-      "community_name": "MainActivity.kt",
+      "community_name": "TracingOverlayTest",
       "norm_label": "componentactivity"
     },
     {
@@ -1238,7 +1420,7 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "camerapreview.kt"
     },
     {
@@ -1249,8 +1431,41 @@
       "_origin": "ast",
       "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "tracescreen.kt"
+    },
+    {
+      "label": "TracingOverlay.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlay.kt"
+    },
+    {
+      "label": "TracingOverlayState.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlaystate.kt"
+    },
+    {
+      "label": "TracingOverlayStateTest.kt",
+      "file_type": "code",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest",
+      "community": 26,
+      "community_name": "TracingOverlayState",
+      "norm_label": "tracingoverlaystatetest.kt"
     },
     {
       "label": "Modifier",
@@ -1260,7 +1475,7 @@
       "_origin": "ast",
       "id": "modifier",
       "community": 26,
-      "community_name": "TraceScreen",
+      "community_name": "TracingOverlayState",
       "norm_label": "modifier"
     },
     {
@@ -1284,17 +1499,6 @@
       "community": 28,
       "community_name": "CameraPreviewTest",
       "norm_label": "camerapreviewtest.kt"
-    },
-    {
-      "label": "GrantPermissionRule",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "grantpermissionrule",
-      "community": 28,
-      "community_name": "CameraPreviewTest",
-      "norm_label": "grantpermissionrule"
     },
     {
       "label": "ExampleInstrumentedTest.kt",
@@ -1627,7 +1831,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L31",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest_previewstreams_restartsafterbackgroundandrecreation_andcanreenter",
@@ -1705,6 +1909,66 @@
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_explorefilterstest_explorefilterstest_selectionssurviverecreationtabsanddetailnavigation",
       "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_explorefilterstest_explorefilterstest_show",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_dragpinchflipandresetupdateoverlay",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_dragpinchflipandresetupdateoverlay",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_pinch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_lockedoverlayignorestouchandkeepsopacityavailable",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_lockedoverlayignorestouchandkeepsopacityavailable",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_pinch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme"
     },
     {
       "relation": "calls",
@@ -1891,7 +2155,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
@@ -1920,18 +2184,6 @@
       "_origin": "ast",
       "source": "gradlew__entry",
       "target": "gradlew_warn",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L13",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
-      "target": "grantpermissionrule",
       "confidence_score": 1.0
     },
     {
@@ -2016,8 +2268,23 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L4",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
-      "source_location": "L17",
+      "source_location": "L16",
       "weight": 1.0,
       "metadata": {
         "target_fqn": "androidx.compose.ui.Modifier"
@@ -2076,6 +2343,21 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "androidx.compose.ui.Modifier"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay",
+      "target": "modifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt",
       "source_location": "L9",
       "weight": 1.0,
@@ -2100,21 +2382,6 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_screens",
       "target": "imagevector",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L8",
-      "weight": 1.0,
-      "metadata": {
-        "target_fqn": "androidx.test.rule.GrantPermissionRule"
-      },
-      "_origin": "ast",
-      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest",
-      "target": "grantpermissionrule",
       "confidence_score": 1.0
     },
     {
@@ -2196,6 +2463,21 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L26",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.data.DrawingTemplate"
+      },
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt",
       "source_location": "L5",
       "weight": 1.0,
@@ -2204,6 +2486,21 @@
       },
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L9",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.data.LocalTemplateCatalog"
+      },
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_localtemplatecatalog_localtemplatecatalog",
       "confidence_score": 1.0
     },
@@ -2301,6 +2598,21 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "metadata": {
+        "target_fqn": "com.sabalapps.cuteanimalstrace.ui.theme.CuteAnimalsTheme"
+      },
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_theme_theme_cuteanimalstheme",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt",
       "source_location": "L8",
       "weight": 1.0,
@@ -2328,7 +2640,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
-      "source_location": "L33",
+      "source_location": "L31",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -2418,6 +2730,42 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_overlaycontrols",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_data_drawingtemplate_drawingtemplate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate",
       "confidence_score": 1.0
     },
     {
@@ -2645,7 +2993,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L12",
+      "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest",
@@ -2683,6 +3031,17 @@
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest",
       "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
       "confidence_score": 1.0
     },
     {
@@ -2755,7 +3114,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt",
-      "source_location": "L33",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview",
@@ -2952,6 +3311,39 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_overlaycontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalogTest.kt",
       "source_location": "L6",
       "weight": 1.0,
@@ -2991,6 +3383,17 @@
       "_origin": "ast",
       "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest",
       "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
       "confidence_score": 1.0
     },
     {
@@ -3041,7 +3444,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
@@ -3052,7 +3455,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_camerapreviewtest_camerapreviewtest",
@@ -3167,6 +3570,50 @@
       "_origin": "ast",
       "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest",
       "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_navigationshelltest_navigationshelltest_home_showsfeaturedcatalogandopensitsdetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_pinch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_dragpinchflipandresetupdateoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "target": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_lockedoverlayignorestouchandkeepsopacityavailable",
       "confidence_score": 1.0
     },
     {
@@ -3368,6 +3815,97 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_movementandscalestaybounded_andinvalidinputisignored",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_lockblocksallgeometrybutallowsopacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_resetcentersatdefaultscale_preservingopacityandflip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_flipdoesnotreversedragdirection_andunlockrestoresmovement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest",
+      "target": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_pinchkeepsitscentroidanchored",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_androidtest_java_com_sabalapps_cuteanimalstrace_tracingoverlaytest_tracingoverlaytest_showoverlay",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_overlaycontrols"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -3457,11 +3995,47 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
-      "source_location": "L71",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_camerapreview_camerapreview"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_tracingoverlay"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracescreen_tracescreen",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlay_overlaycontrols"
     },
     {
       "relation": "calls",
@@ -3522,6 +4096,66 @@
       "_origin": "ast",
       "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_filterdrawingstest_filterdrawingstest_unmatchedsearch_andemptycatalog_returnnoresults",
       "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_filterdrawings_filterdrawings"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_flipdoesnotreversedragdirection_andunlockrestoresmovement",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_lockblocksallgeometrybutallowsopacity",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_movementandscalestaybounded_andinvalidinputisignored",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_pinchkeepsitscentroidanchored",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_test_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystatetest_tracingoverlaystatetest_resetcentersatdefaultscale_preservingopacityandflip",
+      "target": "app_src_main_java_com_sabalapps_cuteanimalstrace_ui_tracingoverlaystate_tracingoverlaystate"
     },
     {
       "relation": "rationale_for",
@@ -3602,5 +4236,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c139829a7693ba1aafb54a5dcbebb8e5d2e6ab97"
+  "built_at_commit": "cfab317701ba96e3e21f60d875fd7bf5a91c7055"
 }

@@ -2,6 +2,8 @@ package com.sabalapps.cuteanimalstrace
 
 import android.Manifest
 import androidx.compose.ui.semantics.SemanticsProperties
+import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.semantics.ProgressBarRangeInfo
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.lifecycle.Lifecycle
@@ -35,7 +37,15 @@ class CameraPreviewTest {
         compose.activityRule.scenario.moveToState(Lifecycle.State.CREATED)
         compose.activityRule.scenario.moveToState(Lifecycle.State.RESUMED)
         waitForLivePreview()
+        compose.onNodeWithTag("overlay_image_kitten").assertIsDisplayed()
+        compose.onNodeWithTag("overlay_opacity").performSemanticsAction(SemanticsActions.SetProgress) { it(0.4f) }
+        compose.onNodeWithTag("overlay_flip").performClick()
+        compose.onNodeWithTag("overlay_lock").performClick()
+        waitForLivePreview()
         compose.activityRule.scenario.recreate()
+        compose.onNodeWithTag("overlay_lock").assertIsSelected()
+        compose.onNodeWithTag("overlay_flip").assertIsSelected().assertIsNotEnabled()
+        compose.onNodeWithTag("overlay_opacity").assertRangeInfoEquals(ProgressBarRangeInfo(0.4f, 0f..1f))
         waitForLivePreview()
         compose.onNodeWithContentDescription("Back").performClick()
         compose.onNodeWithTag("camera_preview").assertDoesNotExist()

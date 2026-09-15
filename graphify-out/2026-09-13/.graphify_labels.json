@@ -1,6 +1,6 @@
 {
   "0": "Cute Animals: Trace & Draw",
-  "1": "MainActivity.kt",
+  "1": "TracingOverlayTest",
   "2": "gradlew",
   "3": "ExampleInstrumentedTest",
   "4": "ExampleUnitTest",
@@ -25,7 +25,7 @@
   "23": "LocalTemplateCatalogTest",
   "24": "CameraPermissionState",
   "25": "ExploreFiltersTest",
-  "26": "TraceScreen",
+  "26": "TracingOverlayState",
   "27": "CameraPermissionStateTest",
   "28": "CameraPreviewTest"
 }

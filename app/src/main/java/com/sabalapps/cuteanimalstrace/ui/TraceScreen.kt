@@ -37,6 +37,7 @@ private tailrec fun Context.activity(): Activity? = when (this) {
 
 @Composable
 fun TraceScreen(drawing: DrawingTemplate?) {
+    val overlayState = rememberSaveable(drawing?.id, saver = TracingOverlayState.Saver) { TracingOverlayState() }
     val context = LocalContext.current
     val activity = context.activity()
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -68,7 +69,10 @@ fun TraceScreen(drawing: DrawingTemplate?) {
             style = MaterialTheme.typography.bodyMedium,
         )
         if (permission == CameraPermissionState.Granted) {
-            CameraPreview(Modifier.weight(1f))
+            CameraPreview(Modifier.weight(1f)) {
+                if (drawing != null) TracingOverlay(drawing, overlayState)
+            }
+            if (drawing != null) OverlayControls(overlayState)
         } else {
             Column(Modifier.fillMaxWidth().weight(1f).verticalScroll(rememberScrollState()).padding(24.dp),
                 verticalArrangement = Arrangement.spacedBy(20.dp)) {

@@ -7,7 +7,6 @@ import androidx.camera.core.Preview
 import androidx.camera.core.TorchState
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -15,7 +14,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
@@ -31,7 +29,7 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.sabalapps.cuteanimalstrace.R
 
 @Composable
-internal fun CameraPreview(modifier: Modifier = Modifier) {
+internal fun CameraPreview(modifier: Modifier = Modifier, overlay: @Composable () -> Unit = {}) {
     val context = LocalContext.current
     val owner = LocalLifecycleOwner.current
     val executor = remember(context) { ContextCompat.getMainExecutor(context) }
@@ -121,15 +119,7 @@ internal fun CameraPreview(modifier: Modifier = Modifier) {
         Box(Modifier.fillMaxWidth().weight(1f).testTag("camera_preview").semantics { stateDescription = previewStatus }) {
             AndroidView(factory = { previewView }, modifier = Modifier.fillMaxSize())
             if (!error) {
-                Box(Modifier.matchParentSize().padding(28.dp)
-                    .border(1.dp, Color.White.copy(alpha = 0.65f), MaterialTheme.shapes.large),
-                    contentAlignment = Alignment.BottomCenter) {
-                    Surface(color = Color.Black.copy(alpha = 0.65f), contentColor = Color.White,
-                        shape = MaterialTheme.shapes.small, modifier = Modifier.padding(12.dp)) {
-                        Text(stringResource(R.string.overlay_placeholder), Modifier.padding(12.dp),
-                            style = MaterialTheme.typography.labelMedium)
-                    }
-                }
+                overlay()
                 if (!streaming) CircularProgressIndicator(Modifier.align(Alignment.Center))
             } else {
                 Surface(Modifier.fillMaxSize()) {
