@@ -1,16 +1,15 @@
 package com.sabalapps.cuteanimalstrace.data
 
-import androidx.annotation.DrawableRes
-
-/** Bundled, read-only template metadata. imageRes identifies a local drawable asset. */
+/** Separate UI artwork and tracing ink; both paths are relative to Android assets. */
 data class DrawingTemplate(
     val id: String,
     val name: String,
     val category: TemplateCategory,
-    @param:DrawableRes val imageRes: Int,
+    val traceImagePath: String,
     val difficulty: Difficulty,
     val featured: Boolean,
     val description: String,
+    val previewImagePath: String = traceImagePath,
 )
 
 enum class Difficulty(val label: String) {
@@ -19,5 +18,5 @@ enum class Difficulty(val label: String) {
 
 enum class TemplateCategory(val label: String) {
     Cats("Cats"), Dogs("Dogs"), Bunnies("Bunnies"), Pandas("Pandas"),
-    Foxes("Foxes"), Bears("Bears"), Kawaii("Kawaii"), BabyAnimals("Baby Animals"),
+    Foxes("Foxes"), Bears("Bears"), Kawaii("Kawaii Animals"), BabyAnimals("Baby Animals"),
 }

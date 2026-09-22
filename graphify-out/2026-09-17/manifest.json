@@ -1,0 +1,812 @@
+{
+  "app/build.gradle.kts": {
+    "mtime": 1789442225.7044244,
+    "seen": 1789567471.612297,
+    "ast_hash": "befafb2c7109c9bf18e57512610b25cb",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/ExampleInstrumentedTest.kt": {
+    "mtime": 1789294713.528102,
+    "seen": 1789567471.6123,
+    "ast_hash": "79829243d84c977680083863e1d73f5f",
+    "semantic_hash": "79829243d84c977680083863e1d73f5f"
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/MainActivity.kt": {
+    "mtime": 1789539152.2626395,
+    "seen": 1789567471.612303,
+    "ast_hash": "d89431b5ed8478ec54fc8bcd94827b01",
+    "semantic_hash": ""
+  },
+  "app/src/test/java/com/sabalapps/cuteanimalstrace/ExampleUnitTest.kt": {
+    "mtime": 1789294713.5179646,
+    "seen": 1789567471.61231,
+    "ast_hash": "fa39484865b8350d5424972ae1955cc4",
+    "semantic_hash": "fa39484865b8350d5424972ae1955cc4"
+  },
+  "build.gradle.kts": {
+    "mtime": 1789295478.6213408,
+    "seen": 1789567471.612312,
+    "ast_hash": "e3c098fa4871e2663115e04535c097f8",
+    "semantic_hash": ""
+  },
+  "gradlew": {
+    "mtime": 1789294712.7329626,
+    "seen": 1789567471.612313,
+    "ast_hash": "266606e78242737ef3da02a80ea0564d",
+    "semantic_hash": "266606e78242737ef3da02a80ea0564d"
+  },
+  "settings.gradle.kts": {
+    "mtime": 1789294713.276691,
+    "seen": 1789567471.6123142,
+    "ast_hash": "29e360bfdcc05d3fa5f128f03aa07e6c",
+    "semantic_hash": "29e360bfdcc05d3fa5f128f03aa07e6c"
+  },
+  "AGENTS.md": {
+    "mtime": 1789294961.4146976,
+    "seen": 1789567471.6123142,
+    "ast_hash": "8cb35f674d046b0f74edb0b8a80767b3",
+    "semantic_hash": "8cb35f674d046b0f74edb0b8a80767b3"
+  },
+  "app/src/main/res/mipmap-hdpi/ic_launcher.webp": {
+    "mtime": 1789294713.1566234,
+    "seen": 1789567471.612343,
+    "ast_hash": "39d9bb21eb48f128a71c3f01ad3cd427",
+    "semantic_hash": "39d9bb21eb48f128a71c3f01ad3cd427"
+  },
+  "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp": {
+    "mtime": 1789294713.1585488,
+    "seen": 1789567471.612343,
+    "ast_hash": "70d6f58af3c76ee221c829b1ce9daa04",
+    "semantic_hash": "70d6f58af3c76ee221c829b1ce9daa04"
+  },
+  "app/src/main/res/mipmap-mdpi/ic_launcher.webp": {
+    "mtime": 1789294713.1615922,
+    "seen": 1789567471.612343,
+    "ast_hash": "d2acce71c7b46e5e9540d23a9f7b2166",
+    "semantic_hash": "d2acce71c7b46e5e9540d23a9f7b2166"
+  },
+  "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp": {
+    "mtime": 1789294713.163565,
+    "seen": 1789567471.612344,
+    "ast_hash": "6376acb48f96a855ee95c113cd7fd616",
+    "semantic_hash": "6376acb48f96a855ee95c113cd7fd616"
+  },
+  "app/src/main/res/mipmap-xhdpi/ic_launcher.webp": {
+    "mtime": 1789294713.1662188,
+    "seen": 1789567471.612344,
+    "ast_hash": "bd087d80b70bec05a43c745f29dc3ffc",
+    "semantic_hash": "bd087d80b70bec05a43c745f29dc3ffc"
+  },
+  "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp": {
+    "mtime": 1789294713.1681688,
+    "seen": 1789567471.612344,
+    "ast_hash": "7479edd56ab712609f030054bffd7263",
+    "semantic_hash": "7479edd56ab712609f030054bffd7263"
+  },
+  "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp": {
+    "mtime": 1789294713.1708856,
+    "seen": 1789567471.612345,
+    "ast_hash": "ea180e8d1a2e8300cc998b987266b736",
+    "semantic_hash": "ea180e8d1a2e8300cc998b987266b736"
+  },
+  "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp": {
+    "mtime": 1789294713.172558,
+    "seen": 1789567471.612345,
+    "ast_hash": "947842742b29eeda80ee0805e1600366",
+    "semantic_hash": "947842742b29eeda80ee0805e1600366"
+  },
+  "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp": {
+    "mtime": 1789294713.175211,
+    "seen": 1789567471.612345,
+    "ast_hash": "54ab624970c86c2146e76b93f27586f7",
+    "semantic_hash": "54ab624970c86c2146e76b93f27586f7"
+  },
+  "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp": {
+    "mtime": 1789294713.1768823,
+    "seen": 1789567471.6123462,
+    "ast_hash": "9ee591be72fb336861a8044086054daa",
+    "semantic_hash": "9ee591be72fb336861a8044086054daa"
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/NavigationShellTest.kt": {
+    "mtime": 1789539359.820895,
+    "seen": 1789567471.612301,
+    "ast_hash": "7e7e1d0d70f360f71dd3ab89d25a8c2c",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt": {
+    "mtime": 1789567461.603287,
+    "seen": 1789567471.6123059,
+    "ast_hash": "adaee4389d238b5210028de9461b6b89",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt": {
+    "mtime": 1789567461.603549,
+    "seen": 1789567471.6123068,
+    "ast_hash": "c2155def1d9dca5d9e0d1783037f889f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/navigation/Destinations.kt": {
+    "mtime": 1789295478.621904,
+    "seen": 1789567471.61231,
+    "ast_hash": "f0b5a6aa03b7ed63081b249f104767f9",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/theme/Theme.kt": {
+    "mtime": 1789442225.7592018,
+    "seen": 1789567471.61231,
+    "ast_hash": "4974b4b5c8ff1ea028b2fdcea75af3b0",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt": {
+    "mtime": 1789539152.261932,
+    "seen": 1789567471.612304,
+    "ast_hash": "c0d0c94fd26ad16f46e0ad1571e4742e",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt": {
+    "mtime": 1789539152.2347856,
+    "seen": 1789567471.612304,
+    "ast_hash": "1c240a52a26842bab42bf7b146ba72ac",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/ExploreFiltersTest.kt": {
+    "mtime": 1789539359.8215814,
+    "seen": 1789567471.612301,
+    "ast_hash": "7d22f246fabca15af828e620e2cff03f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt": {
+    "mtime": 1789296876.6872232,
+    "seen": 1789567471.6123068,
+    "ast_hash": "bccdf3913e3d35e629569bce60917bbb",
+    "semantic_hash": ""
+  },
+  "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawingsTest.kt": {
+    "mtime": 1789539359.819402,
+    "seen": 1789567471.612312,
+    "ast_hash": "4cb84b4ec6bb771fcc51773c97e33370",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/CameraPreviewTest.kt": {
+    "mtime": 1789539359.8216753,
+    "seen": 1789567471.612299,
+    "ast_hash": "ce1ff4679ef7ae3a6ffc52a67710422a",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionState.kt": {
+    "mtime": 1789298948.6437328,
+    "seen": 1789567471.612305,
+    "ast_hash": "47ed475d1b6aaf9789bbe1b8c1a7ddb1",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt": {
+    "mtime": 1789567346.1426454,
+    "seen": 1789567471.6123059,
+    "ast_hash": "3b03dd9689fea650b3dcb7fa9892f6dc",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt": {
+    "mtime": 1789567461.6029656,
+    "seen": 1789567471.612308,
+    "ast_hash": "28f1e2d914c7d6bee11fef250abf35df",
+    "semantic_hash": ""
+  },
+  "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/CameraPermissionStateTest.kt": {
+    "mtime": 1789299035.7608297,
+    "seen": 1789567471.6123111,
+    "ast_hash": "195a7751047c2f693ddab6de698034aa",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt": {
+    "mtime": 1789539359.821227,
+    "seen": 1789567471.612303,
+    "ast_hash": "48717ab2ccc016f199e82ceeeb27a376",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlay.kt": {
+    "mtime": 1789567461.60239,
+    "seen": 1789567471.612308,
+    "ast_hash": "f64672797fba5b6351db9ac667e0407f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt": {
+    "mtime": 1789441577.3639739,
+    "seen": 1789567471.612308,
+    "ast_hash": "f2315d4fdf8c906630efb824cd4c2349",
+    "semantic_hash": ""
+  },
+  "app/src/test/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayStateTest.kt": {
+    "mtime": 1789441577.3648214,
+    "seen": 1789567471.612312,
+    "ast_hash": "f406d06e605886ad35400558fc4620b5",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/SavedPreferencesTest.kt": {
+    "mtime": 1789539359.820752,
+    "seen": 1789567471.612302,
+    "ast_hash": "96b01b0177597b24ea9139e103bed9e4",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/data/UserPreferences.kt": {
+    "mtime": 1789442225.710594,
+    "seen": 1789567471.612305,
+    "ast_hash": "f0e6262df92df99de8a050cac6ed85b4",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/SettingsScreen.kt": {
+    "mtime": 1789567346.1422591,
+    "seen": 1789567471.6123068,
+    "ast_hash": "79b825db91e36caf265aa490ff61299d",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/UserPreferencesViewModel.kt": {
+    "mtime": 1789539152.2622197,
+    "seen": 1789567471.612309,
+    "ast_hash": "49f1f8a7278e299568842cccc269f60a",
+    "semantic_hash": ""
+  },
+  "app/src/test/java/com/sabalapps/cuteanimalstrace/data/UserPreferencesRepositoryTest.kt": {
+    "mtime": 1789539359.8219788,
+    "seen": 1789567471.6123111,
+    "ast_hash": "952c555674bf891e912127b7ece8fbf2",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/raw/open_source_licenses.txt": {
+    "mtime": 1789442514.3290203,
+    "seen": 1789567471.6123142,
+    "ast_hash": "5baa39a4ba571fb5bfa84a7b57d64e39",
+    "semantic_hash": ""
+  },
+  "scripts/generate_trace_assets.py": {
+    "mtime": 1789464020.734923,
+    "seen": 1789567471.612313,
+    "ast_hash": "89fa607a6fc14aeb265035b8798a8dbc",
+    "semantic_hash": ""
+  },
+  "scripts/test_generate_trace_assets.py": {
+    "mtime": 1789463852.2613358,
+    "seen": 1789567471.612313,
+    "ast_hash": "c51cde344cf6d92c3ac527b18dd3b24c",
+    "semantic_hash": ""
+  },
+  "docs/cute_animals_trace_draw_work_mode_prompt.md": {
+    "mtime": 1789463380.7008748,
+    "seen": 1789567471.612315,
+    "ast_hash": "f4539d24db79d5f38f7bf4e008b7e797",
+    "semantic_hash": ""
+  },
+  "scripts/README-imagegen.md": {
+    "mtime": 1789463852.1604273,
+    "seen": 1789567471.612315,
+    "ast_hash": "33dfbe7fb4dcf4bde4d5506ab698168f",
+    "semantic_hash": ""
+  },
+  "scripts/requirements-imagegen.txt": {
+    "mtime": 1789463380.6973634,
+    "seen": 1789567471.612316,
+    "ast_hash": "e0cbe75b342224477bdba546c8deff92",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_001.webp": {
+    "mtime": 1789464150.298534,
+    "seen": 1789567471.612316,
+    "ast_hash": "0fc0c85cf1b2f3b079dea1422b0f07ff",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_002.webp": {
+    "mtime": 1789464140.8368542,
+    "seen": 1789567471.612316,
+    "ast_hash": "114b0f3878b3e728444700ec61689d24",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_003.webp": {
+    "mtime": 1789464151.2784684,
+    "seen": 1789567471.6123168,
+    "ast_hash": "092799c3bd9d08c0c28e6e41995b2b55",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_004.webp": {
+    "mtime": 1789464154.055444,
+    "seen": 1789567471.6123168,
+    "ast_hash": "e4b540db9b0cf2ae56bb8fe3d85b1596",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_005.webp": {
+    "mtime": 1789464162.950213,
+    "seen": 1789567471.6123168,
+    "ast_hash": "f1c1dcbe54cc29887b244be4050fcdc1",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_006.webp": {
+    "mtime": 1789464163.935994,
+    "seen": 1789567471.612318,
+    "ast_hash": "d82fbde6fe8c07ce17198dad1618abd2",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_007.webp": {
+    "mtime": 1789464167.145101,
+    "seen": 1789567471.612318,
+    "ast_hash": "a026cf2e0538618a2e2d25d2f961a252",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_008.webp": {
+    "mtime": 1789464175.5546827,
+    "seen": 1789567471.612318,
+    "ast_hash": "ed53ee23163708533bb60112e469e3f9",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_009.webp": {
+    "mtime": 1789464175.904951,
+    "seen": 1789567471.612319,
+    "ast_hash": "a3bb79408d585ffd820bb123d2101244",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/baby_animals/baby_010.webp": {
+    "mtime": 1789464181.0179412,
+    "seen": 1789567471.612319,
+    "ast_hash": "6b353b6f01f7ec120d9c91c05ba52cdb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_001.webp": {
+    "mtime": 1789464058.2833915,
+    "seen": 1789567471.612319,
+    "ast_hash": "5007efa17f3f8fb6aacd9abfbb4c156d",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_002.webp": {
+    "mtime": 1789464067.0589824,
+    "seen": 1789567471.612319,
+    "ast_hash": "222cbc456d2cd3b006bc3538ec2461e1",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_003.webp": {
+    "mtime": 1789464072.5657368,
+    "seen": 1789567471.61232,
+    "ast_hash": "bb73679d3cac9fe426096f264364fb65",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_004.webp": {
+    "mtime": 1789464074.2201262,
+    "seen": 1789567471.61232,
+    "ast_hash": "8dbd1273d7a735c502bb746a60860e1e",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_005.webp": {
+    "mtime": 1789464079.675471,
+    "seen": 1789567471.61232,
+    "ast_hash": "a9743c8bb35d87fab3aa45873f7bef27",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_006.webp": {
+    "mtime": 1789464084.584345,
+    "seen": 1789567471.6123211,
+    "ast_hash": "b9dabc8241d891b1dc64e46616085f72",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_007.webp": {
+    "mtime": 1789464087.8022807,
+    "seen": 1789567471.6123211,
+    "ast_hash": "485d982a062834624f82ca05fcfb9569",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bears/bear_008.webp": {
+    "mtime": 1789464092.2124927,
+    "seen": 1789567471.6123211,
+    "ast_hash": "b59f6834efca8c744d6cd755180b0eb1",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_001.webp": {
+    "mtime": 1789463824.7351196,
+    "seen": 1789567471.612322,
+    "ast_hash": "e72c3d74a9c8ca057f436cea34975680",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_002.webp": {
+    "mtime": 1789463825.8414092,
+    "seen": 1789567471.612322,
+    "ast_hash": "73ee9326508787df87a66020177c45cb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_003.webp": {
+    "mtime": 1789463953.246588,
+    "seen": 1789567471.612322,
+    "ast_hash": "08041283de26adfe5f7c9bd5e228be9c",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_004.webp": {
+    "mtime": 1789463826.861941,
+    "seen": 1789567471.612322,
+    "ast_hash": "35393f416c6aa2244e509be751162aac",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_005.webp": {
+    "mtime": 1789463827.9481828,
+    "seen": 1789567471.612323,
+    "ast_hash": "a922361509b9453367c2d792983d28d7",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_006.webp": {
+    "mtime": 1789463829.055953,
+    "seen": 1789567471.612323,
+    "ast_hash": "d4f86cbfc4a744612c16ac7f74d96e67",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_007.webp": {
+    "mtime": 1789463951.6584096,
+    "seen": 1789567471.612323,
+    "ast_hash": "5f0a15194bdf892464dc71bd4f2fffa8",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_008.webp": {
+    "mtime": 1789463953.266497,
+    "seen": 1789567471.612324,
+    "ast_hash": "25e893f0c4b0baf8f90c5064e53604cf",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_009.webp": {
+    "mtime": 1789463963.7466216,
+    "seen": 1789567471.612324,
+    "ast_hash": "65729af4ea779c548e724f9840ecffd7",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/bunnies/bunny_010.webp": {
+    "mtime": 1789463967.2155392,
+    "seen": 1789567471.612324,
+    "ast_hash": "6ef1999fb78b8b524d00e9f51f452112",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_001.webp": {
+    "mtime": 1789464226.9186275,
+    "seen": 1789567471.6123252,
+    "ast_hash": "a6749d8dcefc47fd331eecdbd4073368",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_002.webp": {
+    "mtime": 1789463933.3899615,
+    "seen": 1789567471.6123252,
+    "ast_hash": "77529f30cfedf165a24607b2f4982088",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_003.webp": {
+    "mtime": 1789463792.9543648,
+    "seen": 1789567471.6123252,
+    "ast_hash": "eeebb94b3f9f45e4fe22444ff3b4f6a3",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_004.webp": {
+    "mtime": 1789463794.115948,
+    "seen": 1789567471.612326,
+    "ast_hash": "594ebcbd37ad2e5236c2941fce3a258a",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_005.webp": {
+    "mtime": 1789463795.287419,
+    "seen": 1789567471.612326,
+    "ast_hash": "644bd642b6e60d6131db2dd6771d5783",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_006.webp": {
+    "mtime": 1789463796.412947,
+    "seen": 1789567471.612326,
+    "ast_hash": "4159ab60f42e3f9b634edb01e0ab0d80",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_007.webp": {
+    "mtime": 1789463881.627471,
+    "seen": 1789567471.6123269,
+    "ast_hash": "378821ead63d44d3176f2931899abf09",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_008.webp": {
+    "mtime": 1789463798.7376342,
+    "seen": 1789567471.6123269,
+    "ast_hash": "3c0c3c03e6c1fcf14f8cb9088cb9f685",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_009.webp": {
+    "mtime": 1789463799.8874087,
+    "seen": 1789567471.6123269,
+    "ast_hash": "c1da09d91e679bb3293d6b8695cb9265",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_010.webp": {
+    "mtime": 1789463801.1320057,
+    "seen": 1789567471.6123269,
+    "ast_hash": "9f1d03d14910366e15d09e95ead76805",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_011.webp": {
+    "mtime": 1789463897.8510232,
+    "seen": 1789567471.612328,
+    "ast_hash": "5d53c0548e511fa245c1166d84a89853",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_012.webp": {
+    "mtime": 1789463803.6065907,
+    "seen": 1789567471.612328,
+    "ast_hash": "ae3e21a21b85ff2ff7204dcafd6751bb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_013.webp": {
+    "mtime": 1789463804.7304332,
+    "seen": 1789567471.612329,
+    "ast_hash": "6368c4e2f9a37114890452f87245fe4c",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_014.webp": {
+    "mtime": 1789463805.9055812,
+    "seen": 1789567471.612329,
+    "ast_hash": "f7c8d63a6f2e890dec1375d0cf33195d",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/cats/cat_015.webp": {
+    "mtime": 1789463807.1412723,
+    "seen": 1789567471.612329,
+    "ast_hash": "29cfe899eba4274aced37567f97d628f",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_001.webp": {
+    "mtime": 1789463808.2975547,
+    "seen": 1789567471.61233,
+    "ast_hash": "4591dd67ba22cf94bd70a71930bfb082",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_002.webp": {
+    "mtime": 1789463809.5465868,
+    "seen": 1789567471.61233,
+    "ast_hash": "c4eda110e22faacfb22e029c8acfc839",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_003.webp": {
+    "mtime": 1789463810.6818037,
+    "seen": 1789567471.61233,
+    "ast_hash": "475c1f8dabd247118b0b0e3beb66f489",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_004.webp": {
+    "mtime": 1789463811.81532,
+    "seen": 1789567471.61233,
+    "ast_hash": "caec335b7d20dc310bffd4ac36109a7c",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_005.webp": {
+    "mtime": 1789463934.5372825,
+    "seen": 1789567471.612331,
+    "ast_hash": "a53a0b6368bec37fa73b6e6fb359d996",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_006.webp": {
+    "mtime": 1789463813.0721207,
+    "seen": 1789567471.612331,
+    "ast_hash": "9e1fc2856e3a1144ee0076d917901795",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_007.webp": {
+    "mtime": 1789463814.2450733,
+    "seen": 1789567471.612331,
+    "ast_hash": "181d4df94cfe3385d92435b606e045d8",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_008.webp": {
+    "mtime": 1789463815.409576,
+    "seen": 1789567471.612332,
+    "ast_hash": "ea6adaeb815037ae825f05da327344e3",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_009.webp": {
+    "mtime": 1789463816.671793,
+    "seen": 1789567471.612332,
+    "ast_hash": "bba4d465e035a5c79842d29caa4f602b",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_010.webp": {
+    "mtime": 1789463883.139431,
+    "seen": 1789567471.612332,
+    "ast_hash": "e271f13a309babaf2a2f79272906246e",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_011.webp": {
+    "mtime": 1789463818.9171638,
+    "seen": 1789567471.612333,
+    "ast_hash": "9a282b648b322de06c4474218a4872cb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_012.webp": {
+    "mtime": 1789463819.9807737,
+    "seen": 1789567471.612333,
+    "ast_hash": "9ac5070796ed9bfc5f4527afc70236f8",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_013.webp": {
+    "mtime": 1789463913.2544498,
+    "seen": 1789567471.612333,
+    "ast_hash": "e62538b9517eb03d094706b277e0eec1",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_014.webp": {
+    "mtime": 1789463822.3694046,
+    "seen": 1789567471.612334,
+    "ast_hash": "d412c432ec0d98e650d8cdfc3c9732eb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/dogs/dog_015.webp": {
+    "mtime": 1789463823.649549,
+    "seen": 1789567471.612334,
+    "ast_hash": "ecd8ffcb098e4efb67304a6ac4d10e41",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_001.webp": {
+    "mtime": 1789464007.1663425,
+    "seen": 1789567471.612334,
+    "ast_hash": "e2230a14a418c775acad3bc7678d27bd",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_002.webp": {
+    "mtime": 1789464025.3956192,
+    "seen": 1789567471.612334,
+    "ast_hash": "2522b7ae0a657a6c8aa575538f02855e",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_003.webp": {
+    "mtime": 1789464018.1657786,
+    "seen": 1789567471.6123352,
+    "ast_hash": "550d2cf2d8cdc4a1c4d5cd37a969fff0",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_004.webp": {
+    "mtime": 1789464061.6720653,
+    "seen": 1789567471.6123352,
+    "ast_hash": "13c0c1eacff37bb545f65f2dc0723357",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_005.webp": {
+    "mtime": 1789464032.9180224,
+    "seen": 1789567471.6123352,
+    "ast_hash": "121bb0ce6b7b5dedb29c7eca26dfa57e",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_006.webp": {
+    "mtime": 1789464039.4722059,
+    "seen": 1789567471.6123362,
+    "ast_hash": "9a499982ccc61e11c140a06264d6aa96",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_007.webp": {
+    "mtime": 1789464044.6552064,
+    "seen": 1789567471.6123362,
+    "ast_hash": "e7e0f54fab79da17fd49b0ac1f9a4da9",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/foxes/fox_008.webp": {
+    "mtime": 1789464052.8043337,
+    "seen": 1789567471.6123362,
+    "ast_hash": "ff5bc4cdb4eef7f96d7c290d9eef0a16",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_001.webp": {
+    "mtime": 1789464306.7424524,
+    "seen": 1789567471.6123369,
+    "ast_hash": "898781ca02c6e647b741ceba1a876c34",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_002.webp": {
+    "mtime": 1789464100.110533,
+    "seen": 1789567471.6123369,
+    "ast_hash": "470fd573a4c1863348b45a99c7306e64",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_003.webp": {
+    "mtime": 1789464104.9888883,
+    "seen": 1789567471.6123369,
+    "ast_hash": "3af2192c60fde53363cc977d7cffc2db",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_004.webp": {
+    "mtime": 1789464110.442865,
+    "seen": 1789567471.6123378,
+    "ast_hash": "1dd48619b4ea4c7a99896ac927e3328d",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_005.webp": {
+    "mtime": 1789464114.551322,
+    "seen": 1789567471.6123378,
+    "ast_hash": "3cd712eb2e99d87ac7e448c825da40ad",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_006.webp": {
+    "mtime": 1789464116.3516846,
+    "seen": 1789567471.6123378,
+    "ast_hash": "0ed86473ce6cc3bfc4eb81327f056095",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_007.webp": {
+    "mtime": 1789464123.0912697,
+    "seen": 1789567471.612339,
+    "ast_hash": "5ebbf1aea371672b8c3bfcc43fd41cbb",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_008.webp": {
+    "mtime": 1789464127.8281295,
+    "seen": 1789567471.612339,
+    "ast_hash": "f632c8595f8101994daeb9e7de0f9fa2",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_009.webp": {
+    "mtime": 1789464129.3379622,
+    "seen": 1789567471.612339,
+    "ast_hash": "d202d186fa527303f8806ac5bd5cdfff",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/kawaii/kawaii_010.webp": {
+    "mtime": 1789464137.7553103,
+    "seen": 1789567471.61234,
+    "ast_hash": "a564e7d0b61078a36a5dfd0f6544d6ff",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_001.webp": {
+    "mtime": 1789463969.3351815,
+    "seen": 1789567471.61234,
+    "ast_hash": "217fc436d01ca387114c867afaa7569e",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_002.webp": {
+    "mtime": 1789463977.2096922,
+    "seen": 1789567471.61234,
+    "ast_hash": "93276e49f0e54f10620973240a345ffc",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_003.webp": {
+    "mtime": 1789463980.8904467,
+    "seen": 1789567471.612341,
+    "ast_hash": "c3ed9517d8bb705aee55b9d870d2205f",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_004.webp": {
+    "mtime": 1789463981.2234983,
+    "seen": 1789567471.612341,
+    "ast_hash": "ab90c1ef63454db4e482580875130621",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_005.webp": {
+    "mtime": 1789463991.6993124,
+    "seen": 1789567471.612341,
+    "ast_hash": "5f2167ddcc46430070dcc15802cb82c3",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_006.webp": {
+    "mtime": 1789463994.0077448,
+    "seen": 1789567471.6123421,
+    "ast_hash": "aca311d6413a27e6895c6708cfe9a5b0",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_007.webp": {
+    "mtime": 1789463995.0495164,
+    "seen": 1789567471.6123421,
+    "ast_hash": "c61d577cb53e26566160223b7999f322",
+    "semantic_hash": ""
+  },
+  "app/src/main/assets/templates/pandas/panda_008.webp": {
+    "mtime": 1789464006.062971,
+    "seen": 1789567471.6123421,
+    "ast_hash": "52c4bce1971c6b3225e7f65c8a05db16",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/com/sabalapps/cuteanimalstrace/ProductionTemplateCatalogTest.kt": {
+    "mtime": 1789539359.8253906,
+    "seen": 1789567471.612302,
+    "ast_hash": "b99f6e677e4f13061615f7bb35a6ae33",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/AssetTemplateImage.kt": {
+    "mtime": 1789539205.1662092,
+    "seen": 1789567471.612305,
+    "ast_hash": "b2b8cfdb1b42106f76e4c0adcb6e6a1a",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/sabalapps/cuteanimalstrace/ui/UserImageLoader.kt": {
+    "mtime": 1789567251.2822008,
+    "seen": 1789567471.612309,
+    "ast_hash": "f00944095c207170ea82421d2d30a0f8",
+    "semantic_hash": ""
+  }
+}

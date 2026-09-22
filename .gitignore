@@ -13,3 +13,23 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Offline image-generation tooling (production WebP assets remain tracked).
+.venv/
+.venv-*/
+venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/scripts/.imagegen-tmp/
+.trace-*.tmp
+/scripts/.imagegen-stop
+/scripts/.preview-stop
+.preview-*.tmp
+/scripts/.generation_report.resume.json
+
+# Kotlin compiler caches and signed release bundles.
+.kotlin/
+/app/release/

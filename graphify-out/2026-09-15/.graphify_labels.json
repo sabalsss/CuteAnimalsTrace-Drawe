@@ -1,6 +1,6 @@
 {
   "0": "Cute Animals: Trace & Draw",
-  "1": "TracingOverlayTest",
+  "1": "UserPreferencesViewModel",
   "2": "gradlew",
   "3": "ExampleInstrumentedTest",
   "4": "ExampleUnitTest",
@@ -18,9 +18,9 @@
   "16": "Circular Android launcher icon: white robot head on green grid",
   "17": "build.gradle.kts",
   "18": "settings.gradle.kts",
-  "19": "Screens.kt",
-  "20": "TopLevelDestination",
-  "21": "NavigationShellTest",
+  "19": "DrawingTemplate",
+  "20": "LocalTemplateCatalog",
+  "21": "UserPreferencesRepository",
   "22": "TemplateCategory",
   "23": "LocalTemplateCatalogTest",
   "24": "CameraPermissionState",
@@ -28,5 +28,10 @@
   "26": "TracingOverlayState",
   "27": "CameraPermissionStateTest",
   "28": "CameraPreviewTest",
-  "29": "TraceScreen"
+  "29": "CameraPreview",
+  "30": "SavedPreferencesTest",
+  "31": "Cute Animals: Trace & Draw — Production Image Generation Prompt",
+  "32": "generate_trace_assets.py",
+  "33": "GeneratorTests",
+  "34": "README-imagegen.md"
 }

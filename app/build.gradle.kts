@@ -41,6 +41,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.datastore)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.camera.camera2)
     implementation(libs.androidx.camera.lifecycle)
@@ -58,6 +61,8 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.test)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    implementation(libs.play.review)
+    implementation(libs.androidx.work)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

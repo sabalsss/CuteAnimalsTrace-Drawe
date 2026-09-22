@@ -8,6 +8,7 @@ import androidx.camera.core.TorchState
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
@@ -115,48 +116,80 @@ internal fun CameraPreview(modifier: Modifier = Modifier, overlay: @Composable (
     }
 
     val previewStatus = stringResource(if (streaming) R.string.camera_live else R.string.camera_starting)
-    Column(modifier.fillMaxWidth()) {
-        Box(Modifier.fillMaxWidth().weight(1f).testTag("camera_preview").semantics { stateDescription = previewStatus }) {
-            AndroidView(factory = { previewView }, modifier = Modifier.fillMaxSize())
-            if (!error) {
-                overlay()
-                if (!streaming) CircularProgressIndicator(Modifier.align(Alignment.Center))
-            } else {
-                Surface(Modifier.fillMaxSize()) {
-                    Column(Modifier.verticalScroll(rememberScrollState()).padding(24.dp),
-                        verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                        Text(stringResource(R.string.camera_unavailable), style = MaterialTheme.typography.titleLarge)
-                        Text(stringResource(R.string.camera_retry_help))
-                        Button(onClick = { attempt += 1 }, modifier = Modifier.testTag("retry_camera")) {
-                            Text(stringResource(R.string.retry_camera))
-                        }
+    val torchStatus = stringResource(if (torchOn) R.string.flashlight_enabled else R.string.flashlight_disabled)
+    Box(
+        modifier.fillMaxSize().testTag("camera_preview")
+            .semantics { stateDescription = previewStatus },
+    ) {
+        AndroidView(factory = { previewView }, modifier = Modifier.fillMaxSize())
+        if (!error) {
+            overlay()
+            if (!streaming) CircularProgressIndicator(Modifier.align(Alignment.Center))
+            val currentCamera = camera
+            if (currentCamera?.cameraInfo?.hasFlashUnit() == true) {
+                // Floating, translucent, and clear of the traced area in the middle.
+                Surface(
+                    shape = CircleShape,
+                    color = if (torchOn) MaterialTheme.colorScheme.primary.copy(alpha = 0.92f)
+                        else MaterialTheme.colorScheme.surface.copy(alpha = 0.72f),
+                    contentColor = if (torchOn) MaterialTheme.colorScheme.onPrimary
+                        else MaterialTheme.colorScheme.onSurface,
+                    shadowElevation = 4.dp,
+                    modifier = Modifier.align(Alignment.TopEnd).padding(12.dp).size(48.dp),
+                ) {
+                    IconToggleButton(
+                        checked = torchOn,
+                        enabled = ready && !error && !torchPending,
+                        modifier = Modifier.fillMaxSize().testTag("flashlight")
+                            .semantics { stateDescription = torchStatus },
+                        onCheckedChange = {
+                            torchPending = true
+                            torchError = false
+                            val activeSession = session
+                            val future = currentCamera.cameraControl.enableTorch(!torchOn)
+                            future.addListener({
+                                if (session == activeSession) {
+                                    torchPending = false
+                                    torchError = runCatching { future.get() }.isFailure
+                                }
+                            }, executor)
+                        },
+                    ) {
+                        Icon(
+                            AppIcons.flashlight,
+                            stringResource(if (torchOn) R.string.flashlight_off else R.string.flashlight_on),
+                            Modifier.size(22.dp),
+                        )
+                    }
+                }
+                if (torchError) {
+                    Surface(
+                        shape = MaterialTheme.shapes.small,
+                        color = MaterialTheme.colorScheme.errorContainer,
+                        modifier = Modifier.align(Alignment.TopEnd).padding(top = 68.dp, end = 12.dp),
+                    ) {
+                        Text(stringResource(R.string.flashlight_failed),
+                            Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onErrorContainer)
                     }
                 }
             }
-        }
-        Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 12.dp),
-            horizontalAlignment = Alignment.CenterHorizontally) {
-            val currentCamera = camera
-            if (currentCamera?.cameraInfo?.hasFlashUnit() == true) {
-                Button(enabled = ready && !error && !torchPending,
-                    modifier = Modifier.testTag("flashlight"),
-                    onClick = {
-                        torchPending = true
-                        torchError = false
-                        val activeSession = session
-                        val future = currentCamera.cameraControl.enableTorch(!torchOn)
-                        future.addListener({
-                            if (session == activeSession) {
-                                torchPending = false
-                                torchError = runCatching { future.get() }.isFailure
-                            }
-                        }, executor)
-                    }) {
-                    Text(stringResource(if (torchOn) R.string.flashlight_off else R.string.flashlight_on))
+        } else {
+            Surface(Modifier.fillMaxSize()) {
+                Column(
+                    Modifier.verticalScroll(rememberScrollState()).padding(24.dp),
+                    verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
+                ) {
+                    Text(stringResource(R.string.camera_unavailable),
+                        style = MaterialTheme.typography.titleLarge)
+                    Text(stringResource(R.string.camera_retry_help),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Button(onClick = { attempt += 1 }, shape = MaterialTheme.shapes.large,
+                        modifier = Modifier.heightIn(min = 50.dp).testTag("retry_camera")) {
+                        Text(stringResource(R.string.retry_camera))
+                    }
                 }
-                if (torchError) Text(stringResource(R.string.flashlight_failed))
-            } else if (currentCamera != null) {
-                Text(stringResource(R.string.flashlight_unsupported), style = MaterialTheme.typography.bodySmall)
             }
         }
     }

@@ -17,10 +17,11 @@ class TracingOverlayTest {
     @get:Rule val compose = createComposeRule()
     private val state = TracingOverlayState()
     private fun showOverlay() {
+        val drawing = LocalTemplateCatalog.load(androidx.test.platform.app.InstrumentationRegistry.getInstrumentation().targetContext.assets).templates.first()
         compose.setContent {
             CuteAnimalsTheme {
                 Column(Modifier.fillMaxSize()) {
-                    Box(Modifier.weight(1f)) { TracingOverlay(LocalTemplateCatalog.templates.first(), state) }
+                    Box(Modifier.weight(1f)) { TracingOverlay(drawing, state) }
                     OverlayControls(state)
                 }
             }

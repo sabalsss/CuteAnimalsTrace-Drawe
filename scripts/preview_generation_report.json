@@ -1,0 +1,1742 @@
+{
+  "expectedTotal": 84,
+  "model": "gpt-image-2.5-flare",
+  "quality": "medium",
+  "size": "1024x1024",
+  "conversionFormat": "lossless WebP",
+  "concurrency": 3,
+  "maxRetries": 3,
+  "successfulTotal": 52,
+  "skippedTotal": 32,
+  "failedTotal": 0,
+  "pendingTotal": 0,
+  "currentRun": {
+    "skipped": 32,
+    "generated": 52
+  },
+  "traceFingerprints": {
+    "templates/cats/cat_001.webp": "dda6934af898be6c491fc9a9f2605bd822e12d18cba09e94114ba1402bae22fd",
+    "templates/cats/cat_002.webp": "21ca476e3ba5d04b2a61061cbbe1d9981de9aa9b217aa938f4981244c948c303",
+    "templates/cats/cat_003.webp": "00ca1eb36d4c00d80016446fc972f7e98364a48d0d43e1e9c7267c133a7878da",
+    "templates/cats/cat_004.webp": "7331e7f6b7b21143d80cd7e5b80920234e44901b1dc2218dbde2437011951772",
+    "templates/cats/cat_005.webp": "a39a4cc12d66bafaa7e862abd8ea461a7eb94d67123a50e1d840f54d9237a7ed",
+    "templates/cats/cat_006.webp": "eef328ce67a9878b06c261709b32f351fe4ed4bdc0fcd9945b821e1690a890ca",
+    "templates/cats/cat_007.webp": "b3d4133ae926fd575260fefeb9adfdd0264d4820ec6c65db48c93dc71a2dcbdb",
+    "templates/cats/cat_008.webp": "4895bd4736ce0ecb6dd6bed862dbd0167961eec21ed822480d3c44dae55f9a84",
+    "templates/cats/cat_009.webp": "2ba6ccb4186aafe2d9271b00bf0d28bd9d19bfd2aa43597cc463a64c4c25e8eb",
+    "templates/cats/cat_010.webp": "f65e37c2fe78c19baebf1bc872ac4f4e2dd11aee23895685647870da3e69fe53",
+    "templates/cats/cat_011.webp": "94f9b006a686851b18233beb2daa1c6cdf72b74dd9b31e09b0c33197a83a6984",
+    "templates/cats/cat_012.webp": "9511517c307d887d425773589514433177ac9eec315055a422c3a0d450a8983d",
+    "templates/cats/cat_013.webp": "7e75d61cfa3b0fc1b1ae4c51bffafa9779078e5c6f70b826dc9718e9e8d2de1f",
+    "templates/cats/cat_014.webp": "01f679ecab993220ad139e2fc53aba2fbe1259c5ef7a8851199614cc290dce22",
+    "templates/cats/cat_015.webp": "cb85a5153af9816f63ad06938c2d1985cb24243101090b699e65c9f86db7306f",
+    "templates/dogs/dog_001.webp": "06a03f4c71bd04182b85332f67b546f4956e198f7cded9f74c69f6046368658e",
+    "templates/dogs/dog_002.webp": "6d3eb9bea51d4aa3c42044de2ad57cd78172bba6a62a6489eb89f248a7d9dbb8",
+    "templates/dogs/dog_003.webp": "49a084cba7d3f830751ca9c1e8051b7e4ac028f6a1ce05ebfbc7171da9f02010",
+    "templates/dogs/dog_004.webp": "a450bc38186d61ea0290ee60b98ffdc470e93d43d3f153a6031d9f06ee94bc28",
+    "templates/dogs/dog_005.webp": "d6863e92ffc5dc8f764017e82d4912e117e0fdaa469251b851a02471cb8119fa",
+    "templates/dogs/dog_006.webp": "64ffb966e68d47414b656ebb3956338defc2fa578dfa14163a717b5660a333e5",
+    "templates/dogs/dog_007.webp": "05565f53949dbda265756703687839c2f7ec80dc0f3f3598f89a6dcd5ff3f184",
+    "templates/dogs/dog_008.webp": "0037d9fd9da55f4753cbd58d8ac06cb4de1795d90782ee770c5cab30d9c356ff",
+    "templates/dogs/dog_009.webp": "389f34c33ec9f7bb3903aa46e299103e272c76b727f5556606c3b7a783be0b43",
+    "templates/dogs/dog_010.webp": "d1c9a7f8130a54f715deb3bf0408d653b50fcb4459ec752b7a74d57263532e0e",
+    "templates/dogs/dog_011.webp": "34d9c4ce78c512c7bc49016dc75a2bbe4ab0e68479864404d0eb834063e45e71",
+    "templates/dogs/dog_012.webp": "168fa11e541363f6aa1885d7d56264633092e4c8c4bb8c6d83745a83e4ac4978",
+    "templates/dogs/dog_013.webp": "b5b7f6466f7cfeae2062cd5b3a633b3e185a23989f5fcf2debe5db74b3b5e13b",
+    "templates/dogs/dog_014.webp": "4417cdbbb9f7e501eee95b0b0be25048f90fd2f8ff76b7cba185431fc2ac9276",
+    "templates/dogs/dog_015.webp": "c799323d98ed012927402624574125d159323a0b47ca31930756e6dd40443f47",
+    "templates/bunnies/bunny_001.webp": "138d996cdc8069bf009faf92003e6347e68ff5162ed67a4572074ea71324ec57",
+    "templates/bunnies/bunny_002.webp": "0fdd43e38188767aeff48bfa5e0060bb15ed4bcc20c19c42e9190ef1d8ce1e46",
+    "templates/bunnies/bunny_003.webp": "693152f807dcbce72a0d8ceacb2c4e9a0824600379bd0f5e3b2cd61cc2ab0a37",
+    "templates/bunnies/bunny_004.webp": "054abe8d682eecb36ecd08504330b8419be3c710a63bc3703ae3645e8b2380c9",
+    "templates/bunnies/bunny_005.webp": "9c46419d943dc20491a627b8c2500fe6c3d9d1aa72a9be9648330d2b5669b26b",
+    "templates/bunnies/bunny_006.webp": "9250471746c913f57a249b9d20bb4f40b98e44013b51b12a4b860dddd2775039",
+    "templates/bunnies/bunny_007.webp": "f19c76f5669a3484e739e3f88a79c96366cd94aa0e1eb6cf02511b22205d1f3f",
+    "templates/bunnies/bunny_008.webp": "6943f9aab464fd43d307b88ea67a14f5cbf210a3caf9051e5c6565ce8f8ae28f",
+    "templates/bunnies/bunny_009.webp": "fd50cac2049c17c22b378daffbb1c2d4f6c2459b7956adb4366e46e7a22b8407",
+    "templates/bunnies/bunny_010.webp": "ab8842359994b2acc3a84cf99ae5892781169ce1130e1373b75b63690adce587",
+    "templates/pandas/panda_001.webp": "804ef1bab996bdaf4753940cbbcee755225431db1b84ea4d053350605b20e8be",
+    "templates/pandas/panda_002.webp": "fc40fc9ed0cd6e788522c711089093c7cd53662339ad5e3ba608b167b9d965e3",
+    "templates/pandas/panda_003.webp": "7d2b05ac19eb9ea7321d966a9fdcd0594fa4ca54d84b58c6c6c81ac81703ddb1",
+    "templates/pandas/panda_004.webp": "ed97511112b4a092b7296d0f436da66464a5be0ed0b13928d67d0174dd0ecb5e",
+    "templates/pandas/panda_005.webp": "214dd4afc1c44336fcc3cc807c979e01b6e6031f8135735589d5820a2264f7c8",
+    "templates/pandas/panda_006.webp": "2f627f97154e68c9be6bec08394bc2e018dca17c8dfe49419ee514d4203c7dd4",
+    "templates/pandas/panda_007.webp": "0438081cf2d3dd8ece0149be3b2aa0ea41abe8a6424f8f0fc05c4e19a2147012",
+    "templates/pandas/panda_008.webp": "23b9dbf7fbd249cd13c1815a1f83fe47e161d1565a81a4183e30314eada9b843",
+    "templates/foxes/fox_001.webp": "a8abd4b99063e060477df89db3362e2b5d4efc2cd3d18d91f22a5b662fb39483",
+    "templates/foxes/fox_002.webp": "3d4bb03b74615f349189b1930a644d35a03278cfb1d591d8596a3d143327cb6f",
+    "templates/foxes/fox_003.webp": "7bbdd6cf4238d4300af443bb03fda955e8046a5fa5a84a8d76cf92857813156b",
+    "templates/foxes/fox_004.webp": "0fda86ee1192250d0a8fac1e8baf4030fe7d7868d13b8c4170278b49a3fda00d",
+    "templates/foxes/fox_005.webp": "8a1404c01fbbd1c93633e58eacd4e42c49e1d24c78ba55f01b621ad189556d96",
+    "templates/foxes/fox_006.webp": "1a2a8054920fd8277cc9791721d08c29e87e584502bf28cc2119cd7875acc329",
+    "templates/foxes/fox_007.webp": "c9cb68f00d3175cf8bf3e421e41208bfb61fa2043024378e15eaf60dea5fdf4e",
+    "templates/foxes/fox_008.webp": "bfff4bcf62fa37123edd2b9e27087abc9b63e528251804ca7cd93da82f120bd5",
+    "templates/bears/bear_001.webp": "4c95cfaed24683afa3705147f2890b16b0059fdf4513c04cffdebf194c822985",
+    "templates/bears/bear_002.webp": "39634d13110834b5fe208c46456d7dec6e12ffc4d40cd393564cd98828f22fc1",
+    "templates/bears/bear_003.webp": "b6495a6df433e8cfa4265bd79dd0abcec10bc7dea9681404c86d818c2a3171bc",
+    "templates/bears/bear_004.webp": "f2f9966514d49a8d52158fc3ae5d27d343145caaa47550929fb118e019e4417c",
+    "templates/bears/bear_005.webp": "3c532caa8f81278a8f4d144c31df987160fc0597b27e565b705e70b2da1ea45d",
+    "templates/bears/bear_006.webp": "40b614a08413456f6f9bd871497dc247713aa77b9b3829a413f07850cf79831f",
+    "templates/bears/bear_007.webp": "7c144eb422498a0702890a381ad67a02348c4019b6004e48437c4f4031b30912",
+    "templates/bears/bear_008.webp": "edace5072f225337550d860204ce71c590e4f5b5d35f27eb1359588d60029e17",
+    "templates/kawaii/kawaii_001.webp": "a7c960cba6e8e4247872858d8d16fada3fffa2136c2f109ee6140e822c7c15b6",
+    "templates/kawaii/kawaii_002.webp": "ba781cb3689019a086d4593c745745f848a713d2bb235fc926d2555c1536ccf7",
+    "templates/kawaii/kawaii_003.webp": "d16d17c2f39cd03a60a8ebe3786586fdbb5b3d3b906e89c33df84d6a0f2d982c",
+    "templates/kawaii/kawaii_004.webp": "9197d171df52216dbd868f6f723d3acac51d71f8baed064c6fdd9d86883d646e",
+    "templates/kawaii/kawaii_005.webp": "452012aeb5f94e850e15047854a9aac78cf7ded5d9509882bc8b5b0a9406a2a3",
+    "templates/kawaii/kawaii_006.webp": "a93fe9ec0449af8384931c232d8d6712afb31933b1a12f608076ec40f942cad8",
+    "templates/kawaii/kawaii_007.webp": "5847fd870d7409b25d778dc4c7e7ba37a97dedfbc1608eec5dd51a3f9690fe2d",
+    "templates/kawaii/kawaii_008.webp": "2ccdfafb352ddde73bb6e7d367c20eeeef0473c2252953553d3ee9f3e7e9128a",
+    "templates/kawaii/kawaii_009.webp": "df4056e9982cc7238b2d72937a0673cdc053c3c7f3b481b6e4d9a25027e8bf31",
+    "templates/kawaii/kawaii_010.webp": "2928d6ba85116f9d564a675e261dcbf3db4c043aea25915514047cc797762189",
+    "templates/baby_animals/baby_001.webp": "c7ca857bd0308ac2848439f0211a6dcbaf618c7c2a18047ae829df8c222783c6",
+    "templates/baby_animals/baby_002.webp": "a2718d5653f0c6de248c9e17b72d87294ca529dd168f7146d9d8143a371f5c46",
+    "templates/baby_animals/baby_003.webp": "2e5eb29e9ff513e74febc6faa5575cb0aab448831d3fe855d2b77dc6ac6726fb",
+    "templates/baby_animals/baby_004.webp": "95335edbdffea76e0fa66e45d9e0a5cc6ddd43c994bbca4086be00977b25237a",
+    "templates/baby_animals/baby_005.webp": "c2bb495934137d7dce9f632e0068db12821cc9ca9372e6b31e4edc16498037bd",
+    "templates/baby_animals/baby_006.webp": "f2eabcaee2f0bca7a1b427392ffabfa08aee2abb393439d3bb12438fa938abba",
+    "templates/baby_animals/baby_007.webp": "f5fc81398bc4389848d3b90690eb9195d207fb3d4c4e3607cd9d0c31b8b752b8",
+    "templates/baby_animals/baby_008.webp": "584665821eca0501301c15570685eda7fde108d1cc1acdab8f1593854633cb53",
+    "templates/baby_animals/baby_009.webp": "34e78c12f4486b60a196c09dc44d2ba8175a81f9c7316e2e571dbf8ecb9d7206",
+    "templates/baby_animals/baby_010.webp": "8dee82b0419dd3fe51667b7448662df37fa75b98b1c9337186c2af4a39d34934"
+  },
+  "updatedAt": "2026-09-20T05:17:58.293625+00:00",
+  "manifestUpdated": true,
+  "assets": [
+    {
+      "id": "cat_001",
+      "previewImagePath": "templates_preview/cats/cat_001_preview.webp",
+      "traceImagePath": "templates/cats/cat_001.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 293080,
+      "canvasOccupancy": 0.7109,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 292520,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_002",
+      "previewImagePath": "templates_preview/cats/cat_002_preview.webp",
+      "traceImagePath": "templates/cats/cat_002.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 225875,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 259996,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_003",
+      "previewImagePath": "templates_preview/cats/cat_003_preview.webp",
+      "traceImagePath": "templates/cats/cat_003.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 217651,
+      "canvasOccupancy": 0.707,
+      "referenceOutlineRecall": 0.9992,
+      "sizeBytes": 276296,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_004",
+      "previewImagePath": "templates_preview/cats/cat_004_preview.webp",
+      "traceImagePath": "templates/cats/cat_004.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 222892,
+      "canvasOccupancy": 0.6953,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 274364,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_005",
+      "previewImagePath": "templates_preview/cats/cat_005_preview.webp",
+      "traceImagePath": "templates/cats/cat_005.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 218287,
+      "canvasOccupancy": 0.71,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 270948,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_006",
+      "previewImagePath": "templates_preview/cats/cat_006_preview.webp",
+      "traceImagePath": "templates/cats/cat_006.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 206387,
+      "canvasOccupancy": 0.71,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 274980,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_007",
+      "previewImagePath": "templates_preview/cats/cat_007_preview.webp",
+      "traceImagePath": "templates/cats/cat_007.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 178556,
+      "canvasOccupancy": 0.71,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 237760,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_008",
+      "previewImagePath": "templates_preview/cats/cat_008_preview.webp",
+      "traceImagePath": "templates/cats/cat_008.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 270239,
+      "canvasOccupancy": 0.6631,
+      "referenceOutlineRecall": 0.982,
+      "sizeBytes": 251740,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_009",
+      "previewImagePath": "templates_preview/cats/cat_009_preview.webp",
+      "traceImagePath": "templates/cats/cat_009.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 258655,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 293332,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_010",
+      "previewImagePath": "templates_preview/cats/cat_010_preview.webp",
+      "traceImagePath": "templates/cats/cat_010.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 164360,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 358812,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_011",
+      "previewImagePath": "templates_preview/cats/cat_011_preview.webp",
+      "traceImagePath": "templates/cats/cat_011.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 220019,
+      "canvasOccupancy": 0.707,
+      "referenceOutlineRecall": 0.9276,
+      "sizeBytes": 274468,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_012",
+      "previewImagePath": "templates_preview/cats/cat_012_preview.webp",
+      "traceImagePath": "templates/cats/cat_012.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 290418,
+      "canvasOccupancy": 0.6709,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 282470,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_013",
+      "previewImagePath": "templates_preview/cats/cat_013_preview.webp",
+      "traceImagePath": "templates/cats/cat_013.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 224536,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 0.9994,
+      "sizeBytes": 254728,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_014",
+      "previewImagePath": "templates_preview/cats/cat_014_preview.webp",
+      "traceImagePath": "templates/cats/cat_014.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 233320,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 276942,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "cat_015",
+      "previewImagePath": "templates_preview/cats/cat_015_preview.webp",
+      "traceImagePath": "templates/cats/cat_015.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 267688,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 298318,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_001",
+      "previewImagePath": "templates_preview/dogs/dog_001_preview.webp",
+      "traceImagePath": "templates/dogs/dog_001.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 205394,
+      "canvasOccupancy": 0.6582,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 242368,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_002",
+      "previewImagePath": "templates_preview/dogs/dog_002_preview.webp",
+      "traceImagePath": "templates/dogs/dog_002.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 275392,
+      "canvasOccupancy": 0.7012,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 257088,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_003",
+      "previewImagePath": "templates_preview/dogs/dog_003_preview.webp",
+      "traceImagePath": "templates/dogs/dog_003.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 226551,
+      "canvasOccupancy": 0.708,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 280618,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_004",
+      "previewImagePath": "templates_preview/dogs/dog_004_preview.webp",
+      "traceImagePath": "templates/dogs/dog_004.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 201712,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 259480,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_005",
+      "previewImagePath": "templates_preview/dogs/dog_005_preview.webp",
+      "traceImagePath": "templates/dogs/dog_005.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 249475,
+      "canvasOccupancy": 0.7031,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 217460,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_006",
+      "previewImagePath": "templates_preview/dogs/dog_006_preview.webp",
+      "traceImagePath": "templates/dogs/dog_006.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 207820,
+      "canvasOccupancy": 0.6533,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 262396,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_007",
+      "previewImagePath": "templates_preview/dogs/dog_007_preview.webp",
+      "traceImagePath": "templates/dogs/dog_007.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 235685,
+      "canvasOccupancy": 0.7041,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 276010,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_008",
+      "previewImagePath": "templates_preview/dogs/dog_008_preview.webp",
+      "traceImagePath": "templates/dogs/dog_008.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 220805,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 242206,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_009",
+      "previewImagePath": "templates_preview/dogs/dog_009_preview.webp",
+      "traceImagePath": "templates/dogs/dog_009.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 257371,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 288934,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_010",
+      "previewImagePath": "templates_preview/dogs/dog_010_preview.webp",
+      "traceImagePath": "templates/dogs/dog_010.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 222593,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 273970,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_011",
+      "previewImagePath": "templates_preview/dogs/dog_011_preview.webp",
+      "traceImagePath": "templates/dogs/dog_011.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 249603,
+      "canvasOccupancy": 0.6855,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 269526,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_012",
+      "previewImagePath": "templates_preview/dogs/dog_012_preview.webp",
+      "traceImagePath": "templates/dogs/dog_012.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 182331,
+      "canvasOccupancy": 0.7002,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 220342,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_013",
+      "previewImagePath": "templates_preview/dogs/dog_013_preview.webp",
+      "traceImagePath": "templates/dogs/dog_013.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 207861,
+      "canvasOccupancy": 0.6807,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 245016,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_014",
+      "previewImagePath": "templates_preview/dogs/dog_014_preview.webp",
+      "traceImagePath": "templates/dogs/dog_014.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 205179,
+      "canvasOccupancy": 0.6797,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 260050,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "dog_015",
+      "previewImagePath": "templates_preview/dogs/dog_015_preview.webp",
+      "traceImagePath": "templates/dogs/dog_015.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 255190,
+      "canvasOccupancy": 0.7119,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 285810,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_001",
+      "previewImagePath": "templates_preview/bunnies/bunny_001_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_001.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 200010,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 224058,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_002",
+      "previewImagePath": "templates_preview/bunnies/bunny_002_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_002.webp",
+      "status": "skipped",
+      "attemptCount": 1,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 246993,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 240526,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_003",
+      "previewImagePath": "templates_preview/bunnies/bunny_003_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 163035,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 230414,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_004",
+      "previewImagePath": "templates_preview/bunnies/bunny_004_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 198666,
+      "canvasOccupancy": 0.7139,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 217698,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_005",
+      "previewImagePath": "templates_preview/bunnies/bunny_005_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 188639,
+      "canvasOccupancy": 0.7178,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 225890,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_006",
+      "previewImagePath": "templates_preview/bunnies/bunny_006_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 239861,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 0.9773,
+      "sizeBytes": 250932,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_007",
+      "previewImagePath": "templates_preview/bunnies/bunny_007_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 208242,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 230800,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_008",
+      "previewImagePath": "templates_preview/bunnies/bunny_008_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 174637,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 210790,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_009",
+      "previewImagePath": "templates_preview/bunnies/bunny_009_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_009.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 171244,
+      "canvasOccupancy": 0.7119,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 206434,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bunny_010",
+      "previewImagePath": "templates_preview/bunnies/bunny_010_preview.webp",
+      "traceImagePath": "templates/bunnies/bunny_010.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 190483,
+      "canvasOccupancy": 0.7119,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 267868,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_001",
+      "previewImagePath": "templates_preview/pandas/panda_001_preview.webp",
+      "traceImagePath": "templates/pandas/panda_001.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 17991,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 288908,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_002",
+      "previewImagePath": "templates_preview/pandas/panda_002_preview.webp",
+      "traceImagePath": "templates/pandas/panda_002.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 26407,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 287368,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_003",
+      "previewImagePath": "templates_preview/pandas/panda_003_preview.webp",
+      "traceImagePath": "templates/pandas/panda_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 32955,
+      "canvasOccupancy": 0.7178,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 275428,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_004",
+      "previewImagePath": "templates_preview/pandas/panda_004_preview.webp",
+      "traceImagePath": "templates/pandas/panda_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 3104,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 215794,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_005",
+      "previewImagePath": "templates_preview/pandas/panda_005_preview.webp",
+      "traceImagePath": "templates/pandas/panda_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 24500,
+      "canvasOccupancy": 0.7109,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 268178,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_006",
+      "previewImagePath": "templates_preview/pandas/panda_006_preview.webp",
+      "traceImagePath": "templates/pandas/panda_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 68001,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 284684,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_007",
+      "previewImagePath": "templates_preview/pandas/panda_007_preview.webp",
+      "traceImagePath": "templates/pandas/panda_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 25251,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 295930,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "panda_008",
+      "previewImagePath": "templates_preview/pandas/panda_008_preview.webp",
+      "traceImagePath": "templates/pandas/panda_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 50861,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 320598,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_001",
+      "previewImagePath": "templates_preview/foxes/fox_001_preview.webp",
+      "traceImagePath": "templates/foxes/fox_001.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 320989,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 325522,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_002",
+      "previewImagePath": "templates_preview/foxes/fox_002_preview.webp",
+      "traceImagePath": "templates/foxes/fox_002.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 309880,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 322184,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_003",
+      "previewImagePath": "templates_preview/foxes/fox_003_preview.webp",
+      "traceImagePath": "templates/foxes/fox_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 325270,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 0.9348,
+      "sizeBytes": 292322,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_004",
+      "previewImagePath": "templates_preview/foxes/fox_004_preview.webp",
+      "traceImagePath": "templates/foxes/fox_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 204370,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 243566,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_005",
+      "previewImagePath": "templates_preview/foxes/fox_005_preview.webp",
+      "traceImagePath": "templates/foxes/fox_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 274330,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 298692,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_006",
+      "previewImagePath": "templates_preview/foxes/fox_006_preview.webp",
+      "traceImagePath": "templates/foxes/fox_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 225914,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 273026,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_007",
+      "previewImagePath": "templates_preview/foxes/fox_007_preview.webp",
+      "traceImagePath": "templates/foxes/fox_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 239969,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 277204,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "fox_008",
+      "previewImagePath": "templates_preview/foxes/fox_008_preview.webp",
+      "traceImagePath": "templates/foxes/fox_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 258225,
+      "canvasOccupancy": 0.71,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 298042,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_001",
+      "previewImagePath": "templates_preview/bears/bear_001_preview.webp",
+      "traceImagePath": "templates/bears/bear_001.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 289375,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 302430,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_002",
+      "previewImagePath": "templates_preview/bears/bear_002_preview.webp",
+      "traceImagePath": "templates/bears/bear_002.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 339548,
+      "canvasOccupancy": 0.7119,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 307170,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_003",
+      "previewImagePath": "templates_preview/bears/bear_003_preview.webp",
+      "traceImagePath": "templates/bears/bear_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 241870,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 291810,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_004",
+      "previewImagePath": "templates_preview/bears/bear_004_preview.webp",
+      "traceImagePath": "templates/bears/bear_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 214131,
+      "canvasOccupancy": 0.7129,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 210206,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_005",
+      "previewImagePath": "templates_preview/bears/bear_005_preview.webp",
+      "traceImagePath": "templates/bears/bear_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 252374,
+      "canvasOccupancy": 0.7119,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 234960,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_006",
+      "previewImagePath": "templates_preview/bears/bear_006_preview.webp",
+      "traceImagePath": "templates/bears/bear_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 283373,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 262694,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_007",
+      "previewImagePath": "templates_preview/bears/bear_007_preview.webp",
+      "traceImagePath": "templates/bears/bear_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 296243,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 0.978,
+      "sizeBytes": 287696,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "bear_008",
+      "previewImagePath": "templates_preview/bears/bear_008_preview.webp",
+      "traceImagePath": "templates/bears/bear_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 255304,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 291118,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_001",
+      "previewImagePath": "templates_preview/kawaii/kawaii_001_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_001.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 307251,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 251488,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_002",
+      "previewImagePath": "templates_preview/kawaii/kawaii_002_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_002.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 205978,
+      "canvasOccupancy": 0.71,
+      "referenceOutlineRecall": 0.9737,
+      "sizeBytes": 208392,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_003",
+      "previewImagePath": "templates_preview/kawaii/kawaii_003_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 211414,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 296364,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_004",
+      "previewImagePath": "templates_preview/kawaii/kawaii_004_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 15791,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 0.9736,
+      "sizeBytes": 214084,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_005",
+      "previewImagePath": "templates_preview/kawaii/kawaii_005_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 324883,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 309730,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_006",
+      "previewImagePath": "templates_preview/kawaii/kawaii_006_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 216472,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 224354,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_007",
+      "previewImagePath": "templates_preview/kawaii/kawaii_007_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 63290,
+      "canvasOccupancy": 0.707,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 305496,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_008",
+      "previewImagePath": "templates_preview/kawaii/kawaii_008_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 221835,
+      "canvasOccupancy": 0.707,
+      "referenceOutlineRecall": 0.9443,
+      "sizeBytes": 305584,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_009",
+      "previewImagePath": "templates_preview/kawaii/kawaii_009_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_009.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 291757,
+      "canvasOccupancy": 0.7158,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 298174,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "kawaii_010",
+      "previewImagePath": "templates_preview/kawaii/kawaii_010_preview.webp",
+      "traceImagePath": "templates/kawaii/kawaii_010.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 347651,
+      "canvasOccupancy": 0.7129,
+      "referenceOutlineRecall": 0.985,
+      "sizeBytes": 335782,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_001",
+      "previewImagePath": "templates_preview/baby_animals/baby_001_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_001.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 83002,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 290310,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_002",
+      "previewImagePath": "templates_preview/baby_animals/baby_002_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_002.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 163205,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 206628,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_003",
+      "previewImagePath": "templates_preview/baby_animals/baby_003_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_003.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 267905,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 297110,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_004",
+      "previewImagePath": "templates_preview/baby_animals/baby_004_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_004.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 222848,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 301420,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_005",
+      "previewImagePath": "templates_preview/baby_animals/baby_005_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_005.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 250644,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 0.8781,
+      "sizeBytes": 260088,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_006",
+      "previewImagePath": "templates_preview/baby_animals/baby_006_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_006.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 268169,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 278932,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_007",
+      "previewImagePath": "templates_preview/baby_animals/baby_007_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_007.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 26666,
+      "canvasOccupancy": 0.7168,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 250860,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_008",
+      "previewImagePath": "templates_preview/baby_animals/baby_008_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_008.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 244783,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 303212,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_009",
+      "previewImagePath": "templates_preview/baby_animals/baby_009_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_009.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 12365,
+      "canvasOccupancy": 0.708,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 195782,
+      "lossless": true,
+      "error": null
+    },
+    {
+      "id": "baby_010",
+      "previewImagePath": "templates_preview/baby_animals/baby_010_preview.webp",
+      "traceImagePath": "templates/baby_animals/baby_010.webp",
+      "status": "success",
+      "attemptCount": 2,
+      "visualReview": "passed: compared with original trace for identity, pose, expression, orientation, accessories and composition",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "transparencyDetected": true,
+      "colorPixels": 156784,
+      "canvasOccupancy": 0.7148,
+      "referenceOutlineRecall": 1.0,
+      "sizeBytes": 213244,
+      "lossless": true,
+      "error": null
+    }
+  ],
+  "verification": {
+    "validTotal": 84,
+    "failures": [],
+    "unexpectedFiles": [],
+    "duplicateBasenames": [],
+    "traceFilesUnchanged": true,
+    "manifestMetadataPreserved": true,
+    "apkContainsExact84TracesAnd84Previews": true,
+    "tests": {
+      "generatorUnitTests": {
+        "passed": 7
+      },
+      "androidUnitTests": {
+        "passed": 20
+      },
+      "emulatorTests": {
+        "passed": 30,
+        "note": "28 passed initially; two stale test expectations corrected; all five camera/preferences tests passed on rerun."
+      },
+      "debugApkBuild": "passed",
+      "diffCheck": "passed"
+    },
+    "integration": {
+      "Home": "previewImagePath",
+      "Explore": "previewImagePath",
+      "Detail": "previewImagePath",
+      "Favorites": "previewImagePath",
+      "Recent": "previewImagePath",
+      "Trace": "traceImagePath (original black-outline assets)"
+    }
+  },
+  "taskTotals": {
+    "expected": 84,
+    "generatedAcrossAllRuns": 84,
+    "preexistingAtTaskStart": 0,
+    "reusedOnFinalResume": 32,
+    "generatedOnFinalResume": 52,
+    "failures": 0
+  }
+}

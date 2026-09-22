@@ -1,73 +1,94 @@
 package com.sabalapps.cuteanimalstrace.data
 
-import com.sabalapps.cuteanimalstrace.R
+import android.content.res.AssetManager
+import android.util.JsonReader
+import android.util.JsonToken
+import androidx.annotation.WorkerThread
+import java.io.IOException
+import java.io.Reader
 
-/** Small offline catalog compiled into the APK. Add records here and artwork in res/drawable. */
-object LocalTemplateCatalog {
-    val templates: List<DrawingTemplate> = listOf(
-        DrawingTemplate(
-            id = "bunny", name = "Sleepy bunny", category = TemplateCategory.Bunnies,
-            imageRes = R.drawable.template_bunny, difficulty = Difficulty.Easy, featured = true,
-            description = "A gentle bunny with tall ears and a tiny nose. Start with the ears, then follow the round cheeks.",
-        ),
-        DrawingTemplate(
-            id = "kitten", name = "Curious kitten", category = TemplateCategory.Cats,
-            imageRes = R.drawable.template_cat, difficulty = Difficulty.Easy, featured = true,
-            description = "A curious cat with pointed ears and little whiskers. Practice the simple face outline before adding the details.",
-        ),
-        DrawingTemplate(
-            id = "puppy", name = "Happy puppy", category = TemplateCategory.Dogs,
-            imageRes = R.drawable.template_dog, difficulty = Difficulty.Easy, featured = false,
-            description = "A cheerful puppy with floppy ears. Use broad, rounded lines for the ears and a small curve for the smile.",
-        ),
-        DrawingTemplate(
-            id = "panda", name = "Little panda", category = TemplateCategory.Pandas,
-            imageRes = R.drawable.template_panda, difficulty = Difficulty.Medium, featured = true,
-            description = "A round panda with soft ears and eye patches. Take your time with the shapes around the eyes.",
-        ),
-        DrawingTemplate(
-            id = "fox", name = "Friendly fox", category = TemplateCategory.Foxes,
-            imageRes = R.drawable.template_fox, difficulty = Difficulty.Medium, featured = true,
-            description = "A friendly fox with pointed ears and sweeping cheeks. Follow the long curves toward its little nose.",
-        ),
-        DrawingTemplate(
-            id = "bear", name = "Little bear", category = TemplateCategory.Bears,
-            imageRes = R.drawable.template_bear, difficulty = Difficulty.Easy, featured = false,
-            description = "A sweet bear with round ears and a button nose. A few simple curves bring this friendly face to life.",
-        ),
-        DrawingTemplate(
-            id = "kawaii_cat", name = "Kawaii cat", category = TemplateCategory.Kawaii,
-            imageRes = R.drawable.template_kawaii, difficulty = Difficulty.Detailed, featured = false,
-            description = "A bright-eyed cat with a tiny heart. Trace the face first, then add the whiskers and heart with care.",
-        ),
-        DrawingTemplate(
-            id = "baby_bunny", name = "Baby bunny", category = TemplateCategory.BabyAnimals,
-            imageRes = R.drawable.template_bunny, difficulty = Difficulty.Easy, featured = false,
-            description = "A small bunny face for a gentle first drawing. Keep the cheeks round and the ear lines light.",
-        ),
-        DrawingTemplate(
-            id = "tabby", name = "Whiskered tabby", category = TemplateCategory.Cats,
-            imageRes = R.drawable.template_tabby, difficulty = Difficulty.Detailed, featured = false,
-            description = "A striped cat with playful whiskers. Add the forehead stripes after tracing the ears and face.",
-        ),
-        DrawingTemplate(
-            id = "spotty_pup", name = "Spotty pup", category = TemplateCategory.Dogs,
-            imageRes = R.drawable.template_spotty_dog, difficulty = Difficulty.Medium, featured = false,
-            description = "A floppy-eared puppy with a patch around one eye. Draw the outer shape before adding the patch.",
-        ),
-        DrawingTemplate(
-            id = "bunny_heart", name = "Bunny love", category = TemplateCategory.Bunnies,
-            imageRes = R.drawable.template_bunny_heart, difficulty = Difficulty.Medium, featured = false,
-            description = "A bunny with a little heart beside its cheek. Practice the long ears and the two rounded sides of the heart.",
-        ),
-        DrawingTemplate(
-            id = "baby_bear", name = "Baby bear", category = TemplateCategory.BabyAnimals,
-            imageRes = R.drawable.template_baby_bear, difficulty = Difficulty.Easy, featured = false,
-            description = "A round little bear with a tiny tuft of fur. Follow the soft curves and finish with a small smile.",
-        ),
-    )
+/** Manifest-backed metadata only. Images are decoded on demand by the UI. */
+class LocalTemplateCatalog private constructor(val templates: List<DrawingTemplate>) {
+    private val byId = templates.associateBy { it.id }
+    val featuredTemplates = templates.filter { it.featured }
+    fun findById(id: String?): DrawingTemplate? = byId[id]
 
-    val featuredTemplates: List<DrawingTemplate> = templates.filter { it.featured }
+    companion object {
+        @WorkerThread
+        fun load(assets: AssetManager): LocalTemplateCatalog =
+            assets.open("templates_manifest.json").bufferedReader().use(::parse)
 
-    fun findById(id: String?): DrawingTemplate? = templates.find { it.id == id }
+        fun parse(source: Reader): LocalTemplateCatalog {
+            try {
+                val templates = mutableListOf<DrawingTemplate>()
+                JsonReader(source).use { reader ->
+                    reader.beginArray()
+                    while (reader.hasNext()) {
+                        var id = ""
+                        var name = ""
+                        var category = ""
+                        var difficulty = ""
+                        var path = ""
+                        var tracePath = ""
+                        var previewPath = ""
+                        var description = ""
+                        var featured: Boolean? = null
+                        reader.beginObject()
+                        while (reader.hasNext()) {
+                            when (reader.nextName()) {
+                                "id" -> id = reader.nextString()
+                                "displayName" -> name = reader.nextString()
+                                "category" -> category = reader.nextString()
+                                "difficulty" -> difficulty = reader.nextString()
+                                "imagePath" -> path = reader.nextString()
+                                "traceImagePath" -> tracePath = reader.nextString()
+                                "previewImagePath" -> previewPath = reader.nextString()
+                                "shortDescription" -> description = reader.nextString()
+                                "featured" -> featured = reader.nextBoolean()
+                                else -> reader.skipValue()
+                            }
+                        }
+                        reader.endObject()
+                        require(id.matches(Regex("[a-z0-9_]+"))) { "Invalid template ID: $id" }
+                        require(name.isNotBlank() && description.isNotBlank()) { "Incomplete template: $id" }
+                        // Older manifests used imagePath for the tracing asset.
+                        val resolvedTracePath = tracePath.ifBlank { path }
+                        require(resolvedTracePath.matches(Regex("templates/[a-z_]+/$id\\.webp"))) {
+                            "Invalid trace asset path: $resolvedTracePath"
+                        }
+                        require(path.isEmpty() || path == resolvedTracePath) { "Conflicting legacy trace path" }
+                        require(previewPath.isEmpty() || previewPath.matches(
+                            Regex("templates_preview/[a-z_]+/${id}_preview\\.webp"))) {
+                            "Invalid preview asset path: $previewPath"
+                        }
+                        val resolvedCategory = TemplateCategory.entries.firstOrNull {
+                            it.name == category || it.label == category
+                        } ?: error("Unknown category: $category")
+                        val resolvedDifficulty = Difficulty.entries.firstOrNull { it.name == difficulty }
+                            ?: error("Unknown difficulty: $difficulty")
+                        val directory = when (resolvedCategory) {
+                            TemplateCategory.BabyAnimals -> "baby_animals"
+                            else -> resolvedCategory.name.lowercase()
+                        }
+                        require(resolvedTracePath == "templates/$directory/$id.webp") { "Trace category mismatch" }
+                        require(previewPath.isEmpty() || previewPath == "templates_preview/$directory/${id}_preview.webp") {
+                            "Preview category mismatch"
+                        }
+                        templates += DrawingTemplate(id, name, resolvedCategory, resolvedTracePath, resolvedDifficulty,
+                            requireNotNull(featured) { "Missing featured flag: $id" }, description,
+                            previewImagePath = previewPath.ifBlank { resolvedTracePath })
+                    }
+                    reader.endArray()
+                    require(reader.peek() == JsonToken.END_DOCUMENT) { "Trailing manifest content" }
+                }
+                require(templates.isNotEmpty()) { "Empty template manifest" }
+                require(templates.map { it.id }.distinct().size == templates.size) { "Duplicate template IDs" }
+                return LocalTemplateCatalog(templates.toList())
+            } catch (error: IllegalArgumentException) {
+                throw IOException("Invalid template manifest", error)
+            } catch (error: IllegalStateException) {
+                throw IOException("Invalid template manifest", error)
+            }
+        }
+    }
 }

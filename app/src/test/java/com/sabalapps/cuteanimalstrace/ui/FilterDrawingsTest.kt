@@ -5,7 +5,12 @@ import org.junit.Assert.*
 import org.junit.Test
 
 class FilterDrawingsTest {
-    private val drawings = LocalTemplateCatalog.templates
+    private val drawings = listOf(
+        DrawingTemplate("kitten", "Curious kitten", TemplateCategory.Cats, "templates/cats/test.webp", Difficulty.Easy, true, "Test cat"),
+        DrawingTemplate("tabby", "Whiskered tabby", TemplateCategory.Cats, "templates/cats/test.webp", Difficulty.Detailed, false, "Test tabby"),
+        DrawingTemplate("baby_bunny", "Baby bunny", TemplateCategory.BabyAnimals, "templates/baby_animals/test.webp", Difficulty.Easy, false, "Test bunny"),
+        DrawingTemplate("baby_bear", "Baby bear", TemplateCategory.BabyAnimals, "templates/baby_animals/test.webp", Difficulty.Medium, false, "Test bear"),
+    )
 
     @Test fun blankQuery_returnsWholeCatalogInOrder() {
         assertEquals(drawings, filterDrawings(drawings, "   ", null, null))

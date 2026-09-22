@@ -1,22 +1,22 @@
-# Graph Report - CuteAnimalsTraceDraw  (2026-09-13)
+# Graph Report - CuteAnimalsTraceDraw  (2026-09-15)
 
 ## Corpus Check
-- 28 files · ~7,474 words
+- 39 files · ~20,438 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 153 nodes · 208 edges · 30 communities (11 shown, 19 thin omitted)
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.8)
+- 254 nodes · 373 edges · 35 communities (15 shown, 20 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 39 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cfab3177`
+- Built from commit: `26a94a5d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Cute Animals: Trace & Draw
-- TracingOverlayTest
+- UserPreferencesViewModel
 - gradlew
 - ExampleInstrumentedTest
 - ExampleUnitTest
@@ -31,9 +31,9 @@
 - Circular Android launcher icon: white robot head on green grid
 - Rounded-square Android launcher icon: white robot head on green grid
 - Circular Android launcher icon: white robot head on green grid
-- Screens.kt
-- TopLevelDestination
-- NavigationShellTest
+- DrawingTemplate
+- LocalTemplateCatalog
+- UserPreferencesRepository
 - TemplateCategory
 - LocalTemplateCatalogTest
 - CameraPermissionState
@@ -41,56 +41,65 @@
 - TracingOverlayState
 - CameraPermissionStateTest
 - CameraPreviewTest
-- TraceScreen
+- CameraPreview
+- SavedPreferencesTest
+- Cute Animals: Trace & Draw — Production Image Generation Prompt
+- generate_trace_assets.py
+- GeneratorTests
+- README-imagegen.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `DrawingTemplate` - 15 edges
-2. `TracingOverlayState` - 15 edges
-3. `TemplateCategory` - 12 edges
-4. `filterDrawings()` - 10 edges
-5. `CuteAnimalsApp()` - 9 edges
-6. `TraceScreen()` - 8 edges
-7. `Difficulty` - 7 edges
-8. `ExploreFiltersTest` - 6 edges
-9. `TracingOverlayTest` - 6 edges
-10. `LocalTemplateCatalog` - 6 edges
+1. `TracingOverlayState` - 20 edges
+2. `DrawingTemplate` - 17 edges
+3. `UserPreferencesRepository` - 16 edges
+4. `Cute Animals: Trace & Draw — Production Image Generation Prompt` - 16 edges
+5. `CuteAnimalsApp()` - 13 edges
+6. `TemplateCategory` - 12 edges
+7. `SettingsScreen()` - 12 edges
+8. `GeneratorTests` - 11 edges
+9. `filterDrawings()` - 10 edges
+10. `ValidationError` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `TracingOverlayTest` --calls--> `TracingOverlayState`  [INFERRED]
   app/src/androidTest/java/com/sabalapps/cuteanimalstrace/TracingOverlayTest.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt
-- `CuteAnimalsApp()` --calls--> `TraceScreen()`  [INFERRED]
-  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt
+- `UserPreferencesViewModel` --calls--> `UserPreferencesRepository`  [INFERRED]
+  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/UserPreferencesViewModel.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/UserPreferences.kt
+- `TraceScreen()` --calls--> `CameraPreview()`  [INFERRED]
+  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CameraPreview.kt
+- `CuteAnimalsApp()` --calls--> `SettingsScreen()`  [INFERRED]
+  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/CuteAnimalsApp.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/SettingsScreen.kt
 - `ExploreScreen()` --calls--> `filterDrawings()`  [INFERRED]
   app/src/main/java/com/sabalapps/cuteanimalstrace/ui/Screens.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/FilterDrawings.kt
-- `TraceScreen()` --calls--> `TracingOverlayState`  [INFERRED]
-  app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TraceScreen.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/ui/TracingOverlayState.kt
-- `LocalTemplateCatalog` --references--> `DrawingTemplate`  [EXTRACTED]
-  app/src/main/java/com/sabalapps/cuteanimalstrace/data/LocalTemplateCatalog.kt → app/src/main/java/com/sabalapps/cuteanimalstrace/data/DrawingTemplate.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (30 total, 19 thin omitted)
+## Communities (35 total, 20 thin omitted)
 
 ### Community 0 - "Cute Animals: Trace & Draw"
 Cohesion: 0.29
 Nodes (7): Android SDK requirements, CameraX overlay requirement, Cute Animals: Trace & Draw, Kotlin and Jetpack Compose, Material 3 themes, Offline operation, Simple architecture with stable AndroidX
 
-### Community 1 - "TracingOverlayTest"
-Cohesion: 0.26
-Nodes (5): TracingOverlayTest, MainActivity, CuteAnimalsTheme(), Bundle, ComponentActivity
+### Community 1 - "UserPreferencesViewModel"
+Cohesion: 0.14
+Nodes (8): AndroidViewModel, TracingOverlayTest, MainActivity, CuteAnimalsTheme(), UserPreferencesViewModel, Bundle, ComponentActivity, Job
 
 ### Community 2 - "gradlew"
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
-### Community 19 - "Screens.kt"
-Cohesion: 0.40
-Nodes (13): DrawingTemplate, CuteAnimalsApp(), DrawingCard(), DrawingDetailScreen(), ExploreScreen(), FavoritesScreen(), HomeScreen(), Illustration() (+5 more)
+### Community 19 - "DrawingTemplate"
+Cohesion: 0.29
+Nodes (17): DrawingTemplate, UserPreferences, CuteAnimalsApp(), DrawingCard(), DrawingDetailScreen(), ExploreScreen(), FavoriteButton(), FavoritesScreen() (+9 more)
 
-### Community 20 - "TopLevelDestination"
-Cohesion: 0.22
-Nodes (6): DrawingDestination, TopLevelDestination, Explore, Favorites, Home, Settings
+### Community 20 - "LocalTemplateCatalog"
+Cohesion: 0.11
+Nodes (8): NavigationShellTest, LocalTemplateCatalog, DrawingDestination, TopLevelDestination, Explore, Favorites, Home, Settings
+
+### Community 21 - "UserPreferencesRepository"
+Cohesion: 0.11
+Nodes (11): Appearance, Dark, Light, System, Keys, UserPreferencesRepository, PreferenceSwitch(), SettingsScreen() (+3 more)
 
 ### Community 22 - "TemplateCategory"
 Cohesion: 0.11
@@ -100,29 +109,41 @@ Nodes (15): Difficulty, Detailed, Easy, Medium, TemplateCategory, BabyAnimals, B
 Cohesion: 0.33
 Nodes (5): CameraPermissionState, Blocked, Denied, Granted, NotRequested
 
-### Community 29 - "TraceScreen"
-Cohesion: 0.36
-Nodes (6): CameraPreview(), activity(), TraceScreen(), OverlayControls(), TracingOverlay(), Modifier
+### Community 26 - "TracingOverlayState"
+Cohesion: 0.14
+Nodes (6): Modifier, OpacityControl(), OverlayActions(), OverlayControls(), TracingOverlayState, TracingOverlayStateTest
+
+### Community 31 - "Cute Animals: Trace & Draw — Production Image Generation Prompt"
+Cohesion: 0.12
+Nodes (16): Baby Animals — 10, Bears — 8, Bunnies — 10, Cats — 15, Cute Animals: Trace & Draw — Production Image Generation Prompt, Difficulty, Dogs — 15, Featured images (+8 more)
+
+### Community 32 - "generate_trace_assets.py"
+Cohesion: 0.32
+Nodes (15): Exception, android_record(), atomic_json(), check_pixels(), convert_image(), destination(), final_audit(), is_lossless_webp() (+7 more)
+
+### Community 33 - "GeneratorTests"
+Cohesion: 0.20
+Nodes (3): drawing_bytes(), GeneratorTests, Offline tests: no API calls and no production asset writes.
 
 ## Knowledge Gaps
-- **34 isolated node(s):** `Easy`, `Medium`, `Detailed`, `Cats`, `Dogs` (+29 more)
+- **54 isolated node(s):** `Easy`, `Medium`, `Detailed`, `Cats`, `Dogs` (+49 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **20 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `DrawingTemplate` connect `Screens.kt` to `TraceScreen`, `NavigationShellTest`, `TemplateCategory`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
-- **Why does `TracingOverlayState` connect `TracingOverlayState` to `TracingOverlayTest`, `TraceScreen`?**
-  _High betweenness centrality (0.096) - this node is a cross-community bridge._
-- **Why does `TraceScreen()` connect `TraceScreen` to `TracingOverlayState`, `Screens.kt`?**
-  _High betweenness centrality (0.066) - this node is a cross-community bridge._
-- **Are the 7 inferred relationships involving `TracingOverlayState` (e.g. with `TracingOverlayTest` and `TraceScreen()`) actually correct?**
-  _`TracingOverlayState` has 7 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 6 inferred relationships involving `filterDrawings()` (e.g. with `ExploreScreen()` and `.blankQuery_returnsWholeCatalogInOrder()`) actually correct?**
-  _`filterDrawings()` has 6 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 6 inferred relationships involving `CuteAnimalsApp()` (e.g. with `DrawingDetailScreen()` and `ExploreScreen()`) actually correct?**
-  _`CuteAnimalsApp()` has 6 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `CuteAnimalsApp()` connect `DrawingTemplate` to `UserPreferencesViewModel`, `LocalTemplateCatalog`, `UserPreferencesRepository`?**
+  _High betweenness centrality (0.088) - this node is a cross-community bridge._
+- **Why does `DrawingTemplate` connect `DrawingTemplate` to `TracingOverlayState`, `LocalTemplateCatalog`, `TemplateCategory`?**
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+- **Why does `TraceScreen()` connect `DrawingTemplate` to `TracingOverlayState`, `CameraPreview`?**
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+- **Are the 9 inferred relationships involving `TracingOverlayState` (e.g. with `TracingOverlayTest` and `TraceScreen()`) actually correct?**
+  _`TracingOverlayState` has 9 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `UserPreferencesRepository` (e.g. with `UserPreferencesViewModel` and `.defaultOpacityIsBoundedAndRejectsInvalidValues()`) actually correct?**
+  _`UserPreferencesRepository` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 8 inferred relationships involving `CuteAnimalsApp()` (e.g. with `.recordViewed()` and `.toggleFavorite()`) actually correct?**
+  _`CuteAnimalsApp()` has 8 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Easy`, `Medium`, `Detailed` to the rest of the system?**
-  _34 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _54 weakly-connected nodes found - possible documentation gaps or missing edges._

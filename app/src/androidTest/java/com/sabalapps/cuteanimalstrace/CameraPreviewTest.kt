@@ -30,14 +30,17 @@ class CameraPreviewTest {
             compose.activity.packageName, Manifest.permission.CAMERA,
         )
         compose.onNodeWithTag("tab_explore").performClick()
-        compose.onNodeWithTag("screen_explore").performScrollToNode(hasTestTag("drawing_kitten"))
-        compose.onNodeWithTag("drawing_kitten").performClick()
+        compose.onNodeWithTag("screen_explore").performScrollToNode(hasTestTag("drawing_cat_001"))
+        compose.onNodeWithTag("drawing_cat_001").performClick()
         compose.onNodeWithTag("start_trace").performScrollTo().performClick()
         waitForLivePreview()
         compose.activityRule.scenario.moveToState(Lifecycle.State.CREATED)
         compose.activityRule.scenario.moveToState(Lifecycle.State.RESUMED)
         waitForLivePreview()
-        compose.onNodeWithTag("overlay_image_kitten").assertIsDisplayed()
+        // The production screen supplies a decoded bitmap; its Image exists only after loading.
+        val artwork = hasTestTag("overlay_image_cat_001")
+        compose.waitUntil(10_000) { compose.onAllNodes(artwork).fetchSemanticsNodes().isNotEmpty() }
+        compose.onNode(artwork).assertIsDisplayed()
         compose.onNodeWithTag("overlay_opacity").performSemanticsAction(SemanticsActions.SetProgress) { it(0.4f) }
         compose.onNodeWithTag("overlay_flip").performClick()
         compose.onNodeWithTag("overlay_lock").performClick()
