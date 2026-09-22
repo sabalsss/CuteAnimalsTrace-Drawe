@@ -125,58 +125,6 @@ private fun BrandHeader() {
 }
 
 @Composable
-private fun HeroCard(showcase: DrawingTemplate?, onExplore: () -> Unit) {
-    val wide = isWideScreen()
-    Surface(
-        shape = MaterialTheme.shapes.extraLarge,
-        color = MaterialTheme.colorScheme.primaryContainer,
-        contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
-        modifier = Modifier.fillMaxWidth(),
-    ) {
-        Row(
-            Modifier.padding(if (wide) 24.dp else 20.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-        ) {
-            Column(Modifier.weight(1f).widthIn(max = 520.dp),
-                verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Row(verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Icon(AppIcons.sparkle, null, Modifier.size(16.dp))
-                    Text(stringResource(R.string.hero_title),
-                        style = if (wide) MaterialTheme.typography.titleMedium
-                            else MaterialTheme.typography.labelLarge)
-                }
-                Text(stringResource(R.string.hero_description),
-                    style = if (wide) MaterialTheme.typography.bodyLarge
-                        else MaterialTheme.typography.bodyMedium)
-                Button(
-                    onClick = onExplore,
-                    shape = MaterialTheme.shapes.large,
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = MaterialTheme.colorScheme.primary,
-                        contentColor = MaterialTheme.colorScheme.onPrimary),
-                    contentPadding = PaddingValues(horizontal = 22.dp, vertical = 12.dp),
-                    modifier = Modifier.heightIn(min = 50.dp),
-                ) {
-                    Text(stringResource(R.string.explore_drawings))
-                }
-            }
-            if (showcase != null) {
-                ArtworkPlate(
-                    drawing = showcase,
-                    modifier = Modifier.size(if (wide) 156.dp else 112.dp),
-                    targetSize = if (wide) 512 else 256,
-                    artworkPadding = 8.dp,
-                    shape = MaterialTheme.shapes.large,
-                    tagged = false,
-                )
-            }
-        }
-    }
-}
-
-@Composable
 private fun OwnImageCard(onClick: () -> Unit) {
     val source = remember { MutableInteractionSource() }
     Surface(
@@ -255,7 +203,6 @@ fun HomeScreen(
     favorites: Set<String>,
     recent: List<DrawingTemplate>,
     onFavorite: (String) -> Unit,
-    onExplore: () -> Unit,
     onOwnImage: () -> Unit = {},
     easyPicks: List<DrawingTemplate> = emptyList(),
     categoryCounts: Map<TemplateCategory, Int> = emptyMap(),
@@ -272,7 +219,6 @@ fun HomeScreen(
                     modifier = Modifier.semantics { heading() })
             }
         }
-        fullWidth("hero") { HeroCard(drawings.firstOrNull(), onExplore) }
         fullWidth("own_image") { OwnImageCard(onOwnImage) }
         if (categoryCounts.isNotEmpty()) {
             fullWidth("categories_heading") {

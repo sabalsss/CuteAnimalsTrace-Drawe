@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.CuteAnimalsTraceDraw" parent="Base.Theme.CuteAnimalsTraceDraw">
+        <item name="android:windowSplashScreenBackground">@color/splash_background_night</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+    </style>
+</resources>

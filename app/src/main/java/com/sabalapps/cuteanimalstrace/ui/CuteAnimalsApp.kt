@@ -157,144 +157,152 @@ fun CuteAnimalsApp(preferences: UserPreferences, model: UserPreferencesViewModel
         navController.navigate(DrawingDestination.detail(id)) { launchSingleTop = true }
     }
 
-    Scaffold(
-        snackbarHost = { SnackbarHost(snackbar) },
-        topBar = {
-            // Every screen carries its own heading; only the detail route needs a bar for Back.
-            if (topLevel == null && !tracing) {
-                TopAppBar(
-                    title = {},
-                    navigationIcon = {
-                        IconButton(onClick = { navController.popBackStack() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.back))
+    // Settings can replay the walkthrough on top of the app, keeping navigation state underneath.
+    var tutorialVisible by rememberSaveable { mutableStateOf(false) }
+    val tutorialDrawings = remember(catalog) { catalog.tutorialDrawings() }
+
+    Box(Modifier.fillMaxSize()) {
+        Scaffold(
+            snackbarHost = { SnackbarHost(snackbar) },
+            topBar = {
+                // Every screen carries its own heading; only the detail route needs a bar for Back.
+                if (topLevel == null && !tracing) {
+                    TopAppBar(
+                        title = {},
+                        navigationIcon = {
+                            IconButton(onClick = { navController.popBackStack() }) {
+                                Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.back))
+                            }
+                        },
+                        colors = TopAppBarDefaults.topAppBarColors(
+                            containerColor = MaterialTheme.colorScheme.background,
+                        ),
+                    )
+                }
+            },
+            bottomBar = {
+                if (topLevel != null) {
+                    NavigationBar(
+                        modifier = Modifier.testTag("bottom_navigation"),
+                        containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
+                    ) {
+                        TopLevelDestination.entries.forEach { destination ->
+                            NavigationBarItem(
+                                modifier = Modifier.testTag("tab_${destination.route}"),
+                                selected = topLevel == destination,
+                                onClick = { navigateToTab(destination) },
+                                icon = { Icon(destination.icon, contentDescription = null) },
+                                label = { Text(stringResource(destination.label)) },
+                                colors = NavigationBarItemDefaults.colors(
+                                    selectedIconColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                                    selectedTextColor = MaterialTheme.colorScheme.onSurface,
+                                    indicatorColor = MaterialTheme.colorScheme.primaryContainer,
+                                ),
+                            )
                         }
-                    },
-                    colors = TopAppBarDefaults.topAppBarColors(
-                        containerColor = MaterialTheme.colorScheme.background,
-                    ),
-                )
-            }
-        },
-        bottomBar = {
-            if (topLevel != null) {
-                NavigationBar(
-                    modifier = Modifier.testTag("bottom_navigation"),
-                    containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
-                ) {
-                    TopLevelDestination.entries.forEach { destination ->
-                        NavigationBarItem(
-                            modifier = Modifier.testTag("tab_${destination.route}"),
-                            selected = topLevel == destination,
-                            onClick = { navigateToTab(destination) },
-                            icon = { Icon(destination.icon, contentDescription = null) },
-                            label = { Text(stringResource(destination.label)) },
-                            colors = NavigationBarItemDefaults.colors(
-                                selectedIconColor = MaterialTheme.colorScheme.onPrimaryContainer,
-                                selectedTextColor = MaterialTheme.colorScheme.onSurface,
-                                indicatorColor = MaterialTheme.colorScheme.primaryContainer,
-                            ),
-                        )
                     }
                 }
+            },
+        ) { padding ->
+            // Only the tracing routes run full-bleed; everything else is inset per destination,
+            // so a screen never jumps while a transition is still running.
+            val inset: @Composable (@Composable () -> Unit) -> Unit = { content ->
+                Box(Modifier.fillMaxSize().padding(padding).consumeWindowInsets(padding)) { content() }
             }
-        },
-    ) { padding ->
-        // Only the tracing routes run full-bleed; everything else is inset per destination,
-        // so a screen never jumps while a transition is still running.
-        val inset: @Composable (@Composable () -> Unit) -> Unit = { content ->
-            Box(Modifier.fillMaxSize().padding(padding).consumeWindowInsets(padding)) { content() }
-        }
-        NavHost(
-            navController = navController,
-            startDestination = TopLevelDestination.Home.route,
-            modifier = Modifier.fillMaxSize(),
-            enterTransition = { fadeIn(tween(TransitionMillis)) },
-            exitTransition = { fadeOut(tween(TransitionMillis)) },
-            popEnterTransition = { fadeIn(tween(TransitionMillis)) },
-            popExitTransition = { fadeOut(tween(TransitionMillis)) },
-        ) {
-            composable(TopLevelDestination.Home.route) {
-                inset { HomeScreen(
-                    drawings = catalog.featuredTemplates,
-                    favorites = preferences.favorites,
-                    recent = preferences.recent.mapNotNull(catalog::findById).take(6),
-                    onFavorite = toggleFavorite,
-                    onExplore = { navigateToTab(TopLevelDestination.Explore) },
-                    onOwnImage = chooseImage,
-                    easyPicks = easyPicks,
-                    categoryCounts = categoryCounts,
-                    onCategory = { category ->
-                        categoryRequest = category
-                        navigateToTab(TopLevelDestination.Explore)
-                    },
-                    onDrawing = openDrawing,
-                ) }
-            }
-            composable(TopLevelDestination.Explore.route) {
-                inset { ExploreScreen(
-                    drawings = catalog.templates,
-                    favorites = preferences.favorites,
-                    onFavorite = toggleFavorite,
-                    categoryRequest = categoryRequest,
-                    onCategoryHandled = { categoryRequest = null },
-                    onDrawing = openDrawing,
-                ) }
-            }
-            composable(TopLevelDestination.Favorites.route) {
-                inset { FavoritesScreen(catalog.templates.filter { it.id in preferences.favorites },
-                    onFavorite = toggleFavorite,
-                    onExplore = { navigateToTab(TopLevelDestination.Explore) },
-                    onDrawing = openDrawing) }
-            }
-            composable(TopLevelDestination.Settings.route) {
-                inset { SettingsScreen(preferences, onUpdate = model::update) }
-            }
-            composable(DrawingDestination.Detail,
-                arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
-            ) { backStackEntry ->
-                val drawing = catalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
-                LaunchedEffect(backStackEntry.id) {
-                    drawing?.let { model.update { recordViewed(it.id) } }
+            NavHost(
+                navController = navController,
+                startDestination = TopLevelDestination.Home.route,
+                modifier = Modifier.fillMaxSize(),
+                enterTransition = { fadeIn(tween(TransitionMillis)) },
+                exitTransition = { fadeOut(tween(TransitionMillis)) },
+                popEnterTransition = { fadeIn(tween(TransitionMillis)) },
+                popExitTransition = { fadeOut(tween(TransitionMillis)) },
+            ) {
+                composable(TopLevelDestination.Home.route) {
+                    inset { HomeScreen(
+                        drawings = catalog.featuredTemplates,
+                        favorites = preferences.favorites,
+                        recent = preferences.recent.mapNotNull(catalog::findById).take(6),
+                        onFavorite = toggleFavorite,
+                        onOwnImage = chooseImage,
+                        easyPicks = easyPicks,
+                        categoryCounts = categoryCounts,
+                        onCategory = { category ->
+                            categoryRequest = category
+                            navigateToTab(TopLevelDestination.Explore)
+                        },
+                        onDrawing = openDrawing,
+                    ) }
                 }
-                val related = remember(drawing, catalog) {
-                    drawing?.let { current ->
-                        catalog.templates.filter { it.category == current.category && it.id != current.id }
-                            .take(8)
-                    }.orEmpty()
+                composable(TopLevelDestination.Explore.route) {
+                    inset { ExploreScreen(
+                        drawings = catalog.templates,
+                        favorites = preferences.favorites,
+                        onFavorite = toggleFavorite,
+                        categoryRequest = categoryRequest,
+                        onCategoryHandled = { categoryRequest = null },
+                        onDrawing = openDrawing,
+                    ) }
                 }
-                inset {
-                    DrawingDetailScreen(drawing, drawing?.id in preferences.favorites,
-                        onFavorite = { drawing?.let { toggleFavorite(it.id) } },
+                composable(TopLevelDestination.Favorites.route) {
+                    inset { FavoritesScreen(catalog.templates.filter { it.id in preferences.favorites },
+                        onFavorite = toggleFavorite,
                         onExplore = { navigateToTab(TopLevelDestination.Explore) },
-                        related = related,
-                        onRelated = openDrawing) {
-                        drawing?.let { navController.navigate(DrawingDestination.trace(it.id)) { launchSingleTop = true } }
+                        onDrawing = openDrawing) }
+                }
+                composable(TopLevelDestination.Settings.route) {
+                    inset { SettingsScreen(preferences, onUpdate = model::update, onShowTutorial = { tutorialVisible = true }) }
+                }
+                composable(DrawingDestination.Detail,
+                    arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
+                ) { backStackEntry ->
+                    val drawing = catalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
+                    LaunchedEffect(backStackEntry.id) {
+                        drawing?.let { model.update { recordViewed(it.id) } }
+                    }
+                    val related = remember(drawing, catalog) {
+                        drawing?.let { current ->
+                            catalog.templates.filter { it.category == current.category && it.id != current.id }
+                                .take(8)
+                        }.orEmpty()
+                    }
+                    inset {
+                        DrawingDetailScreen(drawing, drawing?.id in preferences.favorites,
+                            onFavorite = { drawing?.let { toggleFavorite(it.id) } },
+                            onExplore = { navigateToTab(TopLevelDestination.Explore) },
+                            related = related,
+                            onRelated = openDrawing) {
+                            drawing?.let { navController.navigate(DrawingDestination.trace(it.id)) { launchSingleTop = true } }
+                        }
                     }
                 }
+                composable("trace-image?uri={uri}",
+                    arguments = listOf(navArgument("uri") { type = NavType.StringType; defaultValue = "" }),
+                    enterTransition = { fadeIn(tween(TransitionMillis)) + slideInVertically { it / 12 } },
+                    popExitTransition = { fadeOut(tween(TransitionMillis)) + slideOutVertically { it / 12 } },
+                ) { backStackEntry ->
+                    TraceScreen(null, preferences,
+                        imageUri = backStackEntry.arguments?.getString("uri"),
+                        onChooseImage = chooseImage,
+                        onExplore = { navigateToTab(TopLevelDestination.Explore) },
+                        onTraceSuccess = recordTraceSuccess,
+                        onBack = { navController.popBackStack() })
+                }
+                composable(DrawingDestination.Trace,
+                    arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
+                    enterTransition = { fadeIn(tween(TransitionMillis)) + slideInVertically { it / 12 } },
+                    popExitTransition = { fadeOut(tween(TransitionMillis)) + slideOutVertically { it / 12 } },
+                ) { backStackEntry ->
+                    val drawing = catalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
+                    TraceScreen(drawing, preferences,
+                        onExplore = { navigateToTab(TopLevelDestination.Explore) },
+                        onTraceSuccess = recordTraceSuccess,
+                        onBack = { navController.popBackStack() })
+                }
             }
-            composable("trace-image?uri={uri}",
-                arguments = listOf(navArgument("uri") { type = NavType.StringType; defaultValue = "" }),
-                enterTransition = { fadeIn(tween(TransitionMillis)) + slideInVertically { it / 12 } },
-                popExitTransition = { fadeOut(tween(TransitionMillis)) + slideOutVertically { it / 12 } },
-            ) { backStackEntry ->
-                TraceScreen(null, preferences,
-                    imageUri = backStackEntry.arguments?.getString("uri"),
-                    onChooseImage = chooseImage,
-                    onExplore = { navigateToTab(TopLevelDestination.Explore) },
-                    onTraceSuccess = recordTraceSuccess,
-                    onBack = { navController.popBackStack() })
-            }
-            composable(DrawingDestination.Trace,
-                arguments = listOf(navArgument(DrawingDestination.Argument) { type = NavType.StringType }),
-                enterTransition = { fadeIn(tween(TransitionMillis)) + slideInVertically { it / 12 } },
-                popExitTransition = { fadeOut(tween(TransitionMillis)) + slideOutVertically { it / 12 } },
-            ) { backStackEntry ->
-                val drawing = catalog.findById(backStackEntry.arguments?.getString(DrawingDestination.Argument))
-                TraceScreen(drawing, preferences,
-                    onExplore = { navigateToTab(TopLevelDestination.Explore) },
-                    onTraceSuccess = recordTraceSuccess,
-                    onBack = { navController.popBackStack() })
-            }
+        }
+        if (tutorialVisible) {
+            OnboardingScreen(tutorialDrawings, onFinish = { tutorialVisible = false }, handleBack = true)
         }
     }
 }

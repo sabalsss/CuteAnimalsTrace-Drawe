@@ -43,7 +43,7 @@ class ExploreFiltersTest {
         compose.onNodeWithTag("explore_empty").assertIsDisplayed()
         compose.onNodeWithTag("clear_filters").performClick()
         show("result_count")
-        compose.onNodeWithTag("result_count").assertTextEquals("84 drawings")
+        compose.onNodeWithTag("result_count").assertTextEquals("108 drawings")
         show("explore_search")
         compose.onNodeWithTag("explore_search").assertTextContains("")
         compose.onNodeWithTag("category_all").assertIsSelected()

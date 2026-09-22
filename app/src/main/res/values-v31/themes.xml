@@ -1,0 +1,8 @@
+<resources>
+    <!-- Android 12+ system splash: the adaptive launcher icon on the app's cream background,
+         handing off to the in-app splash with the full artwork and loading progress. -->
+    <style name="Theme.CuteAnimalsTraceDraw" parent="Base.Theme.CuteAnimalsTraceDraw">
+        <item name="android:windowSplashScreenBackground">@color/splash_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+    </style>
+</resources>

@@ -87,4 +87,23 @@ class NavigationShellTest {
         compose.onNodeWithText(template.name).assertIsDisplayed()
         compose.onNodeWithTag("template_image_${template.id}").assertIsDisplayed()
     }
+    @Test fun newAnimalSpeciesCanBeFoundAndOpenTheirColorPreviews() {
+        compose.onNodeWithTag("tab_explore").performClick()
+        listOf("turtle_001", "axolotl_001", "stingray_001").forEach { id ->
+            val template = LocalTemplateCatalog.load(compose.activity.assets).findById(id)!!
+            compose.onNodeWithTag("screen_explore").performScrollToNode(hasTestTag("explore_search"))
+            compose.onNodeWithTag("explore_search").performTextReplacement(template.name)
+            compose.onNodeWithTag("explore_search").performImeAction()
+            compose.onNodeWithTag("screen_explore").performScrollToNode(hasTestTag("drawing_$id"))
+            compose.onNodeWithTag("drawing_$id").performClick()
+            val loaded = hasTestTag("template_image_$id") and
+                SemanticsMatcher.expectValue(SemanticsProperties.StateDescription, "Artwork loaded")
+            compose.waitUntil(10_000) { compose.onAllNodes(loaded).fetchSemanticsNodes().isNotEmpty() }
+            compose.onNode(loaded).assertIsDisplayed()
+            compose.onNodeWithText(template.name).assertIsDisplayed()
+            compose.onNodeWithTag("start_trace").performScrollTo().assertIsEnabled()
+            compose.onNodeWithContentDescription("Back").performClick()
+        }
+    }
+
 }

@@ -76,5 +76,38 @@ class PreviewAssetTests(unittest.TestCase):
         with self.assertRaises(gen.ValidationError):gen.update_manifest([dict(id='cat_001')],[self.asset])
         self.assertEqual('[]',gen.MANIFEST.read_text())
 
+    def test_expansion_refuses_existing_ids_without_api_calls(self):
+        gen.MANIFEST.write_text('[{"id":"cat_001"}]')
+        plan=self.root/'plan.json';plan.write_text('[{"id":"cat_001"}]')
+        with patch.object(gen,'ROOT',self.root), patch('openai.OpenAI') as client:
+            with self.assertRaisesRegex(gen.ValidationError,'unique new IDs'):
+                gen.expand_library(plan)
+            client.assert_not_called()
+
+    def test_expansion_reserves_budget_before_request(self):
+        gen.MANIFEST.write_text('[{"id":"cat_001"}]')
+        plan=self.root/'plan.json'
+        asset=dict(id='cat_002',categoryDirectory='cats',traceImagePath='templates/cats/cat_002.webp',
+                   previewImagePath='templates_preview/cats/cat_002_preview.webp',description='A kitten')
+        plan.write_text(json.dumps([asset]))
+        before=self.trace.read_bytes()
+        with patch.object(gen,'ROOT',self.root), patch.dict('os.environ',{'OPENAI_API_KEY':'test-placeholder'}), patch('openai.OpenAI') as client:
+            with self.assertRaisesRegex(gen.ValidationError,'Budget reserve reached'):
+                gen.expand_library(plan,budget=0.4)
+            client.return_value.images.generate.assert_not_called()
+            client.return_value.images.edit.assert_not_called()
+        self.assertEqual(before,self.trace.read_bytes())
+        self.assertEqual([],json.loads((self.root/'scripts/animal_expansion_report.json').read_text())['requests'])
+
+    def test_legacy_trace_generator_cannot_drop_expansion_records(self):
+        import generate_trace_assets as traces
+        from types import SimpleNamespace
+        gen.MANIFEST.write_text('[{"id":"cat_001"},{"id":"turtle_001"}]')
+        before=gen.MANIFEST.read_bytes()
+        with patch.object(traces,'ANDROID_MANIFEST',gen.MANIFEST):
+            with self.assertRaisesRegex(gen.ValidationError,'Expanded library detected'):
+                traces.run(SimpleNamespace(validate_only=False),[{'id':'cat_001'}])
+        self.assertEqual(before,gen.MANIFEST.read_bytes())
+
 
 if __name__=='__main__':unittest.main()

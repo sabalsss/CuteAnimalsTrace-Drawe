@@ -68,8 +68,8 @@ def digest(path):
 
 def load_library():
     records = json.loads(MANIFEST.read_text())
-    if len(records) != 84 or len({a['id'] for a in records}) != 84:
-        raise ValidationError("Manifest must contain exactly 84 unique templates")
+    if len(records) < 84 or len({a['id'] for a in records}) != len(records):
+        raise ValidationError("Manifest must retain the original library and unique template IDs")
     result = []
     for original in records:
         asset = dict(original)
@@ -86,8 +86,9 @@ def load_library():
         asset.update(traceImagePath=trace, previewImagePath=f"templates_preview/{parts[1]}/{asset['id']}_preview.webp",
                      categoryDirectory=parts[1])
         result.append(asset)
-    if dict(Counter(a['categoryDirectory'] for a in result)) != EXPECTED_COUNTS:
-        raise ValidationError("Manifest category counts do not match the 84-template library")
+    counts=Counter(a['categoryDirectory'] for a in result)
+    if any(counts[category] < minimum for category,minimum in EXPECTED_COUNTS.items()):
+        raise ValidationError("Manifest is missing original category content")
     return records, result
 
 
@@ -232,8 +233,99 @@ def update_manifest(original, assets):
     atomic_json(MANIFEST,merged)
 
 
+
+def expand_library(plan_path, budget=5.0, limit=None):
+    """Append new trace/preview pairs, preserving existing records and files.
+
+    Sequential requests keep budget reservations and checkpoints deterministic.
+    The old 84-template workflow is intentionally not called here.
+    """
+    from generate_trace_assets import convert_image, validate_webp, android_record
+    from openai import OpenAI
+    records=json.loads(Path(plan_path).read_text())
+    report_path=ROOT/'scripts/animal_expansion_report.json'
+    report=json.loads(report_path.read_text()) if report_path.exists() else dict(
+        budgetUSD=budget, model=MODEL, requests=[], completed=[], originalManifest=json.loads(MANIFEST.read_text()),
+        originalImages={str(p.relative_to(ASSETS)):digest(p) for p in ASSETS.rglob('*.webp')})
+    if report['budgetUSD']!=budget:raise ValidationError('Budget changed from checkpoint')
+    original_ids={a['id'] for a in report['originalManifest']}
+    if len({a['id'] for a in records})!=len(records) or any(a['id'] in original_ids for a in records):
+        raise ValidationError('Expansion must use unique new IDs')
+    def protect():
+        if any(digest(ASSETS/p)!=v for p,v in report['originalImages'].items()):
+            raise ValidationError('An original asset changed')
+        current={a['id']:a for a in json.loads(MANIFEST.read_text())}
+        if any(current.get(a['id'])!=a for a in report['originalManifest']):
+            raise ValidationError('Original metadata changed')
+    def save():atomic_json(report_path,report)
+    def spent():return sum(r.get('costUSD',r['reservedUSD']) for r in report['requests'])
+    protect();save()
+    if not os.environ.get('OPENAI_API_KEY'):raise ValidationError('OPENAI_API_KEY is not available')
+    logging.disable(logging.CRITICAL)
+    client=OpenAI(base_url='https://api.openai.com/v1',max_retries=0,timeout=240)
+    def request(kind, asset, prompt, image=None):
+        # Reserve $0.50 before each request, including ambiguous interrupted calls.
+        # Stop well before the budget, using actual usage as soon as it is returned.
+        if spent()+0.50>budget:raise ValidationError('Budget reserve reached; stopping before another request')
+        row=dict(id=asset['id'],kind=kind,reservedUSD=0.50,status='pending')
+        report['requests'].append(row);save()
+        try:
+            kwargs=dict(model=MODEL,prompt=prompt,size='1024x1024',quality='medium',background='transparent',output_format='png',n=1)
+            result=client.images.edit(image=image,**kwargs) if image else client.images.generate(**kwargs)
+            usage=result.usage
+            if usage is None:raise ValidationError('Usage missing; budget cannot be measured')
+            details=usage.input_tokens_details
+            text_tokens=details.text_tokens;image_tokens=details.image_tokens
+            output_tokens=usage.output_tokens
+            # Uncached rates are conservative if the service applies caching.
+            cost=(text_tokens*5+image_tokens*8+output_tokens*30)/1_000_000
+            row.update(status='returned',textInputTokens=text_tokens,imageInputTokens=image_tokens,
+                       imageOutputTokens=output_tokens,costUSD=cost)
+            save()
+            if spent()>budget:raise ValidationError('Budget reached')
+            if not result.data or len(result.data)!=1 or not result.data[0].b64_json:
+                raise ValidationError('API did not return exactly one image')
+            return result.data[0].b64_json
+        except Exception as error:
+            row.update(status='failed',error=safe_error(error));save();raise
+    trace_style="""Use case: illustration-story. Create one cute kawaii animal black-outline tracing template for a children's drawing app. Clean smooth bold black outlines only, simple closed shapes, friendly face with small dark eyes. NO color, shading, gray fills, shadows, scene, ground line, text, logos, borders or watermark. Animal body interiors must remain transparent, not opaque white. Actual transparent background. One animal, whole body centered with every appendage visible. Subject fills 70% of a 1024x1024 square with generous blank margins. Simple premium mobile-app line art, easy to trace on paper. No accessory unless explicitly requested. Subject: """
+    try:
+        for a in records[:limit]:
+            protect()
+            trace=ASSETS/a['traceImagePath'];preview=preview_path(a)
+            ta=dict(a,category=a['categoryDirectory'],androidAssetPath=a['traceImagePath'],outputFilename=a['id']+'.webp')
+            if not trace.exists():
+                print(a['id']+': trace generating',flush=True)
+                for attempt in range(3):
+                    encoded=request('trace',a,trace_style+a['description'])
+                    try:convert_image(encoded,ta);break
+                    except ValidationError:
+                        if attempt==2:raise
+            validate_webp(trace)
+            if not preview.exists():
+                print(a['id']+': preview generating',flush=True)
+                buffer=io.BytesIO();on_white(reference(a)).save(buffer,'PNG')
+                for attempt in range(3):
+                    encoded=request('preview',a,GLOBAL_PREVIEW_STYLE_PROMPT+'\nAnimal: '+a['displayName']+'. '+a['description']+'\nPalette: '+a['palette'],
+                                    (a['id']+'.png',buffer.getvalue(),'image/png'))
+                    try:save_preview(encoded,a);break
+                    except ValidationError:
+                        if attempt==2:raise
+            validate_preview(preview,a)
+            if a['id'] not in report['completed']:report['completed'].append(a['id'])
+            report['estimatedCostUSD']=round(spent(),6);save()
+            print(a['id']+': pair ready; cost so far $'+format(spent(),'.4f'),flush=True)
+        protect()
+        report['estimatedCostUSD']=round(spent(),6);save()
+        print('Ready for visual review: '+str(len(report['completed']))+' pairs. Manifest not changed yet.',flush=True)
+    finally:client.close()
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--expand-plan')
+    parser.add_argument('--budget-usd',type=float,default=5.0)
+    parser.add_argument('--limit',type=int)
     parser.add_argument('--asset',action='append')
     parser.add_argument('--category',choices=list(EXPECTED_COUNTS))
     parser.add_argument('--concurrency',type=int,default=3)
@@ -247,15 +339,18 @@ def main():
     args=parser.parse_args()
     if not 1<=args.concurrency<=8 or not 0<=args.max_retries<=10 or args.timeout<=0:
         raise ValidationError('Invalid concurrency, retries or timeout')
+    if args.expand_plan:
+        expand_library(args.expand_plan,args.budget_usd,args.limit)
+        return 0
     original,assets=load_library()
     if args.asset and not set(args.asset)<={a['id'] for a in assets}:
         raise ValidationError('Unknown asset ID')
     fingerprints={a['traceImagePath']:digest(ASSETS/a['traceImagePath']) for a in assets}
     prior=json.loads(REPORT.read_text()) if REPORT.exists() else {}
-    if prior.get('traceFingerprints',fingerprints)!=fingerprints:
+    if any(fingerprints.get(path)!=value for path,value in prior.get('traceFingerprints',fingerprints).items()):
         raise ValidationError('Trace reference changed since the original preview run')
     if args.validate_only:
-        result=audit(assets);print(json.dumps(result,indent=2));return 0 if result['validTotal']==84 else 1
+        result=audit(assets);print(json.dumps(result,indent=2));return 0 if result['validTotal']==len(assets) else 1
     if not os.environ.get('OPENAI_API_KEY'):
         raise ValidationError('OPENAI_API_KEY is not available')
     logging.disable(logging.CRITICAL)
@@ -275,7 +370,7 @@ def main():
     signal.signal(signal.SIGTERM,lambda *_:stop.set())
 
     def persist(verification=None,manifest_updated=False):
-        report=dict(expectedTotal=84,model=MODEL,quality=args.quality,size='1024x1024',
+        report=dict(expectedTotal=len(assets),model=MODEL,quality=args.quality,size='1024x1024',
             conversionFormat='lossless WebP',concurrency=args.concurrency,maxRetries=args.max_retries,
             successfulTotal=sum(a['status']=='success' for a in states.values()),
             skippedTotal=sum(a['status']=='skipped' for a in states.values()),
@@ -335,7 +430,7 @@ def main():
                 with lock:totals['retries']+=1
                 status(a,'retrying',error=reason);stop.wait(delay)
 
-    print(f'Verified 84 trace references. Processing {len(selected)} previews; concurrency={args.concurrency}.',flush=True)
+    print(f'Verified {len(assets)} trace references. Processing {len(selected)} previews; concurrency={args.concurrency}.',flush=True)
     persist()
     try:
         with ThreadPoolExecutor(max_workers=args.concurrency) as executor:
@@ -344,10 +439,10 @@ def main():
     if any(digest(ASSETS/p)!=value for p,value in fingerprints.items()):
         raise ValidationError('Original trace integrity check failed')
     verification=audit(assets)
-    complete=verification['validTotal']==84 and not verification['unexpectedFiles'] and not verification['duplicateBasenames']
+    complete=verification['validTotal']==len(assets) and not verification['unexpectedFiles'] and not verification['duplicateBasenames']
     if complete:update_manifest(original,assets)
     persist(verification,complete)
-    print(f'Finished: {verification["validTotal"]}/84 valid previews; {dict(totals)}; original traces unchanged.',flush=True)
+    print(f'Finished: {verification["validTotal"]}/{len(assets)} valid previews; {dict(totals)}; original traces unchanged.',flush=True)
     return 0 if complete else 1
 
 

@@ -46,14 +46,14 @@ class PreviewRoutingTest {
     @Test fun homeUsesColorPreview() {
         val drawing = previewOnly
         compose.setContent { CuteAnimalsTheme {
-            HomeScreen(listOf(drawing), emptySet(), emptyList(), {}, {}, onDrawing = {})
+            HomeScreen(listOf(drawing), emptySet(), emptyList(), {}, onDrawing = {})
         } }
         assertColorImage("screen_home", "drawing_cat_001")
     }
     @Test fun recentUsesColorPreview() {
         val drawing = previewOnly
         compose.setContent { CuteAnimalsTheme {
-            HomeScreen(emptyList(), emptySet(), listOf(drawing), {}, {}, onDrawing = {})
+            HomeScreen(emptyList(), emptySet(), listOf(drawing), {}, onDrawing = {})
         } }
         assertColorImage("screen_home", "recent_cat_001")
     }

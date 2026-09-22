@@ -22,6 +22,7 @@ data class UserPreferences(
     val hasShared: Boolean = false,
     val promptDismissCount: Int = 0,
     val dailyReminder: Boolean = true,
+    val onboardingSeen: Boolean = false,
 )
 
 // A single application-scoped instance; IDs refer to the bundled catalog, never copied templates.
@@ -42,6 +43,7 @@ class UserPreferencesRepository(private val store: DataStore<Preferences>) {
         val shared = booleanPreferencesKey("has_shared")
         val dismissCount = intPreferencesKey("prompt_dismiss_count")
         val dailyReminder = booleanPreferencesKey("daily_reminder")
+        val onboardingSeen = booleanPreferencesKey("onboarding_seen")
     }
 
     val data = store.data.map { values ->
@@ -61,6 +63,7 @@ class UserPreferencesRepository(private val store: DataStore<Preferences>) {
             hasShared = values[Keys.shared] ?: false,
             promptDismissCount = (values[Keys.dismissCount] ?: 0).coerceAtLeast(0),
             dailyReminder = values[Keys.dailyReminder] ?: true,
+            onboardingSeen = values[Keys.onboardingSeen] ?: false,
         )
     }
 
@@ -96,6 +99,7 @@ class UserPreferencesRepository(private val store: DataStore<Preferences>) {
     }
 
     suspend fun setDailyReminder(value: Boolean) { store.edit { it[Keys.dailyReminder] = value } }
+    suspend fun setOnboardingSeen() { store.edit { it[Keys.onboardingSeen] = true } }
 
     suspend fun recordPromptShown(now: Long) { store.edit { it[Keys.lastPrompt] = now } }
     suspend fun recordReviewRequested() { store.edit { it[Keys.requestedReview] = true } }

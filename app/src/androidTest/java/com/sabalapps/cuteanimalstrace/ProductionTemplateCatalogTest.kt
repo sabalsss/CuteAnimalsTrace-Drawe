@@ -18,13 +18,13 @@ class ProductionTemplateCatalogTest {
     private val expectedCounts = mapOf(
         TemplateCategory.Cats to 15, TemplateCategory.Dogs to 15, TemplateCategory.Bunnies to 10,
         TemplateCategory.Pandas to 8, TemplateCategory.Foxes to 8, TemplateCategory.Bears to 8,
-        TemplateCategory.Kawaii to 10, TemplateCategory.BabyAnimals to 10,
+        TemplateCategory.Kawaii to 34, TemplateCategory.BabyAnimals to 10,
     )
 
-    @Test fun manifestHas84UniqueCompleteTemplates_andExactCategoryCounts() {
+    @Test fun manifestHas108UniqueCompleteTemplates_andExactCategoryCounts() {
         val catalog = catalog()
-        assertEquals(84, catalog.templates.size)
-        assertEquals(84, catalog.templates.map { it.id }.distinct().size)
+        assertEquals(108, catalog.templates.size)
+        assertEquals(108, catalog.templates.map { it.id }.distinct().size)
         assertEquals(expectedCounts, catalog.templates.groupingBy { it.category }.eachCount())
         assertEquals("Kawaii Animals", TemplateCategory.Kawaii.label)
         assertEquals("Baby Animals", TemplateCategory.BabyAnimals.label)
@@ -35,7 +35,7 @@ class ProductionTemplateCatalogTest {
         }
         assertNull(catalog.findById(null))
         assertNull(catalog.findById("missing"))
-        assertEquals(12, catalog.featuredTemplates.size)
+        assertEquals(16, catalog.featuredTemplates.size)
         assertEquals(catalog.templates.filter { it.featured }, catalog.featuredTemplates)
     }
 
@@ -64,13 +64,13 @@ class ProductionTemplateCatalogTest {
         }
     }
 
-    @Test fun all84PreviewsAreSeparateColorImagesWithTransparentBackgrounds() {
+    @Test fun all108PreviewsAreSeparateColorImagesWithTransparentBackgrounds() {
         val templates = catalog().templates
         val bundled = assets.list("templates_preview")!!.flatMap { category ->
             assets.list("templates_preview/$category")!!.filter { it.endsWith(".webp") }
                 .map { "templates_preview/$category/$it" }
         }.toSet()
-        assertEquals(84, bundled.size)
+        assertEquals(108, bundled.size)
         assertEquals(templates.map { it.previewImagePath }.toSet(), bundled)
         templates.forEach { template ->
             assertNotEquals(template.traceImagePath, template.previewImagePath)
@@ -121,13 +121,17 @@ class ProductionTemplateCatalogTest {
             assertEquals(count, filterDrawings(templates, "", category, null).size)
             assertEquals(count, filterDrawings(templates, category.label.uppercase(), null, null).size)
         }
-        val difficulties = mapOf(Difficulty.Easy to 40, Difficulty.Medium to 36, Difficulty.Detailed to 8)
+        val difficulties = mapOf(Difficulty.Easy to 50, Difficulty.Medium to 50, Difficulty.Detailed to 8)
         difficulties.forEach { (difficulty, count) ->
             assertEquals(count, filterDrawings(templates, "", null, difficulty).size)
         }
         assertEquals(listOf("cat_015"),
             filterDrawings(templates, "cat", TemplateCategory.Cats, Difficulty.Detailed).map { it.id })
         assertTrue(filterDrawings(templates, "panda", TemplateCategory.Cats, Difficulty.Easy).isEmpty())
+        listOf("turtle", "axolotl", "platypus", "kangaroo", "zebra", "octopus", "stingray").forEach { animal ->
+            assertEquals(listOf("${animal}_001"),
+                filterDrawings(templates, animal, TemplateCategory.Kawaii, null).map { it.id })
+        }
     }
 
     @Test fun malformedAndDuplicateRecordsAreRejected() {

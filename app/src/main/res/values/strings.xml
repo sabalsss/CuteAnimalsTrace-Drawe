@@ -5,8 +5,6 @@
     <string name="favorites">Favorites</string>
     <string name="settings">Settings</string>
     <string name="back">Back</string>
-    <string name="hero_title">Your next little masterpiece</string>
-    <string name="hero_description">Find a friendly face to inspire your next drawing.</string>
     <string name="explore_drawings">Explore drawings</string>
     <string name="little_inspiration">Featured drawings</string>
     <string name="explore_subtitle">Find a little friend in our offline collection.</string>
@@ -74,12 +72,11 @@
     <string name="default_opacity_hint">Applies when you start a new tracing session.</string>
     <string name="storage">Data</string>
     <string name="support">Support</string>
-    <string name="how_to_trace">How to trace</string>
+    <string name="how_to_trace">How to use this app</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="share_app">Share app</string>
     <string name="rate_app">Rate app</string>
     <string name="app_version">Version %1$s</string>
-    <string name="how_to_trace_body">1. Choose an animal and tap Trace this drawing.\n\n2. Allow camera access and place your phone securely above your paper.\n\n3. Drag and pinch the drawing to align it, then adjust opacity.\n\n4. Lock the overlay and trace the lines on your paper. Use the flashlight if needed.</string>
     <string name="privacy_placeholder">Your drawings stay on your device. Camera previews and selected images are used only for tracing; this app does not record or upload them. Favorites, recent drawings, and settings are stored locally and may be included in your device backup. Only images you choose through Android Photo Picker are accessible. No accounts, ads, analytics, or tracking are used. Sharing, rating, and your device’s photo provider are handled by other apps.</string>
     <string name="rate_placeholder">No app is available to open the store. You can search for Cute Animals: Trace &amp; Draw in Google Play.</string>
     <string name="share_app_message">Try Cute Animals: Trace &amp; Draw — an offline app for tracing animal drawings on paper.</string>
@@ -162,4 +159,17 @@
     <string name="favorites_count">%1$d saved</string>
     <!-- Redesign: settings -->
     <string name="settings_theme_hint">Choose how the app looks on this device.</string>
+    <string name="splash_loading">Loading drawings</string>
+    <string name="splash_progress">Getting your drawings ready… %1$d%%</string>
+    <string name="tutorial_skip">Skip</string>
+    <string name="tutorial_next">Next</string>
+    <string name="tutorial_start">Get started</string>
+    <string name="tutorial_pick_title">Pick a cute friend</string>
+    <string name="tutorial_pick_body">Browse cats, dogs, bunnies and more, or choose your own photo to trace.</string>
+    <string name="tutorial_setup_title">Set up your phone</string>
+    <string name="tutorial_setup_body">Put your paper on a table and hold or prop your phone steadily above it.</string>
+    <string name="tutorial_align_title">Line it up</string>
+    <string name="tutorial_align_body">Drag to move, pinch to resize, and adjust opacity until the drawing fits your paper.</string>
+    <string name="tutorial_trace_title">Lock and trace</string>
+    <string name="tutorial_trace_body">Lock the drawing in place, then follow the lines on your paper with a pencil.</string>
 </resources>

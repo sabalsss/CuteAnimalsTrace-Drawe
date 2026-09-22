@@ -40,7 +40,8 @@ private const val PrivacyPolicyUrl = "https://sabalsss.github.io/CuteAnimalsTrac
 
 @Composable
 fun SettingsScreen(preferences: UserPreferences,
-    onUpdate: (suspend UserPreferencesRepository.() -> Unit) -> Unit) {
+    onUpdate: (suspend UserPreferencesRepository.() -> Unit) -> Unit,
+    onShowTutorial: () -> Unit = {}) {
     val context = LocalContext.current
     val shareMessage = stringResource(R.string.share_app_message)
     val shareTitle = stringResource(R.string.share_app)
@@ -155,7 +156,7 @@ fun SettingsScreen(preferences: UserPreferences,
             }
 
             SettingsSection(stringResource(R.string.support), iconVector = Icons.Default.Info) {
-                SupportRow(R.string.how_to_trace) { dialog = R.string.how_to_trace }
+                SupportRow(R.string.how_to_trace, onShowTutorial)
                 RowDivider()
                 SupportRow(R.string.privacy_policy) {
                     try { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PrivacyPolicyUrl))) }
@@ -202,7 +203,6 @@ fun SettingsScreen(preferences: UserPreferences,
     }
     dialog?.let { title ->
         val text = when (title) {
-            R.string.how_to_trace -> stringResource(R.string.how_to_trace_body)
             R.string.privacy_policy -> stringResource(R.string.privacy_placeholder)
             else -> stringResource(R.string.rate_placeholder)
         }

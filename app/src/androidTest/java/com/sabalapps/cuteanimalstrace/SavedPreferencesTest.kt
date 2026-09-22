@@ -95,7 +95,7 @@ class SavedPreferencesTest {
         compose.runOnIdle { assertFalse(keepsAwake(compose.activity.window.decorView)) }
     }
 
-    @Test fun settingsPersistAndSupportDialogsOpen() {
+    @Test fun settingsPersistAndHelpDialogOpens() {
         awaitHome()
         compose.onNodeWithTag("tab_settings").performClick()
         compose.onNodeWithTag("theme_Dark").performClick()
@@ -119,7 +119,8 @@ class SavedPreferencesTest {
         compose.onNodeWithTag("show_tips").performScrollTo().assertIsOff()
         compose.onNodeWithText("How to trace").performScrollTo().performClick()
         compose.onNodeWithText("Close").performClick()
-        compose.onNodeWithText("About").performScrollTo().performClick()
-        compose.onNodeWithText("Close").performClick()
+        compose.onNodeWithText(context.getString(R.string.privacy_policy)).performScrollTo().assertIsDisplayed()
+        val version = context.packageManager.getPackageInfo(context.packageName, 0).versionName.orEmpty()
+        compose.onNodeWithText(context.getString(R.string.app_version, version)).performScrollTo().assertIsDisplayed()
     }
 }

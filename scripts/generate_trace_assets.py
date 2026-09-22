@@ -332,6 +332,12 @@ def final_audit(assets):
 
 
 def run(args, assets):
+    # This legacy generator knows only the original specification. Do not let a
+    # later run replace the expanded app manifest with its old 84-record list.
+    if ANDROID_MANIFEST.exists() and not args.validate_only:
+        current_ids = {a["id"] for a in json.loads(ANDROID_MANIFEST.read_text())}
+        if current_ids - {a["id"] for a in assets}:
+            raise ValidationError("Expanded library detected; use the preview generator --expand-plan workflow")
     from PIL import features
     if not features.check("webp"):
         raise ValidationError("Pillow has no WebP codec")
